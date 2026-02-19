@@ -45,8 +45,9 @@ Allowed examples:
 ## Date, Filename, and Timezone Conventions
 - Date format: `YYYY-MM-DD` (ISO).
 - Filename: `journals/YYYY-MM-DD.md`.
-- Use Austin's local timezone for day boundaries (set once, e.g. `America/Los_Angeles`).
-- If response comes after midnight, Pepper asks: "Log this for today or yesterday?"
+- Use Austin's local timezone for day boundaries (Austin is `America/New_York` unless he says otherwise).
+- Default behavior: **assume we are logging “the day that just ended.”**
+- Only ask to clarify the date if it’s after midnight, travel/jet lag, or the message is ambiguous.
 - One journal file per local day.
 
 ## Example

@@ -2,7 +2,7 @@
 
 Use this exact sequence in Discord. Keep tone short and coachy.
 
-1. "Quick daily recap. Is this for today or yesterday (your local time)?"
+1. "Quick daily recap for the day that just ended (your local time). If it’s after midnight and you were up late, tell me which day you mean." 
 2. "Scorecard check (yes/no each): wake window, morning light, caffeine cutoff, last meal cutoff, room cool/dark/quiet, wind-down, sleep quality >=4/5."
 3. "What happened today? Give me 3 short bullets."
 4. "What worked today? 1-2 bullets."
