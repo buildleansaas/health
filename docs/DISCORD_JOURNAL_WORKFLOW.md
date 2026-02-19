@@ -1,94 +1,71 @@
 # Discord Journal Workflow (Pepper)
 
 ## Goal
-Run a daily Discord recap with Austin, convert replies into `journals/YYYY-MM-DD.md`, then commit and push.
+- Run Discord check-ins with Austin across the day.
+- Convert replies into structured journal files per day-part.
+- Commit and push each completed check-in entry.
+
+## Journal Files (Per Local Day)
+- `journals/YYYY-MM-DD-morning.md`
+- `journals/YYYY-MM-DD-midday.md`
+- `journals/YYYY-MM-DD-evening.md`
+- MVP mode writes morning and evening files.
+- Full mode writes morning, midday, and evening files.
 
 ## End-to-End Flow
-1. Pepper sends recap questions in Discord (use `templates/daily-recap-questions.md`).
+1. Pepper sends the matching questions file in Discord.
 2. Austin replies in freeform text.
-3. Pepper checks for missing fields and asks targeted follow-ups.
+3. Pepper asks follow-ups only for missing required fields.
 4. Pepper redacts sensitive medical details.
-5. Pepper formats content using `templates/daily-recap.md`.
-6. Pepper writes/updates `journals/YYYY-MM-DD.md`.
-7. Pepper commits and pushes:
-   - `git add journals/YYYY-MM-DD.md`
-   - `git commit -m "journal: YYYY-MM-DD daily recap"`
-   - `git push`
+5. Pepper formats content with the matching template.
+6. Pepper writes or updates the day-part file in `journals/`.
+7. Pepper commits and pushes.
+
+## Source Templates
+- Morning questions: `templates/morning-checkin-questions.md`
+- Midday questions: `templates/midday-checkin-questions.md`
+- Evening questions: `templates/evening-recap-questions.md`
+- Morning entry: `templates/morning-checkin.md`
+- Midday entry: `templates/midday-checkin.md`
+- Evening entry: `templates/evening-recap.md`
 
 ## Follow-Up Logic (Ask Only What Is Missing)
-- Missing scorecard item: ask only for that item as yes/no or short text.
-- Fewer than 3 "What happened" bullets: ask for the missing bullets.
-- Missing "What worked": ask for 1-2 wins.
-- Missing friction: ask for 1-2 blockers.
-- Missing "One change for tonight": ask for one concrete action.
-- Optional notes missing: do not block journal creation.
+- Missing required score or value: ask only for that value.
+- Missing reflection bullets: ask only for the missing bullet count.
+- Missing one action or change: ask for one concrete action.
+- Optional notes missing: do not block file creation.
+- If midday is missed, continue and complete evening recap.
 
-Use short follow-up phrasing:
-- "Quick fill: did you hit caffeine cutoff (>=8h pre-bed)?"
-- "Give me one blocker from today."
-- "What is the one change for tonight?"
+## Commit Message Conventions
+- Morning check-in:
+- `git add journals/YYYY-MM-DD-morning.md`
+- `git commit -m "journal: YYYY-MM-DD morning check-in"`
+- Midday check-in:
+- `git add journals/YYYY-MM-DD-midday.md`
+- `git commit -m "journal: YYYY-MM-DD midday check-in"`
+- Evening recap:
+- `git add journals/YYYY-MM-DD-evening.md`
+- `git commit -m "journal: YYYY-MM-DD evening recap"`
+- Batch option for multiple files:
+- `git commit -m "journal: YYYY-MM-DD check-ins (morning/midday/evening)"`
 
 ## Safety and Redaction
-Do not store sensitive medical details. Keep entries behavioral and coaching-focused.
+- Do not store sensitive medical details.
+- Redact before writing:
+- Medication names or doses -> `[medication redacted]`
+- Diagnoses or conditions -> `[health detail redacted]`
+- Lab or vitals numbers -> `[health metric redacted]`
+- Doctor, clinic, or patient IDs -> `[personal health info redacted]`
+- Keep entries behavioral and coaching-focused.
 
-Redact before writing:
-- Medication names/doses -> `[medication redacted]`
-- Diagnoses/conditions -> `[health detail redacted]`
-- Lab/vitals numbers -> `[health metric redacted]`
-- Doctor/clinic/patient IDs -> `[personal health info redacted]`
-
-Allowed examples:
-- "Energy was low"
-- "Stress high after work"
-- "Woke up twice"
-
-## Date, Filename, and Timezone Conventions
+## Date and Timezone Conventions
 - Date format: `YYYY-MM-DD` (ISO).
-- Filename: `journals/YYYY-MM-DD.md`.
-- Use Austin's local timezone for day boundaries (Austin is `America/New_York` unless he says otherwise).
-- Default behavior: **assume we are logging “the day that just ended.”**
-- Only ask to clarify the date if it’s after midnight, travel/jet lag, or the message is ambiguous.
-- One journal file per local day.
+- Timezone: Austin local timezone (`America/New_York` unless changed).
+- File date is the local date of the check-in message.
+- Morning check-in can reference last night, but file stays on current morning date.
+- If message is after midnight and ambiguous, ask for explicit date.
 
-## Example
-Discord conversation:
-- Pepper: "Quick recap: scorecard, what happened (3 bullets), what worked, friction, one change."
-- Austin: "Score 5/7. Missed wind-down and late meal. Morning light done. Busy day, long call, gym. Worked: no caffeine after 2pm. Friction: late dinner. Change: prep dinner earlier."
-- Pepper follow-up: "Sleep quality >=4/5?"
-- Austin: "3/5."
-
-Resulting file `journals/2026-02-19.md`:
-
-```md
-# Daily Recap (Sleep System)
-
-Date: 2026-02-19
-
-## The 7-point score (0–7)
-- Wake time hit (+/-30m): Yes
-- Morning light (10–30m outdoors): Yes
-- Caffeine cutoff (>=8h pre-bed): Yes
-- Last meal (>=90m pre-bed): No
-- Room: cool/dark/quiet: Yes
-- Wind-down done (60m): No
-- Sleep quality >=4/5: No (3/5)
-
-## What happened (3 bullets)
-- Busy workday with one long call.
-- Got gym session done.
-- Dinner ran late.
-
-## What worked (1–2 bullets)
-- No caffeine after 2pm.
-
-## What sucked / friction (1–2 bullets)
-- Late dinner made wind-down harder.
-
-## One change for tonight (ONE thing)
-- Prep dinner earlier so last meal is >=90m before bed.
-
-## Notes (optional)
-- Training: Gym.
-- Alcohol/cannabis:
-- Stress: High during work call.
-```
+## Minimum Execution Standard
+- Every active day should end with an evening recap file.
+- Morning check-in is required in MVP and full mode.
+- Midday check-in is required only in full mode.
