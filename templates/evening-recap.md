@@ -1,16 +1,23 @@
-# Evening Recap (Sleep System)
+# Evening Recap (Integrated System)
 
 Date:
 Check-in: Evening
 
-## The 7-Point Score (0-7)
-- Wake time hit (+/-30m):
-- Morning light (10-30m outdoors):
-- Caffeine cutoff (>=8h pre-bed):
-- Last meal (>=90m pre-bed):
-- Room cool, dark, quiet:
-- Wind-down done (60m):
-- Sleep quality >=4/5:
+## Daily Adherence Score (0-10)
+- Sleep score (0-4):
+- Wake window hit (+/-30m):
+- Caffeine cutoff met:
+- Last meal cutoff met:
+- Wind-down + sleep environment met:
+- Nutrition score (0-3):
+- Protein anchors met:
+- Hydration/fueling consistency met:
+- Whole-food pattern/seed-oil avoidance target met:
+- Training score (0-3):
+- Planned training or fallback completed:
+- Movement baseline completed:
+- Recovery block completed:
+- Total score (0-10):
 
 ## What Happened (3 bullets)
 -
@@ -27,7 +34,6 @@ Check-in: Evening
 -
 
 ## Notes (optional)
-- Training:
-- Alcohol or cannabis:
-- Stress:
-
+- Symptoms or recovery notes:
+- Alcohol/cannabis:
+- Stress load:

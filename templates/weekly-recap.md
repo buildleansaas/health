@@ -1,31 +1,29 @@
-# Weekly Review (Sleep System)
+# Weekly Recap (Integrated System)
 
 Week of:
 
-## Metrics snapshot
-- Avg bedtime:
-- Avg wake time:
-- Avg daily score (0–7):
-- Best night (why):
-- Worst night (why):
+## Score Summary
+- Avg total score (0-10):
+- Avg sleep score (0-4):
+- Avg nutrition score (0-3):
+- Avg training score (0-3):
 
-## Patterns I noticed
+## Wins
 -
 -
+
+## Friction
+-
 -
 
-## Keep / Cut / Add
-- Keep:
-- Cut:
-- Add:
+## One Adjustment for Next Week
+-
 
-## Next week’s targets (max 3)
-1)
-2)
-3)
+## Targets (max 3)
+1.
+2.
+3.
 
-## If I’m still tired: screen for red flags
-- Snoring/gasping/witnessed pauses?
-- Morning headaches?
-- Daytime sleepiness?
-- Mood tanking?
+## Safety Check
+- Any persistent sleep, mood, libido, or recovery red flags? yes / no
+- If yes, note escalation plan:
