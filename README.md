@@ -1,26 +1,33 @@
-# Health Sleep System Repo
+# Austin Integrated Coaching Repo
 
-This repo is a practical, evidence-informed sleep coaching package for Austin.
-It turns a social-media "sleep bible" thread into a clear system you can run daily.
+This repo runs a practical integrated coaching system for Austin across sleep, nutrition, and training.
 
-## What’s inside
+## Start here
+- `docs/SYSTEM_SOURCE_OF_TRUTH.md`
+- `docs/COACHING_CRON_SYSTEM.md`
+- `docs/DISCORD_JOURNAL_WORKFLOW.md`
+- `docs/COACHING_INTEGRATION_PLAN.md`
 
-- `reports/2026-02-19-sleep-bible.md`
-  - Full coaching report: system, 14-day plan, checklist, claims audit, supplement cautions, and personalization questions.
-- `templates/daily-scorecard.md`
-  - Copy/paste daily tracker to keep execution honest.
+## Active templates
+- `templates/morning-checkin.md`
+- `templates/midday-checkin.md`
+- `templates/evening-recap.md`
 - `templates/weekly-review.md`
-  - Weekly reflection template to adjust the plan fast.
+- `templates/weekly-recap.md`
 
-## How to use this repo
+## Journal outputs
+- `journals/YYYY-MM-DD-morning.md`
+- `journals/YYYY-MM-DD-midday.md`
+- `journals/YYYY-MM-DD-evening.md`
+- `weekly/YYYY-[W]WW.md`
 
-1. Read `reports/2026-02-19-sleep-bible.md` once end-to-end.
-2. Pick a target wake time and bedtime window.
-3. Use `templates/daily-scorecard.md` every day for 14 days.
-4. Run `templates/weekly-review.md` at the end of each week.
-5. Personalize using the “What I need from Austin” questions in the report.
+## Scoring model (only model)
+- `total 0-10 = sleep 0-4 + nutrition 0-3 + training 0-3`
 
-## Notes
+## Deprecated and historical
+- Deprecated: `templates/daily-recap.md`, `templates/daily-recap-questions.md`, `templates/daily-scorecard.md`
+- Historical reference: `reports/2026-02-19-sleep-bible.md`
 
+## Safety note
 - This is coaching material, not medical advice.
-- If there are red flags (loud snoring, gasping, severe daytime sleepiness, insomnia lasting months), escalate to a licensed clinician and consider a sleep medicine referral.
+- For red flags or persistent decline, escalate to a licensed clinician.

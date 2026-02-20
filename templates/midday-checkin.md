@@ -3,26 +3,22 @@
 Date:
 Check-in: Midday
 
-## Current State
+Scoring model: `total 0-10 = sleep 0-4 + nutrition 0-3 + training 0-3`.
+
+## Required
 - Energy now (1-5):
 - Stress now (1-5):
+- Sleep guardrails on track (yes/no + note):
+- Nutrition anchors on track (yes/no + note):
+- Training status (done / pending / fallback):
+- One sleep adjustment:
+- One nutrition adjustment:
+- One training/recovery adjustment:
+- Accountability action (what + when):
+
+## Optional
 - Focus now (1-5):
 - Hunger/cravings now (1-5):
+- Calendar/social notes:
 
-## Adherence Snapshot
-- Sleep guardrails still on track (caffeine + last meal + wind-down):
-- Nutrition anchors on track:
-- Training status (done / pending / fallback):
-- Movement baseline status:
-
-## Course Correction
-- Biggest risk from now to bedtime:
-- One sleep adjustment for tonight:
-- One nutrition adjustment for today:
-- One training or recovery adjustment:
-- Accountability action (when/how):
-
-## Notes (optional)
-- Calendar pressure:
-- Social events:
-- Other:
+Unknown format: `Unknown - reason` (only if explicitly stated).

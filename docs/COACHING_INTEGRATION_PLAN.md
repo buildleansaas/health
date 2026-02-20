@@ -2,101 +2,72 @@
 
 ## Goal
 - Replace sleep-only coaching with an integrated daily system.
-- Keep prompts short, behavior-first, and easy to execute under real schedule pressure.
+- Keep prompts short, behavior-first, and easy to execute.
 - Drive consistency, not perfection.
 
 ## Guiding rules
-- Track three domains every day: sleep, nutrition, training.
-- Prioritize adherence and trend direction over day-to-day perfection.
-- Use one primary behavior change at a time.
-- Keep coach language non-diagnostic and practical.
+- Track three domains daily: sleep, nutrition, training.
+- Prioritize adherence trend over single-day perfection.
+- Run one primary behavior change at a time.
+- Keep coaching language non-diagnostic and practical.
 
 ## Daily check-ins
-
-### Morning check-in
-- Capture recovery state:
-- Sleep quality, wake-window hit, awakenings, morning energy.
-- Set sleep guardrails:
-- Caffeine cutoff, last meal cutoff, wind-down start.
-- Set nutrition plan:
-- Protein anchors, hydration/salt plan, carb timing strategy.
-- Set training plan:
-- Session type/time + fallback version.
-- Set risk response:
-- Biggest risk and one if-then plan.
-
-### Midday check-in
-- Re-rate current state:
-- Energy, stress, focus, hunger/cravings.
-- Confirm adherence status:
-- Sleep guardrails still on track.
-- Nutrition anchors on track.
-- Training done / pending / fallback triggered.
-- Apply course correction:
-- One sleep correction, one nutrition correction, one training/recovery correction.
+- Morning check-in:
+- Capture recovery state and set guardrails (caffeine cutoff, last meal cutoff, wind-down).
+- Set nutrition anchors and training plan with fallback.
+- Set one risk response and one non-negotiable.
+- Midday check-in:
+- Re-rate current state and confirm each domain is on track.
+- Apply one sleep, one nutrition, and one training/recovery correction.
 - Lock one accountability action by time.
-
-### Evening recap
-- Score the day with simple points.
-- Capture what happened, what worked, and friction.
-- Pick one change for tomorrow.
+- Evening recap:
+- Score sleep, nutrition, training, and total.
+- Capture what happened, what worked, friction, and one change for tomorrow.
 - Flag red-flag symptoms for escalation when needed.
 
 ## Daily cadence
-- Morning check-in: within 15-90 minutes of wake.
-- Midday check-in: around wake-day midpoint.
-- Evening recap: end of day or 60-120 minutes pre-bed.
+- Morning: within 15-90 minutes of wake.
+- Midday: around wake-day midpoint.
+- Evening: end of day or 60-120 minutes pre-bed.
 - If midday is missed, still complete evening recap.
 
 ## Weekly cadence
-- Weekly review day:
-- Calculate 7-day average adherence score.
-- Review best day, worst day, and recurring friction.
+- Calculate 7-day average domain and total scores.
+- Review best day, lowest day, and recurring friction.
 - Confirm training volume and recovery balance.
-- Set next week:
 - Keep one behavior, cut one behavior, add one behavior.
 - Set max three targets for next week.
-- Escalation check:
 - If persistent red flags or declining function despite adherence, escalate to clinician discussion.
 
 ## Fallback modes
-
-### Busy day mode
-- Keep three anchors:
+- Busy day mode:
 - Sleep: caffeine cutoff + wind-down minimum.
 - Nutrition: two protein feedings + hydration.
 - Training: 20-minute movement block.
-- Goal is minimum stability, not full optimization.
-
-### Minimum viable day mode
-- Absolute floor behavior set:
+- Minimum viable day mode:
 - Fixed wake window.
 - Caffeine cutoff respected.
 - 10-minute walk + one protein-forward meal.
-- If the day breaks, complete this floor and count it as a kept streak day.
 
-## Adherence scoring (simple points)
-- Total score: `0-10` per day.
-- Sleep score `0-4`:
+## Adherence scoring (only model)
+- `total 0-10 = sleep 0-4 + nutrition 0-3 + training 0-3`
+- Sleep `0-4` anchors:
 - Wake window hit.
 - Caffeine cutoff met.
 - Last meal cutoff met.
-- Wind-down plus sleep-environment target met.
-- Nutrition score `0-3`:
+- Wind-down + sleep-environment target met.
+- Nutrition `0-3` anchors:
 - Protein anchors met.
-- Hydration/salt and fueling consistency met.
-- Whole-food pattern and seed-oil avoidance target met.
-- Training score `0-3`:
+- Hydration/fueling consistency met.
+- Whole-food pattern/seed-oil avoidance target met.
+- Training `0-3` anchors:
 - Planned training completed (or fallback completed).
 - Daily movement baseline completed.
-- Recovery block completed (mobility/breathing/downshift).
+- Recovery block completed.
 
 ## Anti-all-or-nothing rules
-- `6/10+` is a successful day.
+- Operational floor: `6/10+` keeps continuity.
+- Austin target: `7/10+` average (with push toward `8/10+`).
 - Missing one anchor does not void the day.
-- Use salvage actions:
-- Missed full training -> do fallback movement.
-- Off-plan meal -> return to next planned meal, no compensation spiral.
-- Late day stress spike -> run 10-minute downshift and protect wind-down.
-- Never miss twice rule for primary habit of the week.
+- Use salvage actions instead of quitting the day.
 - Evaluate trends weekly, not emotionally in-day.

@@ -3,37 +3,28 @@
 Date:
 Check-in: Evening
 
-## Daily Adherence Score (0-10)
+Scoring model: `total 0-10 = sleep 0-4 + nutrition 0-3 + training 0-3`.
+
+## Required Scores
 - Sleep score (0-4):
-- Wake window hit (+/-30m):
-- Caffeine cutoff met:
-- Last meal cutoff met:
-- Wind-down + sleep environment met:
 - Nutrition score (0-3):
-- Protein anchors met:
-- Hydration/fueling consistency met:
-- Whole-food pattern/seed-oil avoidance target met:
 - Training score (0-3):
-- Planned training or fallback completed:
-- Movement baseline completed:
-- Recovery block completed:
 - Total score (0-10):
 
-## What Happened (3 bullets)
+## Required Reflection
+- What happened (2-3 bullets):
 -
 -
+- What worked (at least 1 bullet):
 -
-
-## What Worked (1-2 bullets)
+- Friction (at least 1 bullet):
 -
-
-## Friction (1-2 bullets)
--
-
-## One Change for Tomorrow (ONE thing)
+- One change for tomorrow:
 -
 
-## Notes (optional)
-- Symptoms or recovery notes:
+## Optional
+- Symptoms/recovery notes:
 - Alcohol/cannabis:
 - Stress load:
+
+Unknown format: `Unknown - reason` (only if explicitly stated).

@@ -3,27 +3,21 @@
 Date:
 Check-in: Morning
 
-## Last Night and Recovery
+Scoring model: `total 0-10 = sleep 0-4 + nutrition 0-3 + training 0-3`.
+
+## Required
 - Wake window hit (+/-30m):
 - Sleep quality (1-5):
-- Night awakenings (count):
 - Morning energy (1-5):
-- Morning mood/readiness (1-5):
-
-## Today Plan: Sleep Nutrition Training
-- Caffeine cutoff time:
-- Last meal cutoff time:
-- Wind-down start time:
-- Nutrition anchors (protein meals, hydration/salt, carb strategy):
-- Training plan (type + time):
-- Training fallback (minimum viable version):
-
-## Risks and Response
-- Biggest risk to adherence today:
-- If-then plan:
+- Sleep guardrails (caffeine cutoff, last meal cutoff, wind-down start):
+- Nutrition anchors today (protein + hydration/fueling):
+- Training plan + fallback:
+- Biggest risk + if-then response:
 - One non-negotiable:
 
-## Notes (optional)
-- Stress:
-- Schedule constraints:
-- Other:
+## Optional
+- Night awakenings:
+- Morning mood/readiness:
+- Schedule/stress notes:
+
+Unknown format: `Unknown - reason` (only if explicitly stated).

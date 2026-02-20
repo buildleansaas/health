@@ -2,6 +2,8 @@
 
 Week of:
 
+Scoring model: `total 0-10 = sleep 0-4 + nutrition 0-3 + training 0-3`.
+
 ## Results Snapshot
 - Average total score (0-10):
 - Average sleep score (0-4):

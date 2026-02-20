@@ -1,3 +1,9 @@
+# HISTORICAL REFERENCE: Sleep Bible (Legacy Sleep-Only)
+
+- Snapshot date: 2026-02-19.
+- This file is historical and not canonical for active operations.
+- Use `docs/SYSTEM_SOURCE_OF_TRUTH.md` for current workflow and templates.
+
 # Sleep Bible (Coach Version)
 
 Date: 2026-02-19  
