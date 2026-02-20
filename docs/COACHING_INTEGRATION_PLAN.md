@@ -11,15 +11,31 @@
 - Prioritize adherence trend over single-day perfection.
 - Keep coaching language non-diagnostic and practical.
 
+## Standard training mode enum (use everywhere)
+- `Gym LP` (`Train:GymLP`)
+- `Home Strength (KB+Pullup+Rings)` (`Train:HomeStrength`)
+- `HIIT Only (Chris Heria style)` (`Train:HIITOnly`)
+- `Minimum Day` (`Train:MinimumDay`)
+- `Recovery` (`Train:Recovery`)
+
+## Fallback ladder (A/B/C)
+- `A = Home Strength 25-35 min`
+- `B = HIIT 10-15 min`
+- `C = Minimum Day 8-12 min`
+
+## Pre-swim-night training guidance (Sun/Tue/Thu)
+- Avoid late hard HIIT.
+- If evening is tight, favor `A` or `C`.
+
 ## Daily check-ins
 - Morning check-in:
 - Capture readiness color + energy, sleep state, and guardrails.
-- Set nutrition + training plan/fallback.
+- Set nutrition + training mode (`Train:<mode>`) + fallback rung (`A/B/C`).
 - Set hydration 1L-by-noon plan, stress reset plan, connection plan.
 - Capture pain/location/red-flag status.
 - Midday check-in:
 - Re-rate readiness, energy, stress, hydration sufficiency.
-- Confirm guardrails, nutrition, training, and connection status.
+- Confirm guardrails, nutrition, training mode/status, and connection status.
 - Re-check pain/location/red-flag and set one next action.
 - Evening recap:
 - Score sleep, nutrition, training, and total.
@@ -41,7 +57,7 @@
 - Pain/red-flag threshold: red-flag yes or pain >=7 immediately; pain 4-6 persisting >48h (or pain >=3 for 3+ days).
 
 ## Trigger actions
-- Yellow readiness: fallback training + protect bedtime for 24h.
+- Yellow readiness: fallback ladder (`A` then `B` then `C`) + protect bedtime for 24h.
 - Red readiness: recovery-only day; no high-intensity work.
 - Stress >=4: complete 10-minute reset within 60 minutes.
 - Hydration misses repeated: lock AM + pre-noon water blocks.
@@ -52,11 +68,11 @@
 - Busy day mode:
 - Sleep: caffeine cutoff + wind-down minimum.
 - Nutrition: two protein feedings + hydration floor.
-- Training: 20-minute movement block.
+- Training: use fallback ladder (`A/B/C`) based on available time.
 - Minimum viable day mode:
 - Fixed wake window.
 - Caffeine cutoff respected.
-- 10-minute walk + one protein-forward meal.
+- `C` (`Minimum Day 8-12 min`) + one protein-forward meal.
 
 ## Adherence scoring (only model)
 - `total 0-10 = sleep 0-4 + nutrition 0-3 + training 0-3`
@@ -71,7 +87,7 @@
 - Hydration/fueling consistency met.
 - Whole-food pattern/seed-oil avoidance target met.
 - Training `0-3` anchors:
-- Planned training completed (or fallback completed).
+- Planned training mode completed (or fallback `A/B/C` completed).
 - Daily movement baseline completed.
 - Recovery block completed.
 

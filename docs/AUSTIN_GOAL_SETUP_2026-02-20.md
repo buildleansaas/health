@@ -18,6 +18,22 @@
 - Primary path: Greyskull/Phrak 3x/week for progressive overload and measurable strength gains.
 - HIIT ab circuit is fallback/finisher, not primary replacement.
 
+## Standard training mode enum (use everywhere)
+- `Gym LP` (`Train:GymLP`)
+- `Home Strength (KB+Pullup+Rings)` (`Train:HomeStrength`)
+- `HIIT Only (Chris Heria style)` (`Train:HIITOnly`)
+- `Minimum Day` (`Train:MinimumDay`)
+- `Recovery` (`Train:Recovery`)
+
+## Fallback ladder (A/B/C)
+- `A = Home Strength 25-35 min`
+- `B = HIIT 10-15 min`
+- `C = Minimum Day 8-12 min`
+
+## Pre-swim-night training guidance (Sun/Tue/Thu)
+- Avoid late hard HIIT on pre-swim nights.
+- If evening is tight, favor `A` or `C` over forcing a hard session.
+
 ## Walk floor
 - 20-minute walk is enough as a minimum floor.
 - Progression target: average 25-35 minutes/day or 7k-9k steps/day over 2-4 weeks.
@@ -61,7 +77,7 @@
 - Hydration/fueling consistency hit.
 - Whole-food pattern/seed-oil avoidance target hit.
 - Training `0-3`:
-- Planned session completed (or fallback completed).
+- Planned session completed (or fallback `A/B/C` completed).
 - Movement floor met (>=20 min walk).
 - Recovery block completed (5-10 min mobility/breathing).
 

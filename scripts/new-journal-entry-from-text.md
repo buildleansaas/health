@@ -32,20 +32,45 @@ Rules:
    - diagnoses/conditions -> [health detail redacted]
    - lab/vitals -> [health metric redacted]
 6) Keep wording concise and behavioral.
+7) Recognize training mode enum from raw text:
+   - Canonical display values:
+     - `Gym LP`
+     - `Home Strength (KB+Pullup+Rings)`
+     - `HIIT Only (Chris Heria style)`
+     - `Minimum Day`
+     - `Recovery`
+   - Canonical quick tokens:
+     - `Train:GymLP`
+     - `Train:HomeStrength`
+     - `Train:HIITOnly`
+     - `Train:MinimumDay`
+     - `Train:Recovery`
+   - Accept loose variants and map to canonical:
+     - `gym`, `lp`, `greyskull`, `phrak` -> `Gym LP`
+     - `home strength`, `kb`, `kettlebell`, `pullup`, `rings` -> `Home Strength (KB+Pullup+Rings)`
+     - `hiit`, `chris heria`, `heria` -> `HIIT Only (Chris Heria style)`
+     - `minimum`, `minimum day`, `micro` -> `Minimum Day`
+     - `recovery`, `rest`, `easy recovery` -> `Recovery`
+   - Parse fallback ladder where present:
+     - `A = Home Strength 25-35 min`
+     - `B = HIIT 10-15 min`
+     - `C = Minimum Day 8-12 min`
+   - If training is mentioned but mode is ambiguous, ask one follow-up for exact mode token.
 
 Required fields by part:
 - Morning:
   - wake window hit, sleep quality, morning energy
   - caffeine cutoff, last meal cutoff, wind-down start
-  - nutrition anchors, training plan, training fallback
+  - nutrition anchors, training mode, training fallback (`A/B/C` if used)
   - biggest risk, if-then response, one non-negotiable
 - Midday:
   - energy, stress
-  - sleep guardrails on track, nutrition anchors on track, training status
+  - sleep guardrails on track, nutrition anchors on track, training mode/status
   - one sleep adjustment, one nutrition adjustment, one training/recovery adjustment
   - accountability action with timing
 - Evening:
   - sleep score (0-4), nutrition score (0-3), training score (0-3), total score (0-10)
+  - training mode + completion type (planned / fallback A/B/C / recovery)
   - what happened (2-3 bullets), what worked (>=1 bullet), friction (>=1 bullet), one change for tomorrow
 
 Output format:

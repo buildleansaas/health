@@ -15,6 +15,22 @@
 - Busy day mode: shorter prompts, same three check-ins.
 - Minimum viable day mode: keep floor habits and finish evening recap.
 
+## Standard training mode enum (use everywhere)
+- `Gym LP` (`Train:GymLP`)
+- `Home Strength (KB+Pullup+Rings)` (`Train:HomeStrength`)
+- `HIIT Only (Chris Heria style)` (`Train:HIITOnly`)
+- `Minimum Day` (`Train:MinimumDay`)
+- `Recovery` (`Train:Recovery`)
+
+## Fallback ladder (A/B/C)
+- `A = Home Strength 25-35 min`
+- `B = HIIT 10-15 min`
+- `C = Minimum Day 8-12 min`
+
+## Pre-swim-night training guidance (Sun/Tue/Thu)
+- Avoid late hard HIIT.
+- If evening is tight, favor `A` or `C`.
+
 ## Check-in windows (local time, America/New_York)
 - Morning: within 15-90 minutes of wake.
 - Midday: near wake-day midpoint.
@@ -38,7 +54,7 @@
 - Morning required:
 - Readiness color, energy, wake window hit, sleep quality.
 - Sleep guardrails (caffeine cutoff, last meal cutoff, wind-down start).
-- Nutrition + training plan/fallback.
+- Nutrition + training mode token (`Train:<mode>`) + fallback rung (`A/B/C`).
 - Hydration 1L-by-noon plan.
 - Stress + 10-minute reset plan.
 - Meaningful connection plan (10+ minutes, yes/no).
@@ -50,7 +66,7 @@
 - Readiness color and energy.
 - Stress + reset done/scheduled.
 - Hydration sufficiency (urine color + 1L by noon yes/no).
-- Guardrails on-track, nutrition on-track, training status.
+- Guardrails on-track, nutrition on-track, training mode/status.
 - Meaningful connection status (done/planned/missed).
 - Risk check: pain (0-10) + location + red-flag symptom (yes/no).
 - One next action with time.
@@ -92,7 +108,7 @@
 - Track weekly trend, not single-day perfection.
 
 ## Modifier trigger rules (short, explicit)
-- Readiness Yellow threshold: `Yellow` for >=2 consecutive check-ins or energy <=2 -> fallback training + bedtime protection for next 24h.
+- Readiness Yellow threshold: `Yellow` for >=2 consecutive check-ins or energy <=2 -> fallback ladder (`A` then `B` then `C`) + bedtime protection for next 24h.
 - Readiness Red threshold: any `Red` or energy =1 -> recovery-only day, no high-intensity training.
 - Stress threshold: stress >=4/5 -> run 10-minute reset within 60 minutes; if still >=4 at next check-in, switch to Busy Day mode.
 - Hydration misses: dark urine or missed 1L by noon -> same-day hydration recovery; if >=2 misses in a week, enforce fixed AM + pre-noon water blocks.

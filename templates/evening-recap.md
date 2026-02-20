@@ -6,12 +6,16 @@ Timezone: America/New_York
 
 Scoring model: `total 0-10 = sleep 0-4 + nutrition 0-3 + training 0-3`.
 Modifier facets (not score points): readiness, stress/reset, hydration, connection, risk/safety.
+Training mode enum: `Gym LP`, `Home Strength (KB+Pullup+Rings)`, `HIIT Only (Chris Heria style)`, `Minimum Day`, `Recovery`.
+Mode token format: `Train:GymLP|Train:HomeStrength|Train:HIITOnly|Train:MinimumDay|Train:Recovery`.
+Fallback ladder: `A = Home Strength 25-35 min`, `B = HIIT 10-15 min`, `C = Minimum Day 8-12 min`.
 
 ## Required Scores
 - Sleep score (0-4):
 - Nutrition score (0-3):
 - Training score (0-3):
 - Total score (0-10):
+- Training mode used (Train token) + completion type (planned / fallback A/B/C / recovery):
 
 ## Required Modifier Checks (not scored)
 - Readiness trend today (mostly Green/Yellow/Red):

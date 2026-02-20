@@ -36,6 +36,22 @@
 - Keep each check-in question set answerable in under 90 seconds.
 - If something is missing, ask only for the missing required field.
 
+## Standard training mode enum (use everywhere)
+- `Gym LP` (`Train:GymLP`)
+- `Home Strength (KB+Pullup+Rings)` (`Train:HomeStrength`)
+- `HIIT Only (Chris Heria style)` (`Train:HIITOnly`)
+- `Minimum Day` (`Train:MinimumDay`)
+- `Recovery` (`Train:Recovery`)
+
+## Fallback ladder (A/B/C)
+- `A = Home Strength 25-35 min`
+- `B = HIIT 10-15 min`
+- `C = Minimum Day 8-12 min`
+
+## Pre-swim-night training guidance (Sun/Tue/Thu)
+- Avoid late hard HIIT.
+- If evening is tight, favor `A` or `C`.
+
 ## Scoring model (only model)
 - `total 0-10 = sleep 0-4 + nutrition 0-3 + training 0-3`
 - Modifier facets are coaching triggers only and do not add score points.
@@ -46,7 +62,7 @@
 - Morning required:
 - Readiness color, energy, wake window hit, sleep quality.
 - Guardrails (caffeine cutoff, last meal cutoff, wind-down).
-- Nutrition + training plan/fallback.
+- Nutrition + training mode token (`Train:<mode>`) + fallback rung (`A/B/C`).
 - Hydration 1L-by-noon plan.
 - Stress + 10-minute reset plan.
 - Meaningful connection plan (10+ minutes, yes/no).
@@ -58,7 +74,7 @@
 - Readiness color + energy.
 - Stress + reset done/scheduled.
 - Hydration (urine color + 1L by noon yes/no).
-- Guardrails on-track, nutrition on-track, training status.
+- Guardrails on-track, nutrition on-track, training mode/status.
 - Connection status (done/planned/missed).
 - Pain (0-10) + location + red-flag symptom (yes/no).
 - One next action with time.
@@ -74,7 +90,7 @@
 - One optional line: alcohol/cannabis or extra context.
 
 ## Trigger handling (short)
-- Readiness Yellow: `Yellow` >=2 consecutive check-ins or energy <=2 -> fallback training + bedtime protection for 24h.
+- Readiness Yellow: `Yellow` >=2 consecutive check-ins or energy <=2 -> fallback ladder (`A` then `B` then `C`) + bedtime protection for 24h.
 - Readiness Red: any `Red` or energy =1 -> recovery-only day and no high-intensity training.
 - Stress: stress >=4 -> do 10-minute reset within 60 minutes; if still >=4 next check-in, shift to Busy Day mode.
 - Hydration miss: dark urine or missed 1L by noon; if >=2 misses in a week, enforce AM + pre-noon hydration blocks.

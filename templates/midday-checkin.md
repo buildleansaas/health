@@ -6,6 +6,10 @@ Timezone: America/New_York
 
 Scoring model: `total 0-10 = sleep 0-4 + nutrition 0-3 + training 0-3`.
 Modifier facets (not score points): readiness, stress/reset, hydration, connection, risk/safety.
+Training mode enum: `Gym LP`, `Home Strength (KB+Pullup+Rings)`, `HIIT Only (Chris Heria style)`, `Minimum Day`, `Recovery`.
+Mode token format: `Train:GymLP|Train:HomeStrength|Train:HIITOnly|Train:MinimumDay|Train:Recovery`.
+Fallback ladder: `A = Home Strength 25-35 min`, `B = HIIT 10-15 min`, `C = Minimum Day 8-12 min`.
+Pre-swim nights (Sun/Tue/Thu): avoid late hard HIIT; if evening is tight, favor `A` or `C`.
 
 ## Required (fast)
 - Recovery readiness now (Green/Yellow/Red):
@@ -14,7 +18,7 @@ Modifier facets (not score points): readiness, stress/reset, hydration, connecti
 - Hydration sufficiency: urine color + 1L by noon hit (yes/no):
 - Sleep guardrails on track (yes/no):
 - Nutrition anchors on track (yes/no):
-- Training status (done / pending / fallback):
+- Training status (Train token + done / pending / fallback A/B/C):
 - Meaningful connection status (10+ min) (done / planned / missed):
 - Risk check: pain (0-10), location, red-flag symptom (yes/no):
 - One next action + time:
