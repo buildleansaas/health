@@ -1,15 +1,18 @@
 # Midday Check-In Questions (Pepper)
 
-Use this sequence in Discord. Keep it short and actionable.
+Use this in Discord. Required-first flow should be answerable in <90 seconds.
 
-1. "Midday check-in for today."
-2. "Rate energy, stress, focus, and hunger/cravings right now (1-5 each)."
-3. "Are sleep guardrails still on track: caffeine cutoff, last meal cutoff, wind-down plan?"
-4. "Are nutrition anchors on track?"
-5. "Training status: done, pending, or fallback?"
-6. "What is the biggest risk from now to bedtime?"
-7. "Give one sleep adjustment, one nutrition adjustment, and one training/recovery adjustment."
-8. "What is your accountability action and timing?"
-9. "Optional: calendar pressure, social events, other notes?"
+## Quick Reply Format
+```text
+R:Yellow | E:3 | Stress:4 reset done | Hydration:urine 5, 1L-noon N | Guardrails:Y | Nutrition:Y | Training:pending/fallback walk | Connect:planned 6pm | Pain:2 knee | RedFlag:N | Next:water+protein 1:15pm
+Optional: focus, hunger, calendar pressure
+```
+
+## Required first
+1. "Midday check-in (<90 sec). Reply in one line with readiness color, energy (1-5), and stress (1-5) plus reset done/scheduled."
+2. "Add hydration check: urine color and 1L-by-noon hit (Y/N)."
+3. "Add on-track status: guardrails (Y/N), nutrition (Y/N), training (done/pending/fallback), and meaningful connection (done/planned/missed)."
+4. "Add pain (0-10) + location + red-flag symptom (Y/N), then one next action with time."
+5. "Optional: focus/hunger note, calendar pressure, other context."
 
 If anything is missing, ask only for the missing required item.

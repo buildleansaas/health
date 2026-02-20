@@ -33,6 +33,22 @@
 - Week 2: if form/reps are solid, add +2.5-5 lb upper and +5-10 lb lower where appropriate.
 - If form breaks twice on a lift, reduce ~10% next exposure and rebuild.
 
+## Modifier rollout (coaching only, not scored)
+- Daily capture in morning/midday/evening:
+- Recovery readiness (Green/Yellow/Red) + energy.
+- Stress (1-5) + 10-minute reset completed/planned.
+- Hydration sufficiency (urine color + 1L by noon yes/no).
+- Meaningful social connection (10+ minutes yes/no).
+- Risk/safety (pain 0-10 + location + red-flag symptom yes/no).
+
+## Modifier trigger rules
+- Readiness Yellow threshold: Yellow >=2 consecutive check-ins or energy <=2 -> fallback training + bedtime protection for 24h.
+- Readiness Red threshold: any Red or energy =1 -> recovery-only day (no high intensity).
+- Stress threshold: stress >=4 -> 10-minute reset within 60 minutes.
+- Hydration misses: dark urine or missed 1L by noon; if >=2 days/week -> lock AM + pre-noon hydration blocks.
+- Connection misses: no 10+ minute connection for 2 consecutive days -> schedule next-day connection block before 6pm.
+- Pain/red-flag escalation: red-flag yes or pain >=7 -> urgent escalation now; pain 4-6 for >48h (or pain >=3 for 3+ days) -> clinician-soon.
+
 ## Daily adherence score (only model)
 - `total 0-10 = sleep 0-4 + nutrition 0-3 + training 0-3`
 - Sleep `0-4`:

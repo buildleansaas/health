@@ -2,23 +2,24 @@
 
 Date:
 Check-in: Midday
+Timezone: America/New_York
 
 Scoring model: `total 0-10 = sleep 0-4 + nutrition 0-3 + training 0-3`.
+Modifier facets (not score points): readiness, stress/reset, hydration, connection, risk/safety.
 
-## Required
+## Required (fast)
+- Recovery readiness now (Green/Yellow/Red):
 - Energy now (1-5):
-- Stress now (1-5):
-- Sleep guardrails on track (yes/no + note):
-- Nutrition anchors on track (yes/no + note):
+- Stress now (1-5) + 10-min reset done/scheduled:
+- Hydration sufficiency: urine color + 1L by noon hit (yes/no):
+- Sleep guardrails on track (yes/no):
+- Nutrition anchors on track (yes/no):
 - Training status (done / pending / fallback):
-- One sleep adjustment:
-- One nutrition adjustment:
-- One training/recovery adjustment:
-- Accountability action (what + when):
+- Meaningful connection status (10+ min) (done / planned / missed):
+- Risk check: pain (0-10), location, red-flag symptom (yes/no):
+- One next action + time:
 
 ## Optional
-- Focus now (1-5):
-- Hunger/cravings now (1-5):
-- Calendar/social notes:
+- Optional: focus/hunger note, calendar pressure, other context.
 
 Unknown format: `Unknown - reason` (only if explicitly stated).

@@ -1,15 +1,18 @@
 # Morning Check-In Questions (Pepper)
 
-Use this sequence in Discord. Keep tone short and practical.
+Use this in Discord. Required-first flow should be answerable in <90 seconds.
 
-1. "Morning check-in for today (local time)."
-2. "Quick values: wake window hit, sleep quality (1-5), awakenings count, morning energy (1-5), mood/readiness (1-5)."
-3. "Set sleep guardrails: caffeine cutoff, last meal cutoff, wind-down start."
-4. "Set nutrition anchors for today: protein meals, hydration/salt plan, and carb strategy."
-5. "What is your training plan (type + time)?"
-6. "If training gets disrupted, what is your fallback minimum?"
-7. "What is the biggest risk today, and what is your if-then response?"
-8. "What is your one non-negotiable?"
-9. "Optional: stress, schedule constraints, other notes?"
+## Quick Reply Format
+```text
+R:Green | E:4 | Wake:Y | SleepQ:4 | Guardrails:12p/7p/9:30p | Plan:protein+lift/fallback walk | Hydration:1L-noon Y | Stress:3 reset 1:30p | Connect:Y (call dad) | Pain:1 low-back | RedFlag:N | Risk:late meeting->pack meal | NonNeg:7pm cutoff
+Optional: awakenings, mood, schedule
+```
+
+## Required first
+1. "Morning check-in (<90 sec). Reply in one line with readiness color, energy (1-5), wake window (Y/N), and sleep quality (1-5)."
+2. "Add guardrails (caffeine cutoff / last meal cutoff / wind-down), plus nutrition + training plan with fallback."
+3. "Add hydration 1L-by-noon status (Y/N), stress (1-5) with 10-min reset time, and meaningful connection plan (Y/N + who)."
+4. "Add pain (0-10) + location + red-flag symptom (Y/N), then biggest risk + if-then and one non-negotiable."
+5. "Optional: awakenings, mood/readiness, schedule constraints."
 
 If anything is missing, ask only for the missing required item.

@@ -3,13 +3,14 @@
 ## Goal
 - Run Discord check-ins across morning, midday, and evening.
 - Convert replies into structured day-part journal files.
+- Apply modifier-trigger coaching logic without changing score math.
 - Commit and push each completed check-in entry.
 
 ## System source
 - Canonical map: `docs/SYSTEM_SOURCE_OF_TRUTH.md`
 - SLA/escalation policy: `docs/COACHING_CRON_SYSTEM.md`
 
-## Journal files (per local day)
+## Journal files (per local day, America/New_York)
 - `journals/YYYY-MM-DD-morning.md`
 - `journals/YYYY-MM-DD-midday.md`
 - `journals/YYYY-MM-DD-evening.md`
@@ -29,31 +30,56 @@
 - Entries: `templates/morning-checkin.md`, `templates/midday-checkin.md`, `templates/evening-recap.md`
 - Weekly: `templates/weekly-review.md`, `templates/weekly-recap.md`
 
+## Prompt execution rules (anti-overwhelm)
+- Ask required fields first.
+- Ask optional fields as one optional line only.
+- Keep each check-in question set answerable in under 90 seconds.
+- If something is missing, ask only for the missing required field.
+
 ## Scoring model (only model)
 - `total 0-10 = sleep 0-4 + nutrition 0-3 + training 0-3`
+- Modifier facets are coaching triggers only and do not add score points.
 - Operational floor: `6/10+`
 - Austin target: `7/10+` average (with push toward `8/10+`).
 
 ## Required fields matrix (no tables)
 - Morning required:
-- Wake window hit, sleep quality, morning energy.
-- Caffeine cutoff, last meal cutoff, wind-down start.
-- Nutrition anchors, training plan, training fallback.
-- Biggest risk, if-then response, one non-negotiable.
+- Readiness color, energy, wake window hit, sleep quality.
+- Guardrails (caffeine cutoff, last meal cutoff, wind-down).
+- Nutrition + training plan/fallback.
+- Hydration 1L-by-noon plan.
+- Stress + 10-minute reset plan.
+- Meaningful connection plan (10+ minutes, yes/no).
+- Pain (0-10) + location + red-flag symptom (yes/no).
+- Biggest risk + if-then + one non-negotiable.
 - Morning optional:
-- Night awakenings, mood/readiness, schedule/stress notes.
+- One optional line: awakenings, mood/readiness, schedule constraints.
 - Midday required:
-- Energy, stress.
-- Sleep guardrails on track, nutrition anchors on track, training status.
-- One sleep adjustment, one nutrition adjustment, one training/recovery adjustment.
-- Accountability action with timing.
+- Readiness color + energy.
+- Stress + reset done/scheduled.
+- Hydration (urine color + 1L by noon yes/no).
+- Guardrails on-track, nutrition on-track, training status.
+- Connection status (done/planned/missed).
+- Pain (0-10) + location + red-flag symptom (yes/no).
+- One next action with time.
 - Midday optional:
-- Focus, hunger/cravings, calendar/social notes.
+- One optional line: focus/hunger note, calendar pressure, other context.
 - Evening required:
 - Sleep score (`0-4`), nutrition score (`0-3`), training score (`0-3`), total score (`0-10`).
-- What happened (2-3 bullets), what worked (at least 1 bullet), friction (at least 1 bullet), one change for tomorrow.
+- Readiness trend, peak stress + reset completion.
+- Hydration sufficiency + connection completion.
+- Peak pain (0-10) + location + red-flag symptom (yes/no).
+- Reflection: what happened (2), what worked (1), friction (1), one change tomorrow.
 - Evening optional:
-- Symptoms/recovery notes, alcohol/cannabis, stress load.
+- One optional line: alcohol/cannabis or extra context.
+
+## Trigger handling (short)
+- Readiness Yellow: `Yellow` >=2 consecutive check-ins or energy <=2 -> fallback training + bedtime protection for 24h.
+- Readiness Red: any `Red` or energy =1 -> recovery-only day and no high-intensity training.
+- Stress: stress >=4 -> do 10-minute reset within 60 minutes; if still >=4 next check-in, shift to Busy Day mode.
+- Hydration miss: dark urine or missed 1L by noon; if >=2 misses in a week, enforce AM + pre-noon hydration blocks.
+- Connection miss: missed 10+ minute meaningful connection for 2 consecutive days -> schedule next-day block before 6pm.
+- Pain/red-flag: red-flag yes or pain >=7 -> urgent escalation now. Pain 4-6 >48h (or pain >=3 for 3+ days) -> clinician-soon escalation.
 
 ## Unknown rule and follow-up logic
 - `Unknown` allowed only if explicitly stated by Austin with a reason.

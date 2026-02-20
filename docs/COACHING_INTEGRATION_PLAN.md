@@ -1,48 +1,57 @@
-# Coaching Integration Plan (Sleep + Nutrition + Training)
+# Coaching Integration Plan (Sleep + Nutrition + Training + Modifier Facets)
 
 ## Goal
-- Replace sleep-only coaching with an integrated daily system.
-- Keep prompts short, behavior-first, and easy to execute.
-- Drive consistency, not perfection.
+- Run one integrated daily coaching system that stays low friction.
+- Keep scoring fixed to sleep + nutrition + training.
+- Use readiness/stress/hydration/connection/risk as coaching modifiers and intervention triggers.
 
 ## Guiding rules
-- Track three domains daily: sleep, nutrition, training.
+- Track three scored domains daily: sleep, nutrition, training.
+- Track five modifier facets daily: readiness, stress/reset, hydration, connection, risk/safety.
 - Prioritize adherence trend over single-day perfection.
-- Run one primary behavior change at a time.
 - Keep coaching language non-diagnostic and practical.
 
 ## Daily check-ins
 - Morning check-in:
-- Capture recovery state and set guardrails (caffeine cutoff, last meal cutoff, wind-down).
-- Set nutrition anchors and training plan with fallback.
-- Set one risk response and one non-negotiable.
+- Capture readiness color + energy, sleep state, and guardrails.
+- Set nutrition + training plan/fallback.
+- Set hydration 1L-by-noon plan, stress reset plan, connection plan.
+- Capture pain/location/red-flag status.
 - Midday check-in:
-- Re-rate current state and confirm each domain is on track.
-- Apply one sleep, one nutrition, and one training/recovery correction.
-- Lock one accountability action by time.
+- Re-rate readiness, energy, stress, hydration sufficiency.
+- Confirm guardrails, nutrition, training, and connection status.
+- Re-check pain/location/red-flag and set one next action.
 - Evening recap:
 - Score sleep, nutrition, training, and total.
+- Log modifier outcomes (readiness trend, stress reset, hydration, connection, pain/red-flag).
 - Capture what happened, what worked, friction, and one change for tomorrow.
-- Flag red-flag symptoms for escalation when needed.
 
-## Daily cadence
+## Daily cadence (America/New_York)
 - Morning: within 15-90 minutes of wake.
 - Midday: around wake-day midpoint.
 - Evening: end of day or 60-120 minutes pre-bed.
 - If midday is missed, still complete evening recap.
 
-## Weekly cadence
-- Calculate 7-day average domain and total scores.
-- Review best day, lowest day, and recurring friction.
-- Confirm training volume and recovery balance.
-- Keep one behavior, cut one behavior, add one behavior.
-- Set max three targets for next week.
-- If persistent red flags or declining function despite adherence, escalate to clinician discussion.
+## Intervention triggers (explicit and short)
+- Readiness Yellow threshold: `Yellow` for >=2 consecutive check-ins or energy <=2.
+- Readiness Red threshold: any `Red` or energy =1.
+- Stress threshold: stress >=4/5.
+- Hydration miss threshold: dark urine or missed 1L by noon; repeated if >=2 days/week.
+- Connection miss threshold: no 10+ minute meaningful connection for 2 consecutive days.
+- Pain/red-flag threshold: red-flag yes or pain >=7 immediately; pain 4-6 persisting >48h (or pain >=3 for 3+ days).
+
+## Trigger actions
+- Yellow readiness: fallback training + protect bedtime for 24h.
+- Red readiness: recovery-only day; no high-intensity work.
+- Stress >=4: complete 10-minute reset within 60 minutes.
+- Hydration misses repeated: lock AM + pre-noon water blocks.
+- Connection misses repeated: schedule next-day connection block before 6pm.
+- Pain/red-flag threshold met: run clinician/urgent escalation protocol from `docs/COACHING_CRON_SYSTEM.md`.
 
 ## Fallback modes
 - Busy day mode:
 - Sleep: caffeine cutoff + wind-down minimum.
-- Nutrition: two protein feedings + hydration.
+- Nutrition: two protein feedings + hydration floor.
 - Training: 20-minute movement block.
 - Minimum viable day mode:
 - Fixed wake window.
@@ -51,6 +60,7 @@
 
 ## Adherence scoring (only model)
 - `total 0-10 = sleep 0-4 + nutrition 0-3 + training 0-3`
+- New facets are modifiers/triggers only and add zero score points.
 - Sleep `0-4` anchors:
 - Wake window hit.
 - Caffeine cutoff met.

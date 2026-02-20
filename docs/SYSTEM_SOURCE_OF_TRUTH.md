@@ -1,9 +1,9 @@
 # System Source of Truth (Austin Coaching)
 
 ## Canonical active workflow
-- `docs/COACHING_CRON_SYSTEM.md` is the operating source for check-in cadence, SLA, and escalation.
+- `docs/COACHING_CRON_SYSTEM.md` is the operating source for check-in cadence, SLA, thresholds, and escalation.
 - `docs/DISCORD_JOURNAL_WORKFLOW.md` is the source for Discord-to-journal execution details.
-- `docs/COACHING_INTEGRATION_PLAN.md` is the behavior framework for sleep + nutrition + training.
+- `docs/COACHING_INTEGRATION_PLAN.md` is the behavior framework for scored domains + modifier facets.
 - `docs/AUSTIN_GOAL_SETUP_2026-02-20.md` is the active goal and weekly structure.
 - `scripts/new-journal-entry-from-text.md` is the canonical parser/formatter prompt spec.
 
@@ -22,14 +22,18 @@
 - Training: `0-3`
 - Formula: `total = sleep + nutrition + training`
 
-## Deprecated and historical files
-- Deprecated templates: `templates/daily-recap.md`, `templates/daily-recap-questions.md`, `templates/daily-scorecard.md`
-- Historical reference only: `reports/2026-02-19-sleep-bible.md`
+## Canonical modifier facets (coaching only, not score points)
+- Recovery readiness: Green/Yellow/Red + energy.
+- Stress + 10-minute reset.
+- Hydration sufficiency: urine color + 1L by noon.
+- Social connection: meaningful 10+ minute connection yes/no.
+- Risk/safety: pain 0-10 + location + red-flag symptom yes/no.
 
-## Migration note (from legacy sleep-only)
-- Legacy system used one end-of-day sleep recap and `0-7` sleep score.
-- Active system is day-part journaling with integrated domains:
-- `journals/YYYY-MM-DD-morning.md`
-- `journals/YYYY-MM-DD-midday.md`
-- `journals/YYYY-MM-DD-evening.md`
-- Do not create new `daily-recap` or sleep-only scorecard entries.
+## Trigger and escalation source
+- Operational thresholds and scripts: `docs/COACHING_CRON_SYSTEM.md`.
+- Behavior framework: `docs/COACHING_INTEGRATION_PLAN.md`.
+- User-specific defaults: `docs/AUSTIN_GOAL_SETUP_2026-02-20.md`.
+
+## Workflow boundary
+- Active execution is day-part journaling plus weekly recap in `America/New_York` local date boundaries.
+- Do not modify the scoring formula when adding or adjusting modifier facets.
