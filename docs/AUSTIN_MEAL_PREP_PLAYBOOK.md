@@ -3,6 +3,7 @@
 ## Objective
 - Execute breakfast + lunch in town with low friction.
 - Prioritize no-microwave options while using fridge access.
+- Align nutrition with recomposition at ~225 lbs now, then lean-mass gain toward 230-240 only after consistency.
 - Protect behavior-first testosterone basics: sleep consistency, fuel timing, stress stability, recovery quality.
 
 ## Weekly rhythm split

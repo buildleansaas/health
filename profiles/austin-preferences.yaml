@@ -18,6 +18,12 @@ cadence:
 schedule_notes:
   mwf: "Up early, masters swim, then work in town; home for dinner."
   tue_thu: "Up later, work in town, short break, then pool work; home around 19:30."
+body_comp:
+  height: "6'3\""
+  weight_lbs: 225
+  current_context: "some abdominal fat and lower muscle definition"
+  goal: "recomposition first; stay around 225 or move to 230-240 with higher lean mass"
+  primary_strategy: "high-protein performance recomposition"
 training:
   modes:
     - Masters Swim

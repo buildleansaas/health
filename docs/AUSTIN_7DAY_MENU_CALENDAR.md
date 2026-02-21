@@ -1,13 +1,13 @@
-# Austin 7-Day Menu Calendar (v2)
+# Austin 7-Day Menu Calendar (v3)
 
-## Macro targets by day
-- Mon (Masters + town work): **2600 kcal** — **P190 / C290 / F80**
-- Tue (Town + pool shift): **2450 kcal** — **P185 / C250 / F85**
-- Wed (Masters + town work): **2600 kcal** — **P190 / C290 / F80**
-- Thu (Town + pool shift): **2450 kcal** — **P185 / C250 / F85**
-- Fri (Masters + town work): **2600 kcal** — **P190 / C290 / F80**
-- Sat (Strength/home): **2550 kcal** — **P190 / C270 / F85**
-- Sun (Recovery): **2250 kcal** — **P180 / C180 / F85**
+## Macro targets by day (recomp baseline at 225 lbs, 6'3")
+- Mon (Masters + town work): **2850 kcal** — **P220 / C320 / F90**
+- Tue (Town + pool shift): **2700 kcal** — **P220 / C270 / F95**
+- Wed (Masters + town work): **2850 kcal** — **P220 / C320 / F90**
+- Thu (Town + pool shift): **2700 kcal** — **P220 / C270 / F95**
+- Fri (Masters + town work): **2850 kcal** — **P220 / C320 / F90**
+- Sat (Strength/home): **2800 kcal** — **P220 / C300 / F90**
+- Sun (Recovery): **2500 kcal** — **P210 / C220 / F95**
 
 Scoring model unchanged: `total 0-10 = sleep 0-4 + nutrition 0-3 + training 0-3`.
 
@@ -192,5 +192,6 @@ Fast-food breakfast budget guardrail (MWF default pattern):
 
 ## Notes
 - MWF reality rule: breakfast defaults to fast-food post-masters (planned, not random). Breakfast bake is primarily a home lunch/dinner tool.
+- Body-comp intent: hold near 225 while improving definition first; only push toward 230-240 after waist trend is stable and training performance is rising.
 - If bodyweight is trending down too fast (>1 lb/week), increase carbs +150-200 kcal/day.
 - If trending up too fast (>1 lb/week), reduce carbs/fats by 150-200 kcal/day.
