@@ -15,8 +15,10 @@
 
 ## Breakfast and lunch strategy by day type
 - `MWF breakfast`:
-- Pack breakfast the night before; eat within `60-90` minutes post-swim.
-- Use one protein-forward portable default + fruit.
+- Default to planned post-swim fast-food breakfast in town (not packed reheated meals).
+- Primary default: CFA Egg White Grill + fruit cup.
+- Secondary default: McD Egg McMuffin + apple slices.
+- Eat within `60-90` minutes post-swim.
 - `MWF lunch`:
 - Pre-pack no-microwave meal on Sunday + Wednesday night.
 - Keep one shelf-stable backup in bag (jerky/protein shake/oats cup).
@@ -26,6 +28,9 @@
 - `Tue/Thu lunch`:
 - Eat by early afternoon to avoid pool-session under-fueling.
 - Add pre-pool snack if lunch is >4 hours before pool work.
+
+Breakfast bake placement:
+- Use breakfast bake primarily for home meals (lunch/dinner) and backup meals, not default MWF post-swim breakfast.
 
 ## No-microwave portable meal ideas
 - Greek yogurt cup + berries + granola + walnuts.

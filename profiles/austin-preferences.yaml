@@ -40,6 +40,10 @@ meal_logistics:
   main_friction:
     - breakfast_in_town_execution
     - lunch_in_town_execution
+  mwf_breakfast_default:
+    primary: Chick-fil-A Egg White Grill + fruit cup
+    backup: McDonald's Egg McMuffin + apple slices
+    note: planned_fast_food_in_town_after_masters
   default_fallback_chains:
     - Chick-fil-A
     - McDonald's

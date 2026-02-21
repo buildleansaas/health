@@ -21,10 +21,10 @@ Raw milk integration:
 ## Calendar menu (breakfast/lunch built for in-town constraints)
 
 ### Monday (MWF template)
-- Breakfast (packed, no microwave): breakfast bake bowl (rice + lean beef + stir-fry veg + egg + cheese) + banana
+- Breakfast (post-masters, in-town fast option): CFA Egg White Grill + fruit cup (or McD Egg McMuffin + apple slices)
 - Lunch (packed): turkey wrap + Greek yogurt + apple
 - Snack: mozzarella + turkey/ham roll-ups
-- Dinner: beef + broccoli + rice + side salad
+- Dinner (home): breakfast bake bowl (rice + lean beef + stir-fry veg + egg + cheese) or beef + broccoli + rice
 
 ### Tuesday (Tue/Thu template)
 - Breakfast (home): eggs + oats + berries
@@ -33,10 +33,10 @@ Raw milk integration:
 - Dinner (late/home): chicken + potatoes + veg
 
 ### Wednesday (MWF template)
-- Breakfast: breakfast bake bowl + orange
+- Breakfast (post-masters, in-town fast option): CFA Egg White Grill + fruit cup (or McD Egg McMuffin + apple slices)
 - Lunch: chicken quinoa salad jar + crackers
 - Snack: cottage cheese + pineapple
-- Dinner: salmon/chicken + rice + veg
+- Dinner (home): breakfast bake bowl or salmon/chicken + rice + veg
 
 ### Thursday (Tue/Thu template)
 - Breakfast (home): Greek yogurt bowl + granola + walnuts
@@ -45,10 +45,10 @@ Raw milk integration:
 - Dinner (late/home): lean beef taco bowl (no chips)
 
 ### Friday (MWF template)
-- Breakfast: breakfast bake bowl + apple
+- Breakfast (post-masters, in-town fast option): CFA Egg White Grill + fruit cup (or McD Egg McMuffin + apple slices)
 - Lunch: tuna packet + whole grain crackers + fruit + carrots
 - Snack: jerky + fruit
-- Dinner: burger bowl at home (lean beef, potatoes, salad)
+- Dinner: breakfast bake bowl or burger bowl at home (lean beef, potatoes, salad)
 
 ### Saturday (strength)
 - Breakfast: egg wrap + fruit
@@ -178,5 +178,6 @@ Fast-food fallback budget guardrail:
 5. Wednesday night: 20-30 min restock.
 
 ## Notes
+- MWF reality rule: breakfast defaults to fast-food post-masters (planned, not random). Breakfast bake is primarily a home lunch/dinner tool.
 - If bodyweight is trending down too fast (>1 lb/week), increase carbs +150-200 kcal/day.
 - If trending up too fast (>1 lb/week), reduce carbs/fats by 150-200 kcal/day.
