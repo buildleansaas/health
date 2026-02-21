@@ -21,7 +21,7 @@ Raw milk integration:
 ## Calendar menu (breakfast/lunch built for in-town constraints)
 
 ### Monday (MWF template)
-- Breakfast (post-masters, in-town fast option): CFA chicken/egg/hash brown burrito meal + fruit + large Coke (or McD BOGO breakfast sandwiches / 4 sausage burritos + large Coke)
+- Breakfast (post-masters, in-town fast option): CFA chicken/egg/hash brown burrito meal + 3 jalapeño salsa packs + fruit + large Coke (or McD BOGO sausage, egg & cheese McGriddles + strawberry jelly on each / 4 sausage burritos + large Coke)
 - Lunch (packed): turkey wrap (carb-balance tortilla + turkey + spinach + mustard + optional cheese) + Greek yogurt + apple
 - Snack: mozzarella + turkey/ham roll-ups
 - Dinner (home): breakfast bake bowl (rice + lean beef + stir-fry veg + egg + cheese) or beef + broccoli + rice
@@ -33,7 +33,7 @@ Raw milk integration:
 - Dinner (late/home): chicken + potatoes + veg
 
 ### Wednesday (MWF template)
-- Breakfast (post-masters, in-town fast option): CFA chicken/egg/hash brown burrito meal + fruit + large Coke (or McD BOGO breakfast sandwiches / 4 sausage burritos + large Coke)
+- Breakfast (post-masters, in-town fast option): CFA chicken/egg/hash brown burrito meal + 3 jalapeño salsa packs + fruit + large Coke (or McD BOGO sausage, egg & cheese McGriddles + strawberry jelly on each / 4 sausage burritos + large Coke)
 - Lunch: chicken quinoa salad jar + fruit
 - Snack: cottage cheese + pineapple
 - Dinner (home): breakfast bake bowl or salmon/chicken + rice + veg
@@ -45,7 +45,7 @@ Raw milk integration:
 - Dinner (late/home): lean beef taco bowl (no chips)
 
 ### Friday (MWF template)
-- Breakfast (post-masters, in-town fast option): CFA chicken/egg/hash brown burrito meal + fruit + large Coke (or McD BOGO breakfast sandwiches / 4 sausage burritos + large Coke)
+- Breakfast (post-masters, in-town fast option): CFA chicken/egg/hash brown burrito meal + 3 jalapeño salsa packs + fruit + large Coke (or McD BOGO sausage, egg & cheese McGriddles + strawberry jelly on each / 4 sausage burritos + large Coke)
 - Lunch: turkey + cheese roll-ups + fruit + carrots
 - Snack: jerky + fruit
 - Dinner: breakfast bake bowl or burger bowl at home (lean beef, potatoes, salad)
@@ -65,9 +65,10 @@ Raw milk integration:
 ---
 
 ## Fast-food fallback orders (Mechanicsville)
-- Chick-fil-A: chicken/egg/hash brown burrito meal + fruit + large Coke
+- Chick-fil-A: chicken/egg/hash brown burrito meal + 3 jalapeño salsa packs + fruit + large Coke
 - McDonald’s: BOGO sausage, egg & cheese McGriddles + strawberry jelly on each + large Coke
 - Chipotle: Bowl > burrito; protein + beans + fajita veg + pico + lettuce; moderate rice
+- Taco Bell: 2 Cheesy Gordita Crunches + large Pepsi
 
 Rules:
 - Protein first

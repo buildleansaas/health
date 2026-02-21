@@ -41,7 +41,7 @@ meal_logistics:
     - breakfast_in_town_execution
     - lunch_in_town_execution
   mwf_breakfast_default:
-    primary: Chick-fil-A chicken/egg/hash brown burrito meal + fruit + large Coke
+    primary: Chick-fil-A chicken/egg/hash brown burrito meal + 3 jalapeno salsa packs + fruit + large Coke
     backup: McDonald's BOGO sausage, egg & cheese McGriddles + strawberry jelly on each + large Coke
     note: planned_fast_food_in_town_after_masters
     coaching_stepdown_optional: medium Coke or Coke Zero on 1-2 days/week
@@ -49,7 +49,9 @@ meal_logistics:
     - Chick-fil-A
     - McDonald's
     - Chipotle
+    - Taco Bell
   playbook_path: docs/AUSTIN_MEAL_PREP_PLAYBOOK.md
+  taco_bell_default: 2 Cheesy Gordita Crunches + large Pepsi
 nutrition_defaults:
   raw_milk_weekly_gallons: 1
   egg_purchase_default: 0

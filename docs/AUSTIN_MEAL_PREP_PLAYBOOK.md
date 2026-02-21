@@ -16,7 +16,7 @@
 ## Breakfast and lunch strategy by day type
 - `MWF breakfast`:
 - Default to planned post-swim fast-food breakfast in town (not packed reheated meals).
-- Primary default: CFA chicken/egg/hash brown burrito meal + fruit + large Coke.
+- Primary default: CFA chicken/egg/hash brown burrito meal + 3 jalapeño salsa packs + fruit + large Coke.
 - Secondary default: McD BOGO sausage, egg & cheese McGriddles + strawberry jelly on each + large Coke.
 - Eat within `60-90` minutes post-swim.
 - `MWF lunch`:
@@ -54,7 +54,7 @@ Breakfast bake placement:
 
 ## Fast-food fallback matrix (Mechanicsville)
 - `Chick-fil-A`:
-- Order (Austin default): chicken/egg/hash brown burrito meal + fruit + large Coke.
+- Order (Austin default): chicken/egg/hash brown burrito meal + 3 jalapeño salsa packs + fruit + large Coke.
 - Keep it on-plan: skip extra add-ons beyond this meal.
 - Optional step-down (performance days): medium Coke or Coke Zero.
 - `McDonald's`:
@@ -65,6 +65,9 @@ Breakfast bake placement:
 - Order: bowl with chicken/steak, fajita veg, beans, pico, lettuce; moderate rice based on training day.
 - Avoid: chips + queso as default add-on, sour cream + cheese + guac all together every time.
 - Swaps: burrito -> bowl, half rice + extra fajita veg, one high-calorie topping not three.
+- `Taco Bell`:
+- Order (Austin default): 2 Cheesy Gordita Crunches + large Pepsi.
+- Keep it on-plan: avoid adding extra sides/desserts on top.
 
 ## Simple fallback rules
 - Always anchor protein first.
