@@ -91,6 +91,18 @@ Breakfast bake placement:
 - Fats/extras: natural peanut butter, olive oil, hummus, salsa, mustard, sauerkraut.
 - Convenience backups: jerky, protein bars, shelf-stable shakes, cheese sticks.
 
+## Publix 23111 brand map (protein-efficient defaults)
+- Greek yogurt (main): Chobani Greek Nonfat Plain 32 oz — ~16P/6C/0F, 90 cal per 3/4 cup.
+- Greek yogurt (honey craving lane): Greek Gods Honey stays optional; treat as taste add-on, not primary protein anchor.
+- Cottage cheese: good culture Simply Low-Fat Classic 5.3 oz — ~19P/6C/4F, 140 cal.
+- Deli turkey for wraps/roll-ups: Oscar Mayer Deli Fresh Oven Roasted Turkey — ~9P/1C/1F, 50 cal per serving.
+- Tortillas: Mission Carb Balance Soft Taco (primary) / Tumaro's low-carb (backup).
+- Ground beef (lean default): 93/7 (Verde Farms when available); for tighter cuts use 96/4 if stocked.
+- Steak (lean default): top sirloin or sirloin tip first; ribeye only when intentionally higher-fat.
+- Chicken (lean default): Publix boneless skinless chicken breast.
+- Cheese (portion-controlled): Publix Reduced Fat Sharp Cheddar shredded.
+- Convenience protein: Jack Link's Original jerky (backup only due sodium/cost).
+
 ## 60-90 minute prep block (Sunday, optional 20-30 minute Wednesday reset)
 - `0-10 min`: choose 3 breakfasts + 3 lunches for next 3 workdays.
 - `10-30 min`: batch protein (eggs, chicken, turkey portions).

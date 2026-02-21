@@ -77,6 +77,17 @@ nutrition_defaults:
     - ground beef
     - sweet potatoes
     - broccoli
+  brand_defaults:
+    greek_yogurt_primary: Chobani Greek Nonfat Plain 32oz
+    greek_yogurt_honey_optional: Greek Gods Honey (taste add-on, not primary protein anchor)
+    cottage_cheese: good culture Simply Low-Fat Classic
+    deli_turkey: Oscar Mayer Deli Fresh Oven Roasted Turkey
+    tortilla_primary: Mission Carb Balance Soft Taco
+    tortilla_backup: Tumaro's low-carb wraps
+    ground_beef_primary: 93/7 lean (Verde Farms when available)
+    steak_primary: top sirloin / sirloin tip
+    chicken_primary: Publix boneless skinless chicken breast
+    shredded_cheese: Publix Reduced Fat Sharp Cheddar
   wrap_standard:
     tortilla_primary: Mission Carb Balance (whole wheat)
     tortilla_backup: Tumaro's low-carb wraps

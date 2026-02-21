@@ -80,9 +80,9 @@ Rules:
 Wrap build:
 - 6-8 oz protein (turkey/chicken/ground beef leftovers)
 - Spinach or greens
-- Sauerkraut
 - Mustard or salsa
 - Optional: shredded cheese if needed for calories
+- Keep sauerkraut for home bowls/plates (not wraps)
 
 Tortilla picks (Publix):
 - Primary: Mission Carb Balance (whole wheat)
