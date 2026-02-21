@@ -46,7 +46,7 @@ Raw milk integration:
 
 ### Friday (MWF template)
 - Breakfast (post-masters, in-town fast option): CFA Egg White Grill + fruit cup (or McD Egg McMuffin + apple slices)
-- Lunch: chicken packet + fruit + carrots + cheese stick
+- Lunch: turkey + cheese roll-ups + fruit + carrots
 - Snack: jerky + fruit
 - Dinner: breakfast bake bowl or burger bowl at home (lean beef, potatoes, salad)
 
@@ -100,7 +100,6 @@ Tortilla picks (Publix):
 - Raw milk: **1 gallon/week** (separate local dairy line item)
 - Greek yogurt: **14 single cups** or **2 large tubs**
 - Cottage cheese: **32 oz**
-- Chicken packets: **6**
 - Protein powder: **1 bag**
 - Mozzarella/string cheese: **14 sticks**
 
@@ -145,7 +144,6 @@ Weekly cart budget (food prep list):
 - Deli turkey/ham: `$9.99/lb x 2 lb = $19.98`
 - Greek yogurt tubs: `$6.49 x 2 = $12.98`
 - Cottage cheese 32 oz: `$5.49`
-- Chicken packets: `$2.29 x 6 = $13.74`
 - Protein powder: `$34.99`
 - Mozzarella sticks: `$5.99`
 - Rice (4 lb): `$5.99`
@@ -175,9 +173,9 @@ Weekly cart budget (food prep list):
 - Eggs: `$0` (home flock surplus)
 
 Budget totals:
-- Full weekly cart (including protein powder + raw milk): **`$338.07`**
-- Food-only core (remove protein powder): **`$303.08`**
-- Target budget range to plan against: **`$300-$340/week`**
+- Full weekly cart (including protein powder + raw milk): **`$324.33`**
+- Food-only core (remove protein powder): **`$289.34`**
+- Target budget range to plan against: **`$285-$330/week`**
 
 Fast-food fallback budget guardrail:
 - Plan `2-4` fallback meals/week at `$10-$14` each: **`+$20-$56/week`**

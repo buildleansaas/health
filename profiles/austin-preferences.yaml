@@ -57,6 +57,7 @@ nutrition_defaults:
   hard_food_avoid:
     - tuna
     - crackers
+    - chicken packets
   breakfast_avoid:
     - walnuts
   preferred_foods:

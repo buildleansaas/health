@@ -37,7 +37,7 @@ Breakfast bake placement:
 - Cottage cheese cup + pineapple + almonds.
 - Turkey wrap (Mission Carb Balance tortilla, spinach, sauerkraut, mustard) + apple.
 - Rotisserie chicken sandwich (whole grain bread) + carrots.
-- Chicken packet + carrot/cucumber box + cheese stick.
+- Turkey + cheese roll-ups + carrot/cucumber box.
 - Chicken salad with chickpeas + mixed greens + vinaigrette.
 - Hard-boiled eggs (2-3) + fruit + string cheese.
 - Overnight oats (protein powder + chia + milk) + banana.
@@ -80,7 +80,7 @@ Breakfast bake placement:
 - If Tue/Thu commute will push dinner late: use a pre-drive meal/snack before `7:00pm`; if missed, keep home meal simple and log guardrail miss without spiraling.
 
 ## Grocery shortlist
-- Proteins: rotisserie chicken, deli turkey, eggs, Greek yogurt, cottage cheese, chicken packets, protein powder.
+- Proteins: rotisserie chicken, deli turkey, eggs, Greek yogurt, cottage cheese, protein powder.
 - Carbs: oats, whole grain wraps/bread, rice cups, quinoa, fruit (bananas, apples, berries), potatoes, sweet potatoes.
 - Produce: spinach/mixed greens, carrots, cucumbers, bell peppers, tomatoes, frozen steam veg.
 - Fats/extras: natural peanut butter, olive oil, hummus, salsa, mustard, sauerkraut.
