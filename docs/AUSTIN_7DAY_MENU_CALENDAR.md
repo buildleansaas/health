@@ -22,7 +22,7 @@ Raw milk integration:
 
 ### Monday (MWF template)
 - Breakfast (post-masters, in-town fast option): CFA Egg White Grill + fruit cup (or McD Egg McMuffin + apple slices)
-- Lunch (packed): turkey wrap + Greek yogurt + apple
+- Lunch (packed): turkey wrap (carb-balance tortilla + turkey + spinach + sauerkraut + mustard) + Greek yogurt + apple
 - Snack: mozzarella + turkey/ham roll-ups
 - Dinner (home): breakfast bake bowl (rice + lean beef + stir-fry veg + egg + cheese) or beef + broccoli + rice
 
@@ -34,19 +34,19 @@ Raw milk integration:
 
 ### Wednesday (MWF template)
 - Breakfast (post-masters, in-town fast option): CFA Egg White Grill + fruit cup (or McD Egg McMuffin + apple slices)
-- Lunch: chicken quinoa salad jar + crackers
+- Lunch: chicken quinoa salad jar + fruit
 - Snack: cottage cheese + pineapple
 - Dinner (home): breakfast bake bowl or salmon/chicken + rice + veg
 
 ### Thursday (Tue/Thu template)
-- Breakfast (home): Greek yogurt bowl + granola + walnuts
-- Lunch (town): packed chicken wrap box (or Chipotle fallback)
+- Breakfast (home): eggs + sweet potato hash + fruit
+- Lunch (town): packed chicken wrap box (carb-balance tortilla + chicken + spinach + sauerkraut + mustard) (or Chipotle fallback)
 - Pre-pool snack: banana + shake
 - Dinner (late/home): lean beef taco bowl (no chips)
 
 ### Friday (MWF template)
 - Breakfast (post-masters, in-town fast option): CFA Egg White Grill + fruit cup (or McD Egg McMuffin + apple slices)
-- Lunch: chicken packet + whole grain crackers + fruit + carrots
+- Lunch: chicken packet + fruit + carrots + cheese stick
 - Snack: jerky + fruit
 - Dinner: breakfast bake bowl or burger bowl at home (lean beef, potatoes, salad)
 
@@ -75,6 +75,19 @@ Rules:
 - Water default
 - Avoid combo stacking (fries + soda + dessert)
 
+## Wrap standard (what goes on wraps + tortillas)
+Wrap build:
+- 6-8 oz protein (turkey/chicken/ground beef leftovers)
+- Spinach or greens
+- Sauerkraut
+- Mustard or salsa
+- Optional: shredded cheese if needed for calories
+
+Tortilla picks (Publix):
+- Primary: Mission Carb Balance (whole wheat)
+- Backup: Tumaro's low-carb wraps
+- If unavailable: smallest whole-wheat tortillas with fiber >=3g each
+
 ---
 
 ## 7-day shopping list
@@ -97,7 +110,7 @@ Rules:
 - Whole wheat wraps: **2 packs**
 - Potatoes: **5 lb**
 - Quinoa: **1 bag**
-- Whole grain crackers: **1 box**
+- Sweet potatoes: **5-7 medium**
 - Beans (black/pinto): **4 cans**
 
 ## Produce
@@ -114,7 +127,7 @@ Rules:
 ## Fats + extras
 - Shredded cheese: **1 bag**
 - Olive oil: **1 bottle**
-- Nuts/walnuts: **1 large bag**
+- Sauerkraut: **1-2 jars**
 - Peanut butter: **1 jar**
 - Salsa + mustard + hummus: **1 each**
 
@@ -140,7 +153,7 @@ Weekly cart budget (food prep list):
 - Whole wheat wraps: `$3.99 x 2 = $7.98`
 - Potatoes (5 lb): `$4.99`
 - Quinoa bag: `$6.99`
-- Whole grain crackers: `$3.79`
+- Sweet potatoes (5-7): `$6.99`
 - Beans (4 cans): `$1.49 x 4 = $5.96`
 - Bananas (14): `$3.78`
 - Apples (7): `$6.93`
@@ -153,7 +166,7 @@ Weekly cart budget (food prep list):
 - Carrot/cucumber/tomato mix: `$12.00`
 - Shredded cheese: `$3.99`
 - Olive oil: `$9.99`
-- Nuts/walnuts: `$8.99`
+- Sauerkraut (1-2 jars): `$4.99`
 - Peanut butter: `$4.29`
 - Salsa: `$3.49`
 - Mustard: `$2.29`
@@ -162,8 +175,8 @@ Weekly cart budget (food prep list):
 - Eggs: `$0` (home flock surplus)
 
 Budget totals:
-- Full weekly cart (including protein powder + raw milk): **`$338.87`**
-- Food-only core (remove protein powder): **`$303.88`**
+- Full weekly cart (including protein powder + raw milk): **`$338.07`**
+- Food-only core (remove protein powder): **`$303.08`**
 - Target budget range to plan against: **`$300-$340/week`**
 
 Fast-food fallback budget guardrail:

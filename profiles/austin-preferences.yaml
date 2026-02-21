@@ -56,6 +56,20 @@ nutrition_defaults:
   budgeting_focus_store: Publix (Mechanicsville)
   hard_food_avoid:
     - tuna
+    - crackers
+  breakfast_avoid:
+    - walnuts
+  preferred_foods:
+    - eggs
+    - sauerkraut
+    - steak
+    - ground beef
+    - sweet potatoes
+    - broccoli
+  wrap_standard:
+    tortilla_primary: Mission Carb Balance (whole wheat)
+    tortilla_backup: Tumaro's low-carb wraps
+    filling: protein + spinach + sauerkraut + mustard/salsa
 notes:
   track_user_preferences_updates: true
   journal_every_material_update: true

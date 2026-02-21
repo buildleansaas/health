@@ -33,11 +33,11 @@ Breakfast bake placement:
 - Use breakfast bake primarily for home meals (lunch/dinner) and backup meals, not default MWF post-swim breakfast.
 
 ## No-microwave portable meal ideas
-- Greek yogurt cup + berries + granola + walnuts.
+- Greek yogurt cup + berries + granola.
 - Cottage cheese cup + pineapple + almonds.
-- Turkey wrap (whole wheat tortilla, spinach, mustard) + apple.
+- Turkey wrap (Mission Carb Balance tortilla, spinach, sauerkraut, mustard) + apple.
 - Rotisserie chicken sandwich (whole grain bread) + carrots.
-- Chicken packet + whole grain crackers + cucumber + olive oil packet.
+- Chicken packet + carrot/cucumber box + cheese stick.
 - Chicken salad with chickpeas + mixed greens + vinaigrette.
 - Hard-boiled eggs (2-3) + fruit + string cheese.
 - Overnight oats (protein powder + chia + milk) + banana.
@@ -45,6 +45,11 @@ Breakfast bake placement:
 - Bento box: deli turkey, cheese cubes, grapes, baby carrots, hummus.
 - Quinoa salad jar (quinoa, chicken, black beans, peppers, lime).
 - Smoked salmon bagel thin + light cream cheese + tomato.
+
+## Wrap formula (standard)
+- Tortilla: Mission Carb Balance (primary), Tumaro's (backup), otherwise smallest whole-wheat with >=3g fiber.
+- Fill: 6-8 oz protein + spinach + sauerkraut + mustard/salsa.
+- Optional calorie add: cheese.
 
 ## Fast-food fallback matrix (Mechanicsville)
 - `Chick-fil-A`:
@@ -68,7 +73,7 @@ Breakfast bake placement:
 - If order is uncertain, use: lean protein + fruit/veg + water.
 
 ## Traffic-proof defaults
-- If no prep time in morning: grab protein shake + banana + nuts and leave.
+- If no prep time in morning: grab protein shake + banana + cheese stick and leave.
 - If lunch window collapses: execute nearest fallback chain using "protein-first" order.
 - If stuck between meetings: eat packed backup snack now, then full meal at next break.
 - If pool block is within 90 minutes: use light carb + protein snack, then normal dinner at home.
@@ -76,10 +81,10 @@ Breakfast bake placement:
 
 ## Grocery shortlist
 - Proteins: rotisserie chicken, deli turkey, eggs, Greek yogurt, cottage cheese, chicken packets, protein powder.
-- Carbs: oats, whole grain wraps/bread, rice cups, quinoa, fruit (bananas, apples, berries), potatoes.
+- Carbs: oats, whole grain wraps/bread, rice cups, quinoa, fruit (bananas, apples, berries), potatoes, sweet potatoes.
 - Produce: spinach/mixed greens, carrots, cucumbers, bell peppers, tomatoes, frozen steam veg.
-- Fats/extras: nuts, natural peanut butter, olive oil, hummus, salsa, mustard.
-- Convenience backups: jerky, protein bars, shelf-stable shakes, whole grain crackers.
+- Fats/extras: natural peanut butter, olive oil, hummus, salsa, mustard, sauerkraut.
+- Convenience backups: jerky, protein bars, shelf-stable shakes, cheese sticks.
 
 ## 60-90 minute prep block (Sunday, optional 20-30 minute Wednesday reset)
 - `0-10 min`: choose 3 breakfasts + 3 lunches for next 3 workdays.
