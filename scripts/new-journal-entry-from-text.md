@@ -12,28 +12,40 @@ Inputs:
 - Raw Discord answers:
 {{PASTE_RAW_TEXT}}
 
+Context to read before parsing:
+- docs/CONTEXT_AWARE_CHECKINS.md
+- profiles/austin-preferences.yaml
+- Today day-part files that already exist.
+- Yesterday morning/midday/afternoon/evening files.
+- Prior coach notes and unresolved follow-ups from recent files.
+
 Rules:
-1) Select template by check-in part:
+1) `afternoon` is a first-class supported check-in part and must always map to its own template/file.
+2) Select template by check-in part:
    - morning -> templates/morning-checkin.md
    - midday -> templates/midday-checkin.md
    - afternoon -> templates/afternoon-checkin.md
    - evening -> templates/evening-recap.md
-2) Output filename must be:
+3) Output filename must be:
    - journals/{{YYYY-MM-DD}}-{{part}}.md
-3) Required-field behavior:
+4) Context-aware ingestion notes:
+   - Use recent context to resolve references like "same as earlier", "still pending", or "did it".
+   - Preserve unresolved friction and prior commitments when they are updated in the raw answer.
+   - Do not invent details that are not present in raw text or explicit recent context.
+5) Required-field behavior:
    - If a required field is missing, ask a follow-up question for only that missing field.
    - Do not ask about optional fields.
-4) Unknown handling:
+6) Unknown handling:
    - `Unknown` is allowed only if Austin explicitly says unknown and gives a reason.
    - Write as `Unknown - <reason>`.
    - Do not auto-fill Unknown for missing fields.
    - If a required field is `Unknown`, include it in "Next-check-in follow-up".
-5) Redact sensitive medical info:
+7) Redact sensitive medical info:
    - meds/doses -> [medication redacted]
    - diagnoses/conditions -> [health detail redacted]
    - lab/vitals -> [health metric redacted]
-6) Keep wording concise and behavioral.
-7) Recognize training mode enum from raw text:
+8) Keep wording concise and behavioral.
+9) Recognize training mode enum from raw text:
    - Canonical display values:
      - `Masters Swim`
      - `Gym LP`
@@ -60,30 +72,39 @@ Rules:
      - `B = HIIT 10-15 min`
      - `C = Minimum Day 8-12 min`
    - If training is mentioned but mode is ambiguous, ask one follow-up for exact mode token.
-8) Always include a Pepper coaching block in the journal output:
+10) Always include a Pepper coaching block in the journal output:
    - Morning/midday/afternoon: short coaching read + next 1-3 actions.
    - Evening: computed scores + why + insightful read + tomorrow plan.
 
 Required fields by part:
 - Morning:
-  - wake window hit, sleep quality, morning energy
+  - readiness color, energy, wake window hit, sleep quality
   - caffeine cutoff, last meal cutoff, wind-down start
-  - nutrition anchors, training mode, training fallback (`A/B/C` if used)
-  - biggest risk, if-then response, one non-negotiable
+  - nutrition plan, training mode, fallback rung (`A/B/C`)
+  - hydration 1L-by-noon plan
+  - stress + reset plan
+  - meaningful connection plan
+  - pain (0-10) + location + red-flag symptom
+  - biggest risk + if-then response + one non-negotiable
 - Midday:
-  - energy, stress
-  - sleep guardrails on track, nutrition anchors on track, training mode/status
-  - one sleep adjustment, one nutrition adjustment, one training/recovery adjustment
-  - accountability action with timing
+  - readiness color + energy
+  - stress + reset done/scheduled
+  - hydration status (urine color + 1L by noon yes/no)
+  - guardrails on-track, nutrition on-track, training mode/status
+  - meaningful connection status
+  - pain (0-10) + location + red-flag symptom
+  - one next action with timing
 - Afternoon:
-  - energy, stress + reset status
+  - energy + stress + reset status
   - hydration progress + quick nutrition update
-  - training mode/status and risk check (pain/location/red-flag)
+  - training mode/status + pain/location/red-flag risk check
   - biggest friction + one concrete action with timing
 - Evening:
   - sleep score (0-4), nutrition score (0-3), training score (0-3), total score (0-10)
-  - training mode + completion type (planned / fallback A/B/C / recovery)
-  - what happened (2-3 bullets), what worked (>=1 bullet), friction (>=1 bullet), one change for tomorrow
+  - readiness trend, peak stress + reset completion
+  - hydration sufficiency + meaningful connection completion
+  - peak pain (0-10) + location + red-flag symptom
+  - what happened, what worked, friction, one change for tomorrow
 
 Output format:
 - First: "Follow-up questions (now)" section (only if required fields are missing).

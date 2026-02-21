@@ -1,14 +1,21 @@
 # Coaching Cron System (Pepper)
 
 ## Purpose
-- Run structured integrated check-ins (sleep + nutrition + training) with low friction.
+- Run context-aware integrated check-ins (sleep + nutrition + training) with low friction.
 - Capture coaching modifiers (readiness, stress/reset, hydration, connection, risk/safety) without changing score math.
 - Keep entries concise, behavioral, and privacy-safe.
 
 ## Source of truth docs
 - `docs/SYSTEM_SOURCE_OF_TRUTH.md`
+- `docs/CONTEXT_AWARE_CHECKINS.md`
 - `docs/DISCORD_JOURNAL_WORKFLOW.md`
 - `docs/COACHING_INTEGRATION_PLAN.md`
+
+## Canonical prompt mode
+- Context-aware mode is default for all day-parts.
+- Before each check-in, read context from today + yesterday files, prior coaching notes, unresolved follow-ups, and `profiles/austin-preferences.yaml`.
+- Generate `3-6` targeted prompts instead of sending fixed forms.
+- Preserve required captures through focused follow-up on missing required data.
 
 ## Modes
 - Full mode: morning + midday + afternoon + evening check-ins.
@@ -49,9 +56,11 @@
 - If evening is missed, next morning starts with prior-day mini recap then normal morning check-in.
 
 ## Prompt design standard
-- Ask required fields first.
+- Read context first (`docs/CONTEXT_AWARE_CHECKINS.md`).
+- Ask `3-6` targeted prompts that prioritize required fields with active risk.
 - Ask optional fields as one optional line only.
-- Keep each check-in question set answerable in under 90 seconds.
+- Keep each check-in answerable in under 90 seconds.
+- Do not send repetitive boilerplate when a field is already known and unchanged.
 
 ## Required fields matrix (no tables)
 - Morning required:
@@ -98,7 +107,7 @@
 - If a required field is `Unknown`, create a forced follow-up in the next check-in.
 
 ## What Pepper does
-- Sends the matching question set in Discord.
+- Builds a context-aware prompt for the current day-part in Discord.
 - Parses freeform replies into concise structured bullets.
 - Asks follow-ups only for missing required fields.
 - Captures durable user preference changes in `profiles/austin-preferences.yaml`.

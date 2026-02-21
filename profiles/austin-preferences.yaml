@@ -3,6 +3,8 @@ timezone: America/New_York
 communication:
   format: plain_english_single_message
   no_shorthand_tokens: true
+  prompt_style: context_aware_non_form
+  prompt_budget_per_checkin: "3-6_targeted_prompts"
   scoring_mode: assistant_computes
   require_feedback: true
   require_tomorrow_actions: true
@@ -32,3 +34,4 @@ guardrails:
 notes:
   track_user_preferences_updates: true
   journal_every_material_update: true
+  avoid_static_forms: true

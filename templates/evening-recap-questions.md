@@ -1,24 +1,30 @@
-# Evening Recap Questions (Pepper)
+# Evening Recap Prompt Guide (Internal)
 
-Use this in Discord. Keep one readable message, no shorthand codes.
+This file is an internal generation guide. Do not send it as a fixed user-facing form.
 
-## Prompt
-- Day summary (2-4 bullets)
-- What you ate today (short meal/snack summary)
-- Training type today: Masters Swim / Gym LP / Home Strength / HIIT / Minimum Day / Recovery
-- Training completion: planned / fallback A-B-C / recovery
-- Readiness trend: better / same / worse
-- Peak stress (1-5) + reset done? (yes/no)
-- Hydration on track? (mostly pale urine + 1L before noon: yes/no)
-- Meaningful connection (10+ min): yes/no
-- Peak pain (0-10 + where)
-- Any red-flag symptom: yes/no
-- One win
-- One friction
-- One change for tomorrow
-- Optional: alcohol/cannabis, extra context
+## First read context
+- `docs/CONTEXT_AWARE_CHECKINS.md`
+- `profiles/austin-preferences.yaml`
+- All available day-part files for today.
+- Yesterday evening file for trend and unresolved carryover.
+- Prior coach notes and unresolved follow-ups.
+
+## Ask targeted questions
+- Ask `3-6` prompts focused on score-critical gaps, unresolved friction, and tomorrow setup.
+- Prioritize missing required captures first.
+- Reinforce clear wins before correction when possible.
+- Keep the message concise and practical.
+
+## Ensure required captures before journaling
+- Sleep score (`0-4`), nutrition score (`0-3`), training score (`0-3`), total score (`0-10`).
+- Readiness trend, peak stress + reset completion.
+- Hydration sufficiency + meaningful connection completion.
+- Peak pain (0-10) + location + red-flag symptom (yes/no).
+- Reflection: what happened, what worked, friction, one change for tomorrow.
+- Optional line only if needed: alcohol/cannabis or extra context.
+- If required data is missing, ask only for that missing field before journaling.
 
 After Austin replies:
-- Pepper computes scores (Sleep 0-4, Nutrition 0-3, Training 0-3, Total 0-10).
+- Pepper computes scores using only: `total 0-10 = sleep 0-4 + nutrition 0-3 + training 0-3`.
 - Pepper returns: why (wins + score drag), insightful read, and tomorrow top 1-3 actions.
 - Pepper writes/updates `journals/YYYY-MM-DD-evening.md` and commits.

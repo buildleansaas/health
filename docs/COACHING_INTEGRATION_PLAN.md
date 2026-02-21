@@ -10,6 +10,13 @@
 - Track five modifier facets daily: readiness, stress/reset, hydration, connection, risk/safety.
 - Prioritize adherence trend over single-day perfection.
 - Keep coaching language non-diagnostic and practical.
+- Generate context-aware prompts at each check-in; do not use static forms.
+
+## Context-aware check-in generation
+- Before each check-in, read today + yesterday day-part files, prior coach notes, unresolved follow-ups, and `profiles/austin-preferences.yaml`.
+- Ask `3-6` targeted prompts based on active risk, open friction, prior commitments, and recent wins.
+- Preserve required captures by day-part with focused follow-up for missing required fields only.
+- Keep prompts concise and answerable in under 90 seconds.
 
 ## Standard training mode enum (use everywhere)
 - `Masters Swim` (`Train:MastersSwim`)
@@ -38,6 +45,10 @@
 - Re-rate readiness, energy, stress, hydration sufficiency.
 - Confirm guardrails, nutrition, training mode/status, and connection status.
 - Re-check pain/location/red-flag and set one next action.
+- Afternoon check-in:
+- Re-check energy, stress/reset, hydration progress, and nutrition drift.
+- Confirm training mode/status and pain/location/red-flag status.
+- Capture biggest friction and one concrete action with time.
 - Evening recap:
 - Score sleep, nutrition, training, and total.
 - Log modifier outcomes (readiness trend, stress reset, hydration, connection, pain/red-flag).

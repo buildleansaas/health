@@ -1,22 +1,32 @@
-# Midday Check-In Questions (Pepper)
+# Midday Check-In Prompt Guide (Internal)
 
-Use this in Discord. Keep one readable message, no shorthand codes.
+This file is an internal generation guide. Do not send it as a fixed user-facing form.
 
-## Prompt
-- Energy now (1-5)
-- Stress now (1-5) + reset done? (yes/no)
-- Hydration on track? (urine mostly pale + 1L by noon: yes/no)
-- Sleep guardrails still on track? (yes/no)
-- Nutrition still on track? (yes/no + quick note what you ate)
-- Training status: done / pending / fallback
-- Training type now: Masters Swim / Gym LP / Home Strength / HIIT / Minimum Day / Recovery
-- Meaningful connection status: done / planned / missed
-- Pain now (0-10 + where)
-- Any red-flag symptom (yes/no)
-- One next action + time
-- Optional: focus/hunger/calendar pressure
+## First read context
+- `docs/CONTEXT_AWARE_CHECKINS.md`
+- `profiles/austin-preferences.yaml`
+- Today morning/midday files if present.
+- Yesterday morning/midday/afternoon/evening files.
+- Prior coach notes, open follow-ups, and unresolved morning commitments.
 
-Pre-swim nights (Sun/Tue/Thu): avoid late hard HIIT; favor A or C if evening is tight.
+## Ask targeted questions
+- Ask `3-6` prompts tailored to midday drift and remaining day constraints.
+- Prioritize missing required captures, hydration/training/sleep guardrail risk, and unresolved friction.
+- Include one reinforcement cue when a commitment was completed.
+- Keep wording concise and practical.
+
+## Ensure required captures before journaling
+- Readiness color + energy.
+- Stress + reset done/scheduled.
+- Hydration status (urine color + 1L by noon yes/no).
+- Sleep guardrails on track, nutrition on track, training mode/status.
+- Meaningful connection status (done/planned/missed).
+- Pain (0-10) + location + red-flag symptom (yes/no).
+- One next action with time.
+- Optional line only if needed: focus/hunger/calendar pressure.
+- If required data is missing, ask only for that missing field before journaling.
+
+Pre-swim nights (Sun/Tue/Thu): avoid late hard HIIT; favor `A` or `C` if evening is tight.
 
 After Austin replies:
 - Pepper returns a short coaching read + top 1-3 actions for the rest of the day.

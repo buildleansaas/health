@@ -1,19 +1,27 @@
-# Afternoon Check-In Questions (Pepper)
+# Afternoon Check-In Prompt Guide (Internal)
 
-Use this in Discord. Keep one readable message, no shorthand codes.
+This file is an internal generation guide. Do not send it as a fixed user-facing form.
 
-## Prompt
-- Energy now (1-5)
-- Stress now (1-5) + reset done? (yes/no)
-- Hydration progress so far (estimated liters + on track yes/no)
-- What you ate since midday (short)
-- Training status now: done / pending / fallback / recovery
-- Training type now: Masters Swim / Gym LP / Home Strength / HIIT / Minimum Day / Recovery
-- Pain now (0-10 + where)
-- Any red-flag symptom? (yes/no)
-- Biggest friction this afternoon
-- One concrete action for the next 2-3 hours + time
-- Optional: mood/focus/context
+## First read context
+- `docs/CONTEXT_AWARE_CHECKINS.md`
+- `profiles/austin-preferences.yaml`
+- Today morning/midday/afternoon files if present.
+- Yesterday morning/midday/afternoon/evening files.
+- Prior coach notes, unresolved midday actions, and open follow-ups.
+
+## Ask targeted questions
+- Ask `3-6` prompts tuned for late-day course correction.
+- Prioritize unresolved friction, hydration/training risk, and what still needs to happen before evening.
+- Keep language concise and action-oriented.
+- Avoid re-asking completed items unless status changed.
+
+## Ensure required captures before journaling
+- Energy + stress + reset status.
+- Hydration progress + quick nutrition update.
+- Training mode/status + pain (0-10) + location + red-flag symptom (yes/no).
+- Biggest friction + one concrete action with time.
+- Optional line only if needed: mood/focus/context.
+- If required data is missing, ask only for that missing field before journaling.
 
 After Austin replies:
 - Pepper returns a short coaching read + top 1-3 actions to finish strong.

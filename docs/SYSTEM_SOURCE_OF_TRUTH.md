@@ -1,12 +1,20 @@
 # System Source of Truth (Austin Coaching)
 
 ## Canonical active workflow
+- `docs/CONTEXT_AWARE_CHECKINS.md` is the canonical algorithm for context-aware prompt generation and follow-up logic.
 - `docs/COACHING_CRON_SYSTEM.md` is the operating source for check-in cadence, SLA, thresholds, and escalation.
 - `docs/DISCORD_JOURNAL_WORKFLOW.md` is the source for Discord-to-journal execution details.
 - `docs/COACHING_INTEGRATION_PLAN.md` is the behavior framework for scored domains + modifier facets.
 - `docs/AUSTIN_GOAL_SETUP_2026-02-20.md` is the active goal and weekly structure.
 - `scripts/new-journal-entry-from-text.md` is the canonical parser/formatter prompt spec.
 - `profiles/austin-preferences.yaml` is the canonical preference profile for cadence, tone, and coaching defaults.
+
+## Canonical check-in mode
+- Context-aware coaching is the default mode.
+- Before each check-in, read today + yesterday day-part files, prior coach notes, unresolved follow-ups, and the preference profile.
+- Send `3-6` targeted prompts based on current risk, commitments, friction, and wins.
+- Do not send static fixed forms.
+- Preserve journaling integrity by collecting all required captures with focused follow-up for missing required fields.
 
 ## Canonical active templates
 - `templates/morning-checkin.md`

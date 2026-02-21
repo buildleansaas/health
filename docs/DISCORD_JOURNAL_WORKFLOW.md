@@ -8,6 +8,7 @@
 
 ## System source
 - Canonical map: `docs/SYSTEM_SOURCE_OF_TRUTH.md`
+- Context-aware algorithm: `docs/CONTEXT_AWARE_CHECKINS.md`
 - SLA/escalation policy: `docs/COACHING_CRON_SYSTEM.md`
 - Preference profile: `profiles/austin-preferences.yaml`
 
@@ -19,7 +20,7 @@
 - Weekly file: `weekly/YYYY-[W]WW.md`
 
 ## End-to-end flow
-1. Pepper sends the matching day-part questions in Discord.
+1. Pepper reads context (today + yesterday files, prior coach notes, unresolved follow-ups, preference profile) and generates `3-6` targeted prompts for the current day-part.
 2. Austin replies in freeform text.
 3. Pepper asks follow-ups only for missing required fields.
 4. Pepper captures durable preference updates in `profiles/austin-preferences.yaml` when Austin changes cadence/tone/rules.
@@ -37,9 +38,11 @@
 - Weekly: `templates/weekly-review.md`, `templates/weekly-recap.md`
 
 ## Prompt execution rules (anti-overwhelm)
-- Ask required fields first.
+- First read context per `docs/CONTEXT_AWARE_CHECKINS.md`.
+- Ask `3-6` targeted prompts, not static forms.
+- Prioritize required fields tied to unresolved friction and current risk.
 - Ask optional fields as one optional line only.
-- Keep each check-in question set answerable in under 90 seconds.
+- Keep each check-in answerable in under 90 seconds.
 - If something is missing, ask only for the missing required field.
 
 ## Standard training mode enum (use everywhere)
