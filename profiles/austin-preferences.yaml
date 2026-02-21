@@ -54,6 +54,8 @@ nutrition_defaults:
   egg_purchase_default: 0
   egg_source: home_flock_surplus
   budgeting_focus_store: Publix (Mechanicsville)
+  hard_food_avoid:
+    - tuna
 notes:
   track_user_preferences_updates: true
   journal_every_material_update: true
