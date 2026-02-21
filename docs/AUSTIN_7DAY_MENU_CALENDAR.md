@@ -66,7 +66,7 @@ Raw milk integration:
 
 ## Fast-food fallback orders (Mechanicsville)
 - Chick-fil-A: chicken/egg/hash brown burrito meal + fruit + large Coke
-- McDonald’s: BOGO breakfast sandwiches or 4 sausage burritos + large Coke
+- McDonald’s: BOGO sausage, egg & cheese McGriddles + strawberry jelly on each + large Coke
 - Chipotle: Bowl > burrito; protein + beans + fajita veg + pico + lettuce; moderate rice
 
 Rules:

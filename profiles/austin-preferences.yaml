@@ -42,7 +42,7 @@ meal_logistics:
     - lunch_in_town_execution
   mwf_breakfast_default:
     primary: Chick-fil-A chicken/egg/hash brown burrito meal + fruit + large Coke
-    backup: McDonald's BOGO breakfast sandwiches or 4 sausage burritos + large Coke
+    backup: McDonald's BOGO sausage, egg & cheese McGriddles + strawberry jelly on each + large Coke
     note: planned_fast_food_in_town_after_masters
     coaching_stepdown_optional: medium Coke or Coke Zero on 1-2 days/week
   default_fallback_chains:

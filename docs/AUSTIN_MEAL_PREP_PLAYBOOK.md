@@ -17,7 +17,7 @@
 - `MWF breakfast`:
 - Default to planned post-swim fast-food breakfast in town (not packed reheated meals).
 - Primary default: CFA chicken/egg/hash brown burrito meal + fruit + large Coke.
-- Secondary default: McD BOGO breakfast sandwiches or 4 sausage burritos + large Coke.
+- Secondary default: McD BOGO sausage, egg & cheese McGriddles + strawberry jelly on each + large Coke.
 - Eat within `60-90` minutes post-swim.
 - `MWF lunch`:
 - Pre-pack no-microwave meal on Sunday + Wednesday night.
@@ -58,7 +58,7 @@ Breakfast bake placement:
 - Keep it on-plan: skip extra add-ons beyond this meal.
 - Optional step-down (performance days): medium Coke or Coke Zero.
 - `McDonald's`:
-- Order (Austin default): BOGO breakfast sandwiches or 4 sausage burritos + large Coke.
+- Order (Austin default): BOGO sausage, egg & cheese McGriddles + strawberry jelly on each + large Coke.
 - Keep it on-plan: no extra fries/desserts on top.
 - Optional step-down (performance days): medium Coke or Coke Zero.
 - `Chipotle`:
