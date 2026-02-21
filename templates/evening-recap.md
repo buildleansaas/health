@@ -6,8 +6,8 @@ Timezone: America/New_York
 
 Scoring model: `total 0-10 = sleep 0-4 + nutrition 0-3 + training 0-3`.
 Modifier facets (not score points): readiness, stress/reset, hydration, connection, risk/safety.
-Training mode enum: `Gym LP`, `Home Strength (KB+Pullup+Rings)`, `HIIT Only (Chris Heria style)`, `Minimum Day`, `Recovery`.
-Mode token format: `Train:GymLP|Train:HomeStrength|Train:HIITOnly|Train:MinimumDay|Train:Recovery`.
+Training mode enum: `Masters Swim`, `Gym LP`, `Home Strength (KB+Pullup+Rings)`, `HIIT Only (Chris Heria style)`, `Minimum Day`, `Recovery`.
+Mode token format: `Train:MastersSwim|Train:GymLP|Train:HomeStrength|Train:HIITOnly|Train:MinimumDay|Train:Recovery`.
 Fallback ladder: `A = Home Strength 25-35 min`, `B = HIIT 10-15 min`, `C = Minimum Day 8-12 min`.
 
 ## Required Scores
@@ -34,6 +34,14 @@ Fallback ladder: `A = Home Strength 25-35 min`, `B = HIIT 10-15 min`, `C = Minim
 -
 - One change for tomorrow:
 -
+
+## Pepper Coach Report (required)
+- Why (wins + score drag):
+- Insightful read (1-2 lines):
+- Tomorrow improvement plan (top 1-3):
+  1)
+  2)
+  3)
 
 ## Optional
 - Optional: alcohol/cannabis or extra context notes.

@@ -20,10 +20,13 @@
 1. Pepper sends the matching day-part questions in Discord.
 2. Austin replies in freeform text.
 3. Pepper asks follow-ups only for missing required fields.
-4. Pepper redacts sensitive medical details.
-5. Pepper formats content with the matching template.
-6. Pepper writes or updates day-part file in `journals/`.
-7. Pepper commits and pushes.
+4. Pepper computes the coaching output from Austin's narrative:
+   - Morning/midday: concise coaching read + next actions.
+   - Evening: computed scorecard + why + insightful read + tomorrow plan.
+5. Pepper redacts sensitive medical details.
+6. Pepper formats content with the matching template.
+7. Pepper writes or updates day-part file in `journals/`.
+8. Pepper commits and pushes.
 
 ## Source templates
 - Questions: `templates/morning-checkin-questions.md`, `templates/midday-checkin-questions.md`, `templates/evening-recap-questions.md`
@@ -37,6 +40,7 @@
 - If something is missing, ask only for the missing required field.
 
 ## Standard training mode enum (use everywhere)
+- `Masters Swim` (`Train:MastersSwim`)
 - `Gym LP` (`Train:GymLP`)
 - `Home Strength (KB+Pullup+Rings)` (`Train:HomeStrength`)
 - `HIIT Only (Chris Heria style)` (`Train:HIITOnly`)
@@ -137,3 +141,5 @@
 - Morning is required.
 - Midday is expected; if missed, recover at evening recap.
 - Weekly recap is required once per week.
+- Every check-in file includes a Pepper coaching response block.
+- Evening recap includes Pepper-computed scores + why + insightful read + tomorrow plan.

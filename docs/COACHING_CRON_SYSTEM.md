@@ -16,6 +16,7 @@
 - Minimum viable day mode: keep floor habits and finish evening recap.
 
 ## Standard training mode enum (use everywhere)
+- `Masters Swim` (`Train:MastersSwim`)
 - `Gym LP` (`Train:GymLP`)
 - `Home Strength (KB+Pullup+Rings)` (`Train:HomeStrength`)
 - `HIIT Only (Chris Heria style)` (`Train:HIITOnly`)
@@ -91,6 +92,9 @@
 - Sends the matching question set in Discord.
 - Parses freeform replies into concise structured bullets.
 - Asks follow-ups only for missing required fields.
+- Computes coaching output at each check-in:
+  - Morning/midday: coaching read + next actions.
+  - Evening: computed scorecard + why + insightful read + tomorrow plan.
 - Redacts sensitive health details before writing.
 - Writes or updates day-part files:
 - `journals/YYYY-MM-DD-morning.md`

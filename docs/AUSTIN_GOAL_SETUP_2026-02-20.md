@@ -19,6 +19,7 @@
 - HIIT ab circuit is fallback/finisher, not primary replacement.
 
 ## Standard training mode enum (use everywhere)
+- `Masters Swim` (`Train:MastersSwim`)
 - `Gym LP` (`Train:GymLP`)
 - `Home Strength (KB+Pullup+Rings)` (`Train:HomeStrength`)
 - `HIIT Only (Chris Heria style)` (`Train:HIITOnly`)

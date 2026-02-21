@@ -22,6 +22,10 @@ Integrated scoring model:
 - Training `0-3`
 - `6/10+` counts as a successful day
 
+Coaching response standard (required in each day-part file):
+- Morning/midday: Pepper coaching read + top actions.
+- Evening: Pepper-computed scores + why + insightful read + tomorrow plan.
+
 Weekly review files:
 - `weekly/YYYY-[W]WW.md` (example: `2026-W08.md`)
 

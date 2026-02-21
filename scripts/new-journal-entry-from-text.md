@@ -34,18 +34,21 @@ Rules:
 6) Keep wording concise and behavioral.
 7) Recognize training mode enum from raw text:
    - Canonical display values:
+     - `Masters Swim`
      - `Gym LP`
      - `Home Strength (KB+Pullup+Rings)`
      - `HIIT Only (Chris Heria style)`
      - `Minimum Day`
      - `Recovery`
    - Canonical quick tokens:
+     - `Train:MastersSwim`
      - `Train:GymLP`
      - `Train:HomeStrength`
      - `Train:HIITOnly`
      - `Train:MinimumDay`
      - `Train:Recovery`
    - Accept loose variants and map to canonical:
+     - `masters`, `masters swim`, `swim practice`, `swim team` -> `Masters Swim`
      - `gym`, `lp`, `greyskull`, `phrak` -> `Gym LP`
      - `home strength`, `kb`, `kettlebell`, `pullup`, `rings` -> `Home Strength (KB+Pullup+Rings)`
      - `hiit`, `chris heria`, `heria` -> `HIIT Only (Chris Heria style)`
@@ -56,6 +59,9 @@ Rules:
      - `B = HIIT 10-15 min`
      - `C = Minimum Day 8-12 min`
    - If training is mentioned but mode is ambiguous, ask one follow-up for exact mode token.
+8) Always include a Pepper coaching block in the journal output:
+   - Morning/midday: short coaching read + next 1-3 actions.
+   - Evening: computed scores + why + insightful read + tomorrow plan.
 
 Required fields by part:
 - Morning:

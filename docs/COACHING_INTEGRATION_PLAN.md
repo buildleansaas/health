@@ -12,6 +12,7 @@
 - Keep coaching language non-diagnostic and practical.
 
 ## Standard training mode enum (use everywhere)
+- `Masters Swim` (`Train:MastersSwim`)
 - `Gym LP` (`Train:GymLP`)
 - `Home Strength (KB+Pullup+Rings)` (`Train:HomeStrength`)
 - `HIIT Only (Chris Heria style)` (`Train:HIITOnly`)
