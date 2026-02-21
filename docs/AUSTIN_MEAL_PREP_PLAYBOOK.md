@@ -35,7 +35,7 @@ Breakfast bake placement:
 ## No-microwave portable meal ideas
 - Greek yogurt cup + berries + granola.
 - Cottage cheese cup + pineapple + almonds.
-- Turkey wrap (Mission Carb Balance tortilla, spinach, sauerkraut, mustard) + apple.
+- Turkey wrap (Mission Carb Balance tortilla, spinach, mustard, optional cheese) + apple.
 - Rotisserie chicken sandwich (whole grain bread) + carrots.
 - Turkey + cheese roll-ups + carrot/cucumber box.
 - Chicken salad with chickpeas + mixed greens + vinaigrette.
@@ -48,7 +48,8 @@ Breakfast bake placement:
 
 ## Wrap formula (standard)
 - Tortilla: Mission Carb Balance (primary), Tumaro's (backup), otherwise smallest whole-wheat with >=3g fiber.
-- Fill: 6-8 oz protein + spinach + sauerkraut + mustard/salsa.
+- Fill: 6-8 oz protein + spinach + mustard + optional cheese.
+- Sauerkraut: use with home bowls/plates, not wraps.
 - Optional calorie add: cheese.
 
 ## Fast-food fallback matrix (Mechanicsville)

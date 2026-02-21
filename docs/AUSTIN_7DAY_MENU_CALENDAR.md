@@ -22,7 +22,7 @@ Raw milk integration:
 
 ### Monday (MWF template)
 - Breakfast (post-masters, in-town fast option): CFA Egg White Grill + fruit cup (or McD Egg McMuffin + apple slices)
-- Lunch (packed): turkey wrap (carb-balance tortilla + turkey + spinach + sauerkraut + mustard) + Greek yogurt + apple
+- Lunch (packed): turkey wrap (carb-balance tortilla + turkey + spinach + mustard + optional cheese) + Greek yogurt + apple
 - Snack: mozzarella + turkey/ham roll-ups
 - Dinner (home): breakfast bake bowl (rice + lean beef + stir-fry veg + egg + cheese) or beef + broccoli + rice
 
@@ -40,7 +40,7 @@ Raw milk integration:
 
 ### Thursday (Tue/Thu template)
 - Breakfast (home): eggs + sweet potato hash + fruit
-- Lunch (town): packed chicken wrap box (carb-balance tortilla + chicken + spinach + sauerkraut + mustard) (or Chipotle fallback)
+- Lunch (town): packed chicken wrap box (carb-balance tortilla + chicken + spinach + mustard + optional cheese) (or Chipotle fallback)
 - Pre-pool snack: banana + shake
 - Dinner (late/home): lean beef taco bowl (no chips)
 

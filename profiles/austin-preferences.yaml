@@ -70,7 +70,10 @@ nutrition_defaults:
   wrap_standard:
     tortilla_primary: Mission Carb Balance (whole wheat)
     tortilla_backup: Tumaro's low-carb wraps
-    filling: protein + spinach + sauerkraut + mustard/salsa
+    filling: protein + spinach + mustard + optional cheese
+    avoid_on_wraps:
+      - sauerkraut
+    sauerkraut_use: home_meals_only
 notes:
   track_user_preferences_updates: true
   journal_every_material_update: true
