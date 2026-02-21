@@ -62,9 +62,9 @@ Breakfast bake placement:
 - Keep it on-plan: no extra fries/desserts on top.
 - Optional step-down (performance days): medium Coke or Coke Zero.
 - `Chipotle`:
-- Order: bowl with chicken/steak, fajita veg, beans, pico, lettuce; moderate rice based on training day.
-- Avoid: chips + queso as default add-on, sour cream + cheese + guac all together every time.
-- Swaps: burrito -> bowl, half rice + extra fajita veg, one high-calorie topping not three.
+- Order (Austin default): bowl with white rice, black beans, double chicken, fajitas, pico, corn, sour cream, cheese.
+- Keep it on-plan: avoid adding chips/queso/drink on top unless intentional.
+- Optional step-down (when desired): single chicken or no sour cream.
 - `Taco Bell`:
 - Order (Austin default): 2 Cheesy Gordita Crunches + large Pepsi.
 - Keep it on-plan: avoid adding extra sides/desserts on top.

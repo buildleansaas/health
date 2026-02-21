@@ -28,7 +28,7 @@ Raw milk integration:
 
 ### Tuesday (Tue/Thu template)
 - Breakfast (home): eggs + oats + berries
-- Lunch (town): Chipotle bowl (chicken/steak, beans, fajita veg, pico, lettuce, moderate rice)
+- Lunch (town): Chipotle bowl (white rice, black beans, double chicken, fajitas, pico, corn, sour cream, cheese)
 - Pre-pool snack: yogurt + fruit or protein shake
 - Dinner (late/home): chicken + potatoes + veg
 
@@ -67,7 +67,7 @@ Raw milk integration:
 ## Fast-food fallback orders (Mechanicsville)
 - Chick-fil-A: chicken/egg/hash brown burrito meal + 3 jalapeño salsa packs + fruit + large Coke
 - McDonald’s: BOGO sausage, egg & cheese McGriddles + strawberry jelly on each + large Coke
-- Chipotle: Bowl > burrito; protein + beans + fajita veg + pico + lettuce; moderate rice
+- Chipotle: bowl with white rice, black beans, double chicken, fajitas, pico, corn, sour cream, cheese
 - Taco Bell: 2 Cheesy Gordita Crunches + large Pepsi
 
 Rules:

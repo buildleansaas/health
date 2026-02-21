@@ -51,6 +51,7 @@ meal_logistics:
     - Chipotle
     - Taco Bell
   playbook_path: docs/AUSTIN_MEAL_PREP_PLAYBOOK.md
+  chipotle_default: bowl with white rice, black beans, double chicken, fajitas, pico, corn, sour cream, cheese
   taco_bell_default: 2 Cheesy Gordita Crunches + large Pepsi
 nutrition_defaults:
   raw_milk_weekly_gallons: 1
