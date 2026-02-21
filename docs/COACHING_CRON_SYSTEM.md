@@ -11,8 +11,8 @@
 - `docs/COACHING_INTEGRATION_PLAN.md`
 
 ## Modes
-- Full mode: morning + midday + evening check-ins.
-- Busy day mode: shorter prompts, same three check-ins.
+- Full mode: morning + midday + afternoon + evening check-ins.
+- Busy day mode: shorter prompts, same four check-ins.
 - Minimum viable day mode: keep floor habits and finish evening recap.
 
 ## Standard training mode enum (use everywhere)
@@ -34,7 +34,8 @@
 
 ## Check-in windows (local time, America/New_York)
 - Morning: within 15-90 minutes of wake.
-- Midday: near wake-day midpoint.
+- Midday: around late morning to midday.
+- Afternoon: late-afternoon course-correct window.
 - Evening: end of day or 60-120 minutes pre-bed.
 
 ## Check-in SLA policy
@@ -43,7 +44,8 @@
 - Missed-state threshold: mark check-in missed when no response by window end + 2 hours.
 - Recovery behavior:
 - If morning is missed, midday starts with a 2-line recovery prompt plus outstanding required follow-ups.
-- If midday is missed, evening recap includes a short recovery catch-up before scoring.
+- If midday is missed, afternoon starts with a short recovery catch-up.
+- If afternoon is missed, evening recap includes a short recovery catch-up before scoring.
 - If evening is missed, next morning starts with prior-day mini recap then normal morning check-in.
 
 ## Prompt design standard
@@ -73,6 +75,13 @@
 - One next action with time.
 - Midday optional:
 - One optional line: focus/hunger note, calendar pressure, other context.
+- Afternoon required:
+- Energy + stress + reset status.
+- Hydration progress + quick nutrition update.
+- Training type/status and risk check (pain/location/red-flag).
+- Biggest friction + one concrete action with time.
+- Afternoon optional:
+- One optional line: mood/focus/context.
 - Evening required:
 - Sleep score (`0-4`), nutrition score (`0-3`), training score (`0-3`), total score (`0-10`).
 - Readiness trend, peak stress + reset completion.
@@ -92,15 +101,18 @@
 - Sends the matching question set in Discord.
 - Parses freeform replies into concise structured bullets.
 - Asks follow-ups only for missing required fields.
+- Captures durable user preference changes in `profiles/austin-preferences.yaml`.
 - Computes coaching output at each check-in:
-  - Morning/midday: coaching read + next actions.
+  - Morning/midday/afternoon: coaching read + next actions.
   - Evening: computed scorecard + why + insightful read + tomorrow plan.
 - Redacts sensitive health details before writing.
 - Writes or updates day-part files:
 - `journals/YYYY-MM-DD-morning.md`
 - `journals/YYYY-MM-DD-midday.md`
+- `journals/YYYY-MM-DD-afternoon.md`
 - `journals/YYYY-MM-DD-evening.md`
 - Commits and pushes with day-part commit messages.
+- For material user updates between check-ins, updates the active day-part journal file and commits a follow-up note.
 
 ## Scoring and anti-all-or-nothing rules
 - Use only this model: `total 0-10 = sleep 0-4 + nutrition 0-3 + training 0-3`.

@@ -51,7 +51,7 @@
 - If form breaks twice on a lift, reduce ~10% next exposure and rebuild.
 
 ## Modifier rollout (coaching only, not scored)
-- Daily capture in morning/midday/evening:
+- Daily capture in morning/midday/afternoon/evening:
 - Recovery readiness (Green/Yellow/Red) + energy.
 - Stress (1-5) + 10-minute reset completed/planned.
 - Hydration sufficiency (urine color + 1L by noon yes/no).

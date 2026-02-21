@@ -1,0 +1,34 @@
+name: Austin
+timezone: America/New_York
+communication:
+  format: plain_english_single_message
+  no_shorthand_tokens: true
+  scoring_mode: assistant_computes
+  require_feedback: true
+  require_tomorrow_actions: true
+cadence:
+  checkins_per_day: 4
+  windows:
+    morning: "08:00"
+    midday: "12:00"
+    afternoon: "16:00"
+    evening: "20:00"
+training:
+  modes:
+    - Masters Swim
+    - Gym LP
+    - Home Strength (KB+Pullup+Rings)
+    - HIIT Only (Chris Heria style)
+    - Minimum Day
+    - Recovery
+  fallback_ladder:
+    A: Home Strength 25-35 min
+    B: HIIT 10-15 min
+    C: Minimum Day 8-12 min
+guardrails:
+  caffeine_cutoff: "before noon"
+  last_calories_cutoff: "19:00"
+  pre_swim_nights_lights_out: "22:00"
+notes:
+  track_user_preferences_updates: true
+  journal_every_material_update: true

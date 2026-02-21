@@ -7,7 +7,7 @@ You are formatting a day-part journal entry for this repo.
 
 Inputs:
 - Date (local): {{YYYY-MM-DD}}
-- Check-in part: {{morning|midday|evening}}
+- Check-in part: {{morning|midday|afternoon|evening}}
 - Timezone: {{IANA timezone}}
 - Raw Discord answers:
 {{PASTE_RAW_TEXT}}
@@ -16,6 +16,7 @@ Rules:
 1) Select template by check-in part:
    - morning -> templates/morning-checkin.md
    - midday -> templates/midday-checkin.md
+   - afternoon -> templates/afternoon-checkin.md
    - evening -> templates/evening-recap.md
 2) Output filename must be:
    - journals/{{YYYY-MM-DD}}-{{part}}.md
@@ -60,7 +61,7 @@ Rules:
      - `C = Minimum Day 8-12 min`
    - If training is mentioned but mode is ambiguous, ask one follow-up for exact mode token.
 8) Always include a Pepper coaching block in the journal output:
-   - Morning/midday: short coaching read + next 1-3 actions.
+   - Morning/midday/afternoon: short coaching read + next 1-3 actions.
    - Evening: computed scores + why + insightful read + tomorrow plan.
 
 Required fields by part:
@@ -74,6 +75,11 @@ Required fields by part:
   - sleep guardrails on track, nutrition anchors on track, training mode/status
   - one sleep adjustment, one nutrition adjustment, one training/recovery adjustment
   - accountability action with timing
+- Afternoon:
+  - energy, stress + reset status
+  - hydration progress + quick nutrition update
+  - training mode/status and risk check (pain/location/red-flag)
+  - biggest friction + one concrete action with timing
 - Evening:
   - sleep score (0-4), nutrition score (0-3), training score (0-3), total score (0-10)
   - training mode + completion type (planned / fallback A/B/C / recovery)

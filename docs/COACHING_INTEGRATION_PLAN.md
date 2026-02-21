@@ -45,9 +45,11 @@
 
 ## Daily cadence (America/New_York)
 - Morning: within 15-90 minutes of wake.
-- Midday: around wake-day midpoint.
+- Midday: around late morning to midday.
+- Afternoon: late-afternoon course-correct check-in.
 - Evening: end of day or 60-120 minutes pre-bed.
-- If midday is missed, still complete evening recap.
+- If midday is missed, recover at afternoon.
+- If afternoon is missed, recover at evening recap.
 
 ## Intervention triggers (explicit and short)
 - Readiness Yellow threshold: `Yellow` for >=2 consecutive check-ins or energy <=2.

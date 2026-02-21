@@ -6,14 +6,16 @@
 - `docs/COACHING_INTEGRATION_PLAN.md` is the behavior framework for scored domains + modifier facets.
 - `docs/AUSTIN_GOAL_SETUP_2026-02-20.md` is the active goal and weekly structure.
 - `scripts/new-journal-entry-from-text.md` is the canonical parser/formatter prompt spec.
+- `profiles/austin-preferences.yaml` is the canonical preference profile for cadence, tone, and coaching defaults.
 
 ## Canonical active templates
 - `templates/morning-checkin.md`
 - `templates/midday-checkin.md`
+- `templates/afternoon-checkin.md`
 - `templates/evening-recap.md`
 - `templates/weekly-review.md`
 - `templates/weekly-recap.md`
-- Question sets: `templates/morning-checkin-questions.md`, `templates/midday-checkin-questions.md`, `templates/evening-recap-questions.md`
+- Question sets: `templates/morning-checkin-questions.md`, `templates/midday-checkin-questions.md`, `templates/afternoon-checkin-questions.md`, `templates/evening-recap-questions.md`
 
 ## Canonical scoring model (only model)
 - Daily total: `0-10`
@@ -35,5 +37,5 @@
 - User-specific defaults: `docs/AUSTIN_GOAL_SETUP_2026-02-20.md`.
 
 ## Workflow boundary
-- Active execution is day-part journaling plus weekly recap in `America/New_York` local date boundaries.
+- Active execution is four daily day-part check-ins (morning/midday/afternoon/evening) plus weekly recap in `America/New_York` local date boundaries.
 - Do not modify the scoring formula when adding or adjusting modifier facets.

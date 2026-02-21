@@ -1,7 +1,7 @@
 # Discord Journal Workflow (Pepper)
 
 ## Goal
-- Run Discord check-ins across morning, midday, and evening.
+- Run Discord check-ins across morning, midday, afternoon, and evening.
 - Convert replies into structured day-part journal files.
 - Apply modifier-trigger coaching logic without changing score math.
 - Commit and push each completed check-in entry.
@@ -9,10 +9,12 @@
 ## System source
 - Canonical map: `docs/SYSTEM_SOURCE_OF_TRUTH.md`
 - SLA/escalation policy: `docs/COACHING_CRON_SYSTEM.md`
+- Preference profile: `profiles/austin-preferences.yaml`
 
 ## Journal files (per local day, America/New_York)
 - `journals/YYYY-MM-DD-morning.md`
 - `journals/YYYY-MM-DD-midday.md`
+- `journals/YYYY-MM-DD-afternoon.md`
 - `journals/YYYY-MM-DD-evening.md`
 - Weekly file: `weekly/YYYY-[W]WW.md`
 
@@ -20,17 +22,18 @@
 1. Pepper sends the matching day-part questions in Discord.
 2. Austin replies in freeform text.
 3. Pepper asks follow-ups only for missing required fields.
-4. Pepper computes the coaching output from Austin's narrative:
-   - Morning/midday: concise coaching read + next actions.
+4. Pepper captures durable preference updates in `profiles/austin-preferences.yaml` when Austin changes cadence/tone/rules.
+5. Pepper computes the coaching output from Austin's narrative:
+   - Morning/midday/afternoon: concise coaching read + next actions.
    - Evening: computed scorecard + why + insightful read + tomorrow plan.
-5. Pepper redacts sensitive medical details.
-6. Pepper formats content with the matching template.
-7. Pepper writes or updates day-part file in `journals/`.
-8. Pepper commits and pushes.
+6. Pepper redacts sensitive medical details.
+7. Pepper formats content with the matching template.
+8. Pepper writes or updates day-part file in `journals/`.
+9. Pepper commits and pushes.
 
 ## Source templates
-- Questions: `templates/morning-checkin-questions.md`, `templates/midday-checkin-questions.md`, `templates/evening-recap-questions.md`
-- Entries: `templates/morning-checkin.md`, `templates/midday-checkin.md`, `templates/evening-recap.md`
+- Questions: `templates/morning-checkin-questions.md`, `templates/midday-checkin-questions.md`, `templates/afternoon-checkin-questions.md`, `templates/evening-recap-questions.md`
+- Entries: `templates/morning-checkin.md`, `templates/midday-checkin.md`, `templates/afternoon-checkin.md`, `templates/evening-recap.md`
 - Weekly: `templates/weekly-review.md`, `templates/weekly-recap.md`
 
 ## Prompt execution rules (anti-overwhelm)
@@ -84,6 +87,13 @@
 - One next action with time.
 - Midday optional:
 - One optional line: focus/hunger note, calendar pressure, other context.
+- Afternoon required:
+- Energy + stress + reset status.
+- Hydration progress + quick nutrition update.
+- Training type/status and risk check (pain/location/red-flag).
+- Biggest friction + one concrete action with time.
+- Afternoon optional:
+- One optional line: mood/focus/context.
 - Evening required:
 - Sleep score (`0-4`), nutrition score (`0-3`), training score (`0-3`), total score (`0-10`).
 - Readiness trend, peak stress + reset completion.
@@ -115,6 +125,9 @@
 - Midday:
 - `git add journals/YYYY-MM-DD-midday.md`
 - `git commit -m "journal: YYYY-MM-DD midday check-in"`
+- Afternoon:
+- `git add journals/YYYY-MM-DD-afternoon.md`
+- `git commit -m "journal: YYYY-MM-DD afternoon check-in"`
 - Evening:
 - `git add journals/YYYY-MM-DD-evening.md`
 - `git commit -m "journal: YYYY-MM-DD evening recap"`
@@ -139,7 +152,9 @@
 ## Minimum execution standard
 - Every active day ends with an evening recap file.
 - Morning is required.
-- Midday is expected; if missed, recover at evening recap.
+- Midday is required.
+- Afternoon is required.
 - Weekly recap is required once per week.
 - Every check-in file includes a Pepper coaching response block.
 - Evening recap includes Pepper-computed scores + why + insightful read + tomorrow plan.
+- Material user updates between check-ins should be appended to the active day-part journal file before end of day.

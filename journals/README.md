@@ -3,16 +3,19 @@
 Create separate files per day-part:
 - `journals/YYYY-MM-DD-morning.md`
 - `journals/YYYY-MM-DD-midday.md`
+- `journals/YYYY-MM-DD-afternoon.md`
 - `journals/YYYY-MM-DD-evening.md`
 
 Use day-part templates:
 - `templates/morning-checkin.md`
 - `templates/midday-checkin.md`
+- `templates/afternoon-checkin.md`
 - `templates/evening-recap.md`
 
 Use Discord question templates:
 - `templates/morning-checkin-questions.md`
 - `templates/midday-checkin-questions.md`
+- `templates/afternoon-checkin-questions.md`
 - `templates/evening-recap-questions.md`
 
 Integrated scoring model:
