@@ -1,4 +1,4 @@
-# Austin 7-Day Menu Calendar (v1)
+# Austin 7-Day Menu Calendar (v2)
 
 ## Macro targets by day
 - Mon (Masters + town work): **2600 kcal** — **P190 / C290 / F80**
@@ -10,6 +10,11 @@
 - Sun (Recovery): **2250 kcal** — **P180 / C180 / F85**
 
 Scoring model unchanged: `total 0-10 = sleep 0-4 + nutrition 0-3 + training 0-3`.
+
+Raw milk integration:
+- Assume `1 gallon/week` raw whole milk (`16 cups/week`, ~`2.3 cups/day` average).
+- Macro block from milk (weekly): ~`+128g protein / +192g carbs / +128g fat` (~`+2,380 kcal`).
+- Daily planning rule: when milk intake is higher, reduce one carb add-on + one fat add-on to stay near daily targets.
 
 ---
 
@@ -78,7 +83,8 @@ Rules:
 - Lean ground beef (93/7): **4 lb**
 - Chicken breast/thigh: **5 lb**
 - Deli turkey/ham: **2 lb**
-- Eggs: **24**
+- Eggs: **0 to buy** (home surplus from flock)
+- Raw milk: **1 gallon/week** (separate local dairy line item)
 - Greek yogurt: **14 single cups** or **2 large tubs**
 - Cottage cheese: **32 oz**
 - Tuna packets: **6**
@@ -113,6 +119,56 @@ Rules:
 - Salsa + mustard + hummus: **1 each**
 
 ---
+
+## Mechanicsville budget snapshot (Publix-first, 2026-02-21)
+Price basis:
+- Target store: Publix Brandy Creek Commons (Mechanicsville area).
+- Prices are practical planning prices from current Publix/Instacart-style listings and common shelf points.
+- In-store may be lower than delivery markup.
+
+Weekly cart budget (food prep list):
+- Lean ground beef 93/7: `$8.49/lb x 4 lb = $33.96`
+- Chicken breast/thigh: `$6.99/lb x 5 lb = $34.95`
+- Deli turkey/ham: `$9.99/lb x 2 lb = $19.98`
+- Greek yogurt tubs: `$6.49 x 2 = $12.98`
+- Cottage cheese 32 oz: `$5.49`
+- Tuna packets: `$1.39 x 6 = $8.34`
+- Protein powder: `$34.99`
+- Mozzarella sticks: `$5.99`
+- Rice (4 lb): `$5.99`
+- Oats canister: `$5.49`
+- Whole wheat wraps: `$3.99 x 2 = $7.98`
+- Potatoes (5 lb): `$4.99`
+- Quinoa bag: `$6.99`
+- Whole grain crackers: `$3.79`
+- Beans (4 cans): `$1.49 x 4 = $5.96`
+- Bananas (14): `$3.78`
+- Apples (7): `$6.93`
+- Berries (3): `$14.97`
+- Oranges/pineapple mix: `$8.99`
+- Greens (2 boxes): `$10.98`
+- Stir-fry veg frozen (4): `$11.96`
+- Bell peppers (6): `$6.00`
+- Broccoli (4): `$9.96`
+- Carrot/cucumber/tomato mix: `$12.00`
+- Shredded cheese: `$3.99`
+- Olive oil: `$9.99`
+- Nuts/walnuts: `$8.99`
+- Peanut butter: `$4.29`
+- Salsa: `$3.49`
+- Mustard: `$2.29`
+- Hummus: `$4.99`
+- Raw milk (1 gallon/week): `$12.00` (local estimate; usually non-Publix source)
+- Eggs: `$0` (home flock surplus)
+
+Budget totals:
+- Full weekly cart (including protein powder + raw milk): **`$333.47`**
+- Food-only core (remove protein powder): **`$298.48`**
+- Target budget range to plan against: **`$295-$335/week`**
+
+Fast-food fallback budget guardrail:
+- Plan `2-4` fallback meals/week at `$10-$14` each: **`+$20-$56/week`**
+- Full real-world weekly food budget target (groceries + fallback): **`$320-$390/week`**
 
 ## Prep flow (Sunday 60-90 min)
 1. Batch cook breakfast bake (6 containers).

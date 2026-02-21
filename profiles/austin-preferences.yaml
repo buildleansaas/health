@@ -45,6 +45,11 @@ meal_logistics:
     - McDonald's
     - Chipotle
   playbook_path: docs/AUSTIN_MEAL_PREP_PLAYBOOK.md
+nutrition_defaults:
+  raw_milk_weekly_gallons: 1
+  egg_purchase_default: 0
+  egg_source: home_flock_surplus
+  budgeting_focus_store: Publix (Mechanicsville)
 notes:
   track_user_preferences_updates: true
   journal_every_material_update: true
