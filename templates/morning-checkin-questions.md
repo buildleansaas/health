@@ -4,6 +4,7 @@ This file is an internal generation guide. Do not send it as a fixed user-facing
 
 ## First read context
 - `docs/CONTEXT_AWARE_CHECKINS.md`
+- `docs/AUSTIN_MEAL_PREP_PLAYBOOK.md`
 - `profiles/austin-preferences.yaml`
 - Today files already written for the current date.
 - Yesterday morning/midday/afternoon/evening files.
@@ -12,6 +13,7 @@ This file is an internal generation guide. Do not send it as a fixed user-facing
 ## Ask targeted questions
 - Ask `3-6` prompts tailored to current context.
 - Prioritize unresolved friction, prior commitments, and morning risk signals.
+- Include one targeted meal-logistics nudge tied to day type (`MWF` early swim/work squeeze vs `Tue/Thu` later start + pool timing).
 - Include reinforcement when a clear win exists.
 - Keep the message concise, plain English, one Discord message.
 
@@ -19,6 +21,7 @@ This file is an internal generation guide. Do not send it as a fixed user-facing
 - Readiness color, energy, wake window hit, sleep quality.
 - Caffeine cutoff, last meal cutoff, wind-down start.
 - Nutrition plan + training mode (`Train:<mode>`) + fallback rung (`A/B/C`).
+- Breakfast + lunch execution plan for today with a traffic-proof fallback and preferred chain/order if time collapses.
 - Hydration 1L-by-noon plan.
 - Stress + reset plan.
 - Meaningful connection plan.

@@ -15,6 +15,9 @@ cadence:
     midday: "12:00"
     afternoon: "16:00"
     evening: "20:00"
+schedule_notes:
+  mwf: "Up early, masters swim, then work in town; home for dinner."
+  tue_thu: "Up later, work in town, short break, then pool work; home around 19:30."
 training:
   modes:
     - Masters Swim
@@ -31,6 +34,17 @@ guardrails:
   caffeine_cutoff: "before noon"
   last_calories_cutoff: "19:00"
   pre_swim_nights_lights_out: "22:00"
+meal_logistics:
+  no_microwave_preferred: true
+  fridge_access_in_town: true
+  main_friction:
+    - breakfast_in_town_execution
+    - lunch_in_town_execution
+  default_fallback_chains:
+    - Chick-fil-A
+    - McDonald's
+    - Chipotle
+  playbook_path: docs/AUSTIN_MEAL_PREP_PLAYBOOK.md
 notes:
   track_user_preferences_updates: true
   journal_every_material_update: true

@@ -6,6 +6,7 @@
 - `docs/DISCORD_JOURNAL_WORKFLOW.md` is the source for Discord-to-journal execution details.
 - `docs/COACHING_INTEGRATION_PLAN.md` is the behavior framework for scored domains + modifier facets.
 - `docs/AUSTIN_GOAL_SETUP_2026-02-20.md` is the active goal and weekly structure.
+- `docs/AUSTIN_MEAL_PREP_PLAYBOOK.md` is the meal logistics source for weekday breakfast/lunch execution defaults.
 - `scripts/new-journal-entry-from-text.md` is the canonical parser/formatter prompt spec.
 - `profiles/austin-preferences.yaml` is the canonical preference profile for cadence, tone, and coaching defaults.
 

@@ -7,6 +7,7 @@
 
 ## Inputs to read before each check-in
 - `profiles/austin-preferences.yaml`
+- `docs/AUSTIN_MEAL_PREP_PLAYBOOK.md`
 - Today journal files that exist so far:
 - `journals/YYYY-MM-DD-morning.md`
 - `journals/YYYY-MM-DD-midday.md`
@@ -26,15 +27,18 @@
 - Repeated blockers.
 - Missed actions from prior check-ins.
 - Missed check-ins or incomplete recoveries.
+- Breakfast/lunch execution misses and impulsive fast-food events.
 3. Extract prior commitments:
 - Non-negotiable, if-then plan, and planned next action.
 - Training mode and fallback rung (`A/B/C`).
 - Hydration, reset, and connection plans.
+- Breakfast/lunch logistics plan and fallback chain order.
 4. Extract risk signals:
 - Sleep guardrail drift.
 - Hydration misses.
 - Training risk or pain trend.
 - Stress escalation and red-flag status.
+- Day-type meal risk (`MWF` early swim/workday squeeze vs `Tue/Thu` pool timing squeeze).
 5. Extract wins to reinforce:
 - Completed commitments.
 - Positive trend changes.
@@ -54,6 +58,7 @@
 - Readiness color, energy, wake window hit, sleep quality.
 - Caffeine cutoff, last meal cutoff, wind-down start.
 - Nutrition plan + training mode token + fallback rung.
+- Breakfast + lunch logistics plan for current day type and traffic-proof fallback.
 - Hydration 1L-by-noon plan.
 - Stress + reset plan.
 - Meaningful connection plan.
@@ -64,18 +69,21 @@
 - Stress + reset done/scheduled.
 - Hydration status (urine color + 1L by noon yes/no).
 - Guardrails status, nutrition status, training mode/status.
+- Breakfast execution (`Yes/Partial/No`) + lunch plan/status + fallback intent (`Intentional/Impulsive/None` if used).
 - Meaningful connection status.
 - Pain (0-10) + location + red-flag symptom.
 - One next action with time.
 - Afternoon:
 - Energy + stress + reset status.
 - Hydration progress + quick nutrition update.
+- Lunch execution (`Yes/Partial/No`) + no-microwave adherence (`Yes/No`, reason if `No`).
 - Training mode/status + pain/location/red-flag check.
 - Biggest friction + one concrete action with time.
 - Evening:
 - Sleep score (`0-4`), nutrition score (`0-3`), training score (`0-3`), total score (`0-10`).
 - Readiness trend, peak stress + reset completion.
 - Hydration sufficiency + meaningful connection completion.
+- Meal logistics outcomes: breakfast/lunch execution, fallback chain use, no-microwave adherence.
 - Peak pain (0-10) + location + red-flag symptom.
 - Reflection: what happened, what worked, friction, one change for tomorrow.
 

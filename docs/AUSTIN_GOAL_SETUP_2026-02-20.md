@@ -14,6 +14,15 @@
 - Sat: strength (Greyskull/Phrak C) or shortened lift if masters swim happens.
 - Sun: rest + light yoga + walk.
 
+## In-town meal logistics module
+- Primary playbook: `docs/AUSTIN_MEAL_PREP_PLAYBOOK.md`.
+- Rhythm split:
+- `MWF`: up early -> masters -> work in town -> home dinner.
+- `Tue/Thu`: up later -> work in town -> short break -> pool work -> home around `7:30pm`.
+- Main friction target: breakfast + lunch execution while in town.
+- Default constraints: no microwave preferred; fridge access available in town.
+- Fast-food fallback chains: Chick-fil-A, McDonald's, Chipotle (protein-first ordering rules from playbook).
+
 ## Strength vs HIIT decision
 - Primary path: Greyskull/Phrak 3x/week for progressive overload and measurable strength gains.
 - HIIT ab circuit is fallback/finisher, not primary replacement.
@@ -57,6 +66,11 @@
 - Hydration sufficiency (urine color + 1L by noon yes/no).
 - Meaningful social connection (10+ minutes yes/no).
 - Risk/safety (pain 0-10 + location + red-flag symptom yes/no).
+- Meal logistics adherence:
+- Breakfast executed as planned (Yes/Partial/No).
+- Lunch executed as planned (Yes/Partial/No).
+- No-microwave preference honored (Yes/No, reason if No).
+- Fast-food fallback use (Intentional/Impulsive/None).
 
 ## Modifier trigger rules
 - Readiness Yellow threshold: Yellow >=2 consecutive check-ins or energy <=2 -> fallback training + bedtime protection for 24h.
@@ -65,6 +79,9 @@
 - Hydration misses: dark urine or missed 1L by noon; if >=2 days/week -> lock AM + pre-noon hydration blocks.
 - Connection misses: no 10+ minute connection for 2 consecutive days -> schedule next-day connection block before 6pm.
 - Pain/red-flag escalation: red-flag yes or pain >=7 -> urgent escalation now; pain 4-6 for >48h (or pain >=3 for 3+ days) -> clinician-soon.
+- Meal logistics drift:
+- Breakfast `No` or Lunch `No` for 2 workdays/week -> enforce traffic-proof default for next workday morning + lunch.
+- Any `Impulsive` fast-food entry -> next check-in sets a specific fallback order before next meal window.
 
 ## Daily adherence score (only model)
 - `total 0-10 = sleep 0-4 + nutrition 0-3 + training 0-3`

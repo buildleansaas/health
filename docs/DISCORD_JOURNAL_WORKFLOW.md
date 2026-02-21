@@ -11,6 +11,7 @@
 - Context-aware algorithm: `docs/CONTEXT_AWARE_CHECKINS.md`
 - SLA/escalation policy: `docs/COACHING_CRON_SYSTEM.md`
 - Preference profile: `profiles/austin-preferences.yaml`
+- Meal logistics playbook: `docs/AUSTIN_MEAL_PREP_PLAYBOOK.md`
 
 ## Journal files (per local day, America/New_York)
 - `journals/YYYY-MM-DD-morning.md`
@@ -62,6 +63,15 @@
 - Avoid late hard HIIT.
 - If evening is tight, favor `A` or `C`.
 
+## Meal logistics defaults (coaching-only)
+- Apply day-type split from `docs/AUSTIN_MEAL_PREP_PLAYBOOK.md`:
+- `MWF`: early masters + in-town work; breakfast/lunch execution is high-priority.
+- `Tue/Thu`: later start + pool work + home around `7:30pm`; avoid lunch-to-pool under-fueling.
+- Default constraints:
+- No microwave preferred.
+- Fridge access in town available.
+- Fast-food fallback chains: Chick-fil-A, McDonald's, Chipotle.
+
 ## Scoring model (only model)
 - `total 0-10 = sleep 0-4 + nutrition 0-3 + training 0-3`
 - Modifier facets are coaching triggers only and do not add score points.
@@ -73,6 +83,7 @@
 - Readiness color, energy, wake window hit, sleep quality.
 - Guardrails (caffeine cutoff, last meal cutoff, wind-down).
 - Nutrition + training mode token (`Train:<mode>`) + fallback rung (`A/B/C`).
+- Breakfast + lunch logistics plan for today's day type (`MWF` or `Tue/Thu`) and traffic-proof fallback.
 - Hydration 1L-by-noon plan.
 - Stress + 10-minute reset plan.
 - Meaningful connection plan (10+ minutes, yes/no).
@@ -85,6 +96,7 @@
 - Stress + reset done/scheduled.
 - Hydration (urine color + 1L by noon yes/no).
 - Guardrails on-track, nutrition on-track, training mode/status.
+- Breakfast executed (`Yes/Partial/No`) + lunch plan/status + fallback intent (`Intentional/Impulsive/None` when applicable).
 - Connection status (done/planned/missed).
 - Pain (0-10) + location + red-flag symptom (yes/no).
 - One next action with time.
@@ -93,6 +105,7 @@
 - Afternoon required:
 - Energy + stress + reset status.
 - Hydration progress + quick nutrition update.
+- Lunch execution (`Yes/Partial/No`) + no-microwave adherence (`Yes/No`, reason if `No`).
 - Training type/status and risk check (pain/location/red-flag).
 - Biggest friction + one concrete action with time.
 - Afternoon optional:
@@ -101,6 +114,7 @@
 - Sleep score (`0-4`), nutrition score (`0-3`), training score (`0-3`), total score (`0-10`).
 - Readiness trend, peak stress + reset completion.
 - Hydration sufficiency + connection completion.
+- Meal logistics outcomes: breakfast/lunch execution + fallback chain use + no-microwave adherence.
 - Peak pain (0-10) + location + red-flag symptom (yes/no).
 - Reflection: what happened (2), what worked (1), friction (1), one change tomorrow.
 - Evening optional:
@@ -113,6 +127,7 @@
 - Hydration miss: dark urine or missed 1L by noon; if >=2 misses in a week, enforce AM + pre-noon hydration blocks.
 - Connection miss: missed 10+ minute meaningful connection for 2 consecutive days -> schedule next-day block before 6pm.
 - Pain/red-flag: red-flag yes or pain >=7 -> urgent escalation now. Pain 4-6 >48h (or pain >=3 for 3+ days) -> clinician-soon escalation.
+- Meal logistics miss: breakfast `No` or lunch `No` on >=2 workdays/week, or any `Impulsive` fast-food event -> enforce next-day traffic-proof defaults and pre-commit one fallback order.
 
 ## Unknown rule and follow-up logic
 - `Unknown` allowed only if explicitly stated by Austin with a reason.
