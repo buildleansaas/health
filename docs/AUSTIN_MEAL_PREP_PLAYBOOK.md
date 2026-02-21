@@ -16,8 +16,8 @@
 ## Breakfast and lunch strategy by day type
 - `MWF breakfast`:
 - Default to planned post-swim fast-food breakfast in town (not packed reheated meals).
-- Primary default: CFA Egg White Grill + fruit cup.
-- Secondary default: McD Egg McMuffin + apple slices.
+- Primary default: CFA chicken/egg/hash brown burrito meal + fruit + large Coke.
+- Secondary default: McD BOGO breakfast sandwiches or 4 sausage burritos + large Coke.
 - Eat within `60-90` minutes post-swim.
 - `MWF lunch`:
 - Pre-pack no-microwave meal on Sunday + Wednesday night.
@@ -54,13 +54,13 @@ Breakfast bake placement:
 
 ## Fast-food fallback matrix (Mechanicsville)
 - `Chick-fil-A`:
-- Order: grilled nuggets + kale crunch/fruit cup; grilled chicken sandwich; egg white grill breakfast.
-- Avoid: regular nuggets + fries + shake combo, sugary drinks, extra sauces by default.
-- Swaps: fries -> fruit/kale, regular sandwich -> grilled, full-sugar drink -> water/diet.
+- Order (Austin default): chicken/egg/hash brown burrito meal + fruit + large Coke.
+- Keep it on-plan: skip extra add-ons beyond this meal.
+- Optional step-down (performance days): medium Coke or Coke Zero.
 - `McDonald's`:
-- Order: Egg McMuffin; 2x sausage burrito + apple slices; McDouble (no mayo) + side salad/apple slices.
-- Avoid: large fries + soda combos, bakery add-ons, double-dessert orders.
-- Swaps: large combo -> single sandwich + water, fries -> apple slices, soda -> zero-sugar option.
+- Order (Austin default): BOGO breakfast sandwiches or 4 sausage burritos + large Coke.
+- Keep it on-plan: no extra fries/desserts on top.
+- Optional step-down (performance days): medium Coke or Coke Zero.
 - `Chipotle`:
 - Order: bowl with chicken/steak, fajita veg, beans, pico, lettuce; moderate rice based on training day.
 - Avoid: chips + queso as default add-on, sour cream + cheese + guac all together every time.
@@ -70,8 +70,8 @@ Breakfast bake placement:
 - Always anchor protein first.
 - Add produce second.
 - Add carbs based on training demand (higher on swim/lift days, moderate on lighter days).
-- Default drink: water.
-- If order is uncertain, use: lean protein + fruit/veg + water.
+- Keep drinks intentional (planned large Coke is acceptable for MWF breakfast; avoid stacking extra sugary drinks later).
+- If order is uncertain, use: lean protein + fruit/veg + one planned drink.
 
 ## Traffic-proof defaults
 - If no prep time in morning: grab protein shake + banana + cheese stick and leave.

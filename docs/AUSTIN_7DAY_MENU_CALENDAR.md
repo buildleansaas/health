@@ -21,7 +21,7 @@ Raw milk integration:
 ## Calendar menu (breakfast/lunch built for in-town constraints)
 
 ### Monday (MWF template)
-- Breakfast (post-masters, in-town fast option): CFA Egg White Grill + fruit cup (or McD Egg McMuffin + apple slices)
+- Breakfast (post-masters, in-town fast option): CFA chicken/egg/hash brown burrito meal + fruit + large Coke (or McD BOGO breakfast sandwiches / 4 sausage burritos + large Coke)
 - Lunch (packed): turkey wrap (carb-balance tortilla + turkey + spinach + mustard + optional cheese) + Greek yogurt + apple
 - Snack: mozzarella + turkey/ham roll-ups
 - Dinner (home): breakfast bake bowl (rice + lean beef + stir-fry veg + egg + cheese) or beef + broccoli + rice
@@ -33,7 +33,7 @@ Raw milk integration:
 - Dinner (late/home): chicken + potatoes + veg
 
 ### Wednesday (MWF template)
-- Breakfast (post-masters, in-town fast option): CFA Egg White Grill + fruit cup (or McD Egg McMuffin + apple slices)
+- Breakfast (post-masters, in-town fast option): CFA chicken/egg/hash brown burrito meal + fruit + large Coke (or McD BOGO breakfast sandwiches / 4 sausage burritos + large Coke)
 - Lunch: chicken quinoa salad jar + fruit
 - Snack: cottage cheese + pineapple
 - Dinner (home): breakfast bake bowl or salmon/chicken + rice + veg
@@ -45,7 +45,7 @@ Raw milk integration:
 - Dinner (late/home): lean beef taco bowl (no chips)
 
 ### Friday (MWF template)
-- Breakfast (post-masters, in-town fast option): CFA Egg White Grill + fruit cup (or McD Egg McMuffin + apple slices)
+- Breakfast (post-masters, in-town fast option): CFA chicken/egg/hash brown burrito meal + fruit + large Coke (or McD BOGO breakfast sandwiches / 4 sausage burritos + large Coke)
 - Lunch: turkey + cheese roll-ups + fruit + carrots
 - Snack: jerky + fruit
 - Dinner: breakfast bake bowl or burger bowl at home (lean beef, potatoes, salad)
@@ -65,15 +65,15 @@ Raw milk integration:
 ---
 
 ## Fast-food fallback orders (Mechanicsville)
-- Chick-fil-A: Egg White Grill / Grilled nuggets + fruit or kale crunch / Grilled sandwich
-- McDonald’s: Egg McMuffin / Sausage burritos + apple slices / McDouble (simple build) + water
+- Chick-fil-A: chicken/egg/hash brown burrito meal + fruit + large Coke
+- McDonald’s: BOGO breakfast sandwiches or 4 sausage burritos + large Coke
 - Chipotle: Bowl > burrito; protein + beans + fajita veg + pico + lettuce; moderate rice
 
 Rules:
 - Protein first
 - Add produce
-- Water default
-- Avoid combo stacking (fries + soda + dessert)
+- Keep drinks intentional (large Coke is accepted baseline on MWF breakfast; optional coaching step-down = medium or Coke Zero 1-2 days/week)
+- Avoid combo stacking beyond your planned breakfast order
 
 ## Wrap standard (what goes on wraps + tortillas)
 Wrap build:
@@ -177,9 +177,10 @@ Budget totals:
 - Food-only core (remove protein powder): **`$289.34`**
 - Target budget range to plan against: **`$285-$330/week`**
 
-Fast-food fallback budget guardrail:
-- Plan `2-4` fallback meals/week at `$10-$14` each: **`+$20-$56/week`**
-- Full real-world weekly food budget target (groceries + fallback): **`$320-$390/week`**
+Fast-food breakfast budget guardrail (MWF default pattern):
+- Plan `3` MWF breakfast orders/week at roughly `$11-$16` each: **`+$33-$48/week`**
+- If adding 1-2 extra fallback meals: +`$10-$14` each
+- Full real-world weekly food budget target (groceries + fast-food): **`$335-$395/week`**
 
 ## Prep flow (Sunday 60-90 min)
 1. Batch cook breakfast bake (6 containers).
