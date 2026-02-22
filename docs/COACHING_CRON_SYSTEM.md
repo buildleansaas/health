@@ -1,7 +1,7 @@
 # Coaching Cron System (Pepper)
 
 ## Purpose
-- Run context-aware integrated check-ins (sleep + nutrition + training) with low friction.
+- Run context-aware integrated check-ins with low friction.
 - Capture coaching modifiers (readiness, stress/reset, hydration, connection, risk/safety) without changing score math.
 - Keep entries concise, behavioral, and privacy-safe.
 
@@ -12,14 +12,14 @@
 - `docs/COACHING_INTEGRATION_PLAN.md`
 
 ## Canonical prompt mode
-- Context-aware mode is default for all day-parts.
-- Before each check-in, read context from today + yesterday files, prior coaching notes, unresolved follow-ups, and `profiles/austin-preferences.yaml`.
-- Generate `3-6` targeted prompts instead of sending fixed forms.
+- Context-aware mode is default for both daily touches.
+- Before each touch, read context from today + yesterday files, prior coaching notes, unresolved follow-ups, and `profiles/austin-preferences.yaml`.
+- Generate `3-6` targeted prompts instead of fixed forms.
 - Preserve required captures through focused follow-up on missing required data.
 
 ## Modes
-- Full mode: morning + midday + afternoon + evening check-ins.
-- Busy day mode: shorter prompts, same four check-ins.
+- Standard mode: daytime + evening touches.
+- Busy day mode: shorter prompts, same two touches.
 - Minimum viable day mode: keep floor habits and finish evening recap.
 
 ## Standard training mode enum (use everywhere)
@@ -40,63 +40,45 @@
 - If evening is tight, favor `A` or `C`.
 
 ## Check-in windows (local time, America/New_York)
-- Morning: within 15-90 minutes of wake.
-- Midday: around late morning to midday.
-- Afternoon: late-afternoon course-correct window.
-- Evening: end of day or 60-120 minutes pre-bed.
+- Daytime: target `11:30`, window `10:30-14:30`.
+- Evening: target `20:30`, window `19:30-22:30` (or 60-120 minutes pre-bed).
 
 ## Check-in SLA policy
-- Initial prompt window: send first prompt at start of each check-in window.
-- Reminder timing: reminder 1 at +30 minutes, reminder 2 at +90 minutes if no response.
-- Missed-state threshold: mark check-in missed when no response by window end + 2 hours.
+- Initial prompt: send first prompt at target time.
+- Reminder timing: reminder 1 at `+30 minutes`, reminder 2 at `+90 minutes` if no response.
+- Missed-state threshold: mark touch missed when no response by window end + 2 hours.
 - Recovery behavior:
-- If morning is missed, midday starts with a 2-line recovery prompt plus outstanding required follow-ups.
-- If midday is missed, afternoon starts with a short recovery catch-up.
-- If afternoon is missed, evening recap includes a short recovery catch-up before scoring.
-- If evening is missed, next morning starts with prior-day mini recap then normal morning check-in.
+- If daytime is missed, evening starts with a short catch-up block before recap/scoring.
+- If evening is missed, next daytime starts with prior-night carryover and immediate day plan.
+- If both touches are missed, next daytime sends restart prompt + one easy action.
 
 ## Prompt design standard
 - Read context first (`docs/CONTEXT_AWARE_CHECKINS.md`).
 - Ask `3-6` targeted prompts that prioritize required fields with active risk.
 - Ask optional fields as one optional line only.
-- Keep each check-in answerable in under 90 seconds.
+- Keep each touch answerable in under 90 seconds.
 - Do not send repetitive boilerplate when a field is already known and unchanged.
 
 ## Required fields matrix (no tables)
-- Morning required:
-- Readiness color, energy, wake window hit, sleep quality.
-- Sleep guardrails (caffeine cutoff, last meal cutoff, wind-down start).
-- Nutrition + training mode token (`Train:<mode>`) + fallback rung (`A/B/C`).
-- Hydration 1L-by-noon plan.
-- Stress + 10-minute reset plan.
-- Meaningful connection plan (10+ minutes, yes/no).
-- Risk check: pain (0-10) + location + red-flag symptom (yes/no).
-- Biggest risk + if-then + one non-negotiable.
-- Morning optional:
-- One optional line: awakenings, mood/readiness, schedule constraints.
-- Midday required:
-- Readiness color and energy.
-- Stress + reset done/scheduled.
-- Hydration sufficiency (urine color + 1L by noon yes/no).
-- Guardrails on-track, nutrition on-track, training mode/status.
-- Meaningful connection status (done/planned/missed).
-- Risk check: pain (0-10) + location + red-flag symptom (yes/no).
-- One next action with time.
-- Midday optional:
-- One optional line: focus/hunger note, calendar pressure, other context.
-- Afternoon required:
-- Energy + stress + reset status.
-- Hydration progress + quick nutrition update.
-- Training type/status and risk check (pain/location/red-flag).
-- Biggest friction + one concrete action with time.
-- Afternoon optional:
-- One optional line: mood/focus/context.
+- Daytime required:
+- Carryover block when needed (prior evening missed, unresolved unknowns, or open follow-ups).
+- Readiness color + energy + stress now.
+- Hydration status and nutrition/training status.
+- Training mode token (`Train:<mode>`) + fallback rung (`A/B/C`) for remaining day.
+- Schedule constraints and biggest friction.
+- Concrete remainder-of-day execution plan with timing sequence.
+- Top risk + if-then fallback.
+- Daytime optional:
+- One optional line: mood/readiness note, extra context, or schedule nuance.
 - Evening required:
+- Execution recap against daytime plan (what completed, what slipped, why).
 - Sleep score (`0-4`), nutrition score (`0-3`), training score (`0-3`), total score (`0-10`).
 - Readiness trend, peak stress + reset completion.
 - Hydration sufficiency and connection completion.
 - Risk/safety: peak pain (0-10) + location + red-flag symptom (yes/no).
 - Reflection: what happened (2), what worked (1), friction (1), one change for tomorrow.
+- Tomorrow preview (top 1-3 actions).
+- One before-bed goal with timing.
 - Evening optional:
 - One optional line: alcohol/cannabis or extra context.
 
@@ -104,24 +86,26 @@
 - `Unknown` is allowed only when Austin explicitly says it is unknown and gives a reason.
 - Write as `Unknown - <reason>`.
 - Do not auto-fill unknown for missing data.
-- If a required field is `Unknown`, create a forced follow-up in the next check-in.
+- If a required field is `Unknown`, create a forced follow-up in the next touch.
 
 ## What Pepper does
-- Builds a context-aware prompt for the current day-part in Discord.
+- Builds a context-aware prompt for the current touch in Discord.
 - Parses freeform replies into concise structured bullets.
 - Asks follow-ups only for missing required fields.
 - Captures durable user preference changes in `profiles/austin-preferences.yaml`.
-- Computes coaching output at each check-in:
-  - Morning/midday/afternoon: coaching read + next actions.
-  - Evening: computed scorecard + why + insightful read + tomorrow plan.
+- Computes coaching output at each touch:
+  - Daytime: coaching read + remainder-of-day next actions.
+  - Evening: computed scorecard + why + insightful read + tomorrow preview + before-bed goal lock-in.
 - Redacts sensitive health details before writing.
-- Writes or updates day-part files:
+- Writes or updates canonical daily files:
+- `journals/YYYY-MM-DD-daytime.md`
+- `journals/YYYY-MM-DD-evening.md`
+- Keeps legacy compatibility for historical context reads:
 - `journals/YYYY-MM-DD-morning.md`
 - `journals/YYYY-MM-DD-midday.md`
 - `journals/YYYY-MM-DD-afternoon.md`
-- `journals/YYYY-MM-DD-evening.md`
-- Commits and pushes with day-part commit messages.
-- For material user updates between check-ins, updates the active day-part journal file and commits a follow-up note.
+- Commits and pushes with touch-specific commit messages.
+- For material user updates between touches, updates the active daily journal file and commits a follow-up note.
 
 ## Scoring and anti-all-or-nothing rules
 - Use only this model: `total 0-10 = sleep 0-4 + nutrition 0-3 + training 0-3`.
@@ -133,17 +117,17 @@
 - Track weekly trend, not single-day perfection.
 
 ## Modifier trigger rules (short, explicit)
-- Readiness Yellow threshold: `Yellow` for >=2 consecutive check-ins or energy <=2 -> fallback ladder (`A` then `B` then `C`) + bedtime protection for next 24h.
+- Readiness Yellow threshold: `Yellow` for >=2 consecutive touches or energy <=2 -> fallback ladder (`A` then `B` then `C`) + bedtime protection for next 24h.
 - Readiness Red threshold: any `Red` or energy =1 -> recovery-only day, no high-intensity training.
-- Stress threshold: stress >=4/5 -> run 10-minute reset within 60 minutes; if still >=4 at next check-in, switch to Busy Day mode.
+- Stress threshold: stress >=4/5 -> run 10-minute reset within 60 minutes; if still >=4 at next touch, switch to Busy Day mode.
 - Hydration misses: dark urine or missed 1L by noon -> same-day hydration recovery; if >=2 misses in a week, enforce fixed AM + pre-noon water blocks.
 - Connection misses: no meaningful 10+ minute connection for 2 consecutive days -> schedule next-day connection block before 6pm.
 - Pain/red-flag escalation: red-flag yes or pain >=7 -> urgent escalation now. Pain 4-6 for >48h (or pain >=3 for 3+ days) -> clinician-soon escalation.
 
 ## Escalation scripts
 - Coaching escalation:
-- If one check-in is missed, run recovery behavior on next check-in.
-- If two check-ins are missed in a row, send restart prompt with one easy action.
+- If one touch is missed, run recovery behavior on next touch.
+- If both touches are missed in one day, send restart prompt with one easy action.
 - If adherence is below `6/10` for 3 consecutive days, run Busy Day mode for 48 hours.
 - If 7-day average is below `7/10`, keep goals unchanged and reduce friction instead of adding new goals.
 - Health-risk escalation scripts:

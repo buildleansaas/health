@@ -2,7 +2,7 @@
 
 - Status: Deprecated on 2026-02-20.
 - Do not use for new check-ins.
-- Use active question sets: `templates/morning-checkin-questions.md`, `templates/midday-checkin-questions.md`, `templates/evening-recap-questions.md`.
+- Active question guides: `templates/daytime-checkin-questions.md` and `templates/evening-recap-questions.md`.
 - Active scoring model: `total 0-10 = sleep 0-4 + nutrition 0-3 + training 0-3`.
 
 ## Legacy question set (historical reference)

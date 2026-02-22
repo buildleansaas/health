@@ -1,10 +1,10 @@
 # Discord Journal Workflow (Pepper)
 
 ## Goal
-- Run Discord check-ins across morning, midday, afternoon, and evening.
-- Convert replies into structured day-part journal files.
+- Run Discord check-ins in a 2-touch loop: daytime + evening.
+- Convert replies into structured daily journal files.
 - Apply modifier-trigger coaching logic without changing score math.
-- Commit and push each completed check-in entry.
+- Commit and push each completed touch entry.
 
 ## System source
 - Canonical map: `docs/SYSTEM_SOURCE_OF_TRUTH.md`
@@ -14,28 +14,34 @@
 - Meal logistics playbook: `docs/AUSTIN_MEAL_PREP_PLAYBOOK.md`
 
 ## Journal files (per local day, America/New_York)
+- Canonical outputs:
+- `journals/YYYY-MM-DD-daytime.md`
+- `journals/YYYY-MM-DD-evening.md`
+- Legacy history compatibility (read/backfill only):
 - `journals/YYYY-MM-DD-morning.md`
 - `journals/YYYY-MM-DD-midday.md`
 - `journals/YYYY-MM-DD-afternoon.md`
-- `journals/YYYY-MM-DD-evening.md`
 - Weekly file: `weekly/YYYY-[W]WW.md`
 
 ## End-to-end flow
-1. Pepper reads context (today + yesterday files, prior coach notes, unresolved follow-ups, preference profile) and generates `3-6` targeted prompts for the current day-part.
+1. Pepper reads context (today + yesterday files, prior coach notes, unresolved follow-ups, preference profile) and generates `3-6` targeted prompts for the current touch.
 2. Austin replies in freeform text.
 3. Pepper asks follow-ups only for missing required fields.
 4. Pepper captures durable preference updates in `profiles/austin-preferences.yaml` when Austin changes cadence/tone/rules.
-5. Pepper computes the coaching output from Austin's narrative:
-   - Morning/midday/afternoon: concise coaching read + next actions.
-   - Evening: computed scorecard + why + insightful read + tomorrow plan.
+5. Pepper computes coaching output from Austin's narrative:
+   - Daytime: concise coaching read + remainder-of-day actions.
+   - Evening: execution recap + computed scorecard + why + insightful read + tomorrow preview + before-bed goal.
 6. Pepper redacts sensitive medical details.
 7. Pepper formats content with the matching template.
-8. Pepper writes or updates day-part file in `journals/`.
+8. Pepper writes or updates touch file in `journals/`.
 9. Pepper commits and pushes.
 
 ## Source templates
-- Questions: `templates/morning-checkin-questions.md`, `templates/midday-checkin-questions.md`, `templates/afternoon-checkin-questions.md`, `templates/evening-recap-questions.md`
-- Entries: `templates/morning-checkin.md`, `templates/midday-checkin.md`, `templates/afternoon-checkin.md`, `templates/evening-recap.md`
+- Active question guides: `templates/daytime-checkin-questions.md`, `templates/evening-recap-questions.md`
+- Active entry templates: `templates/daytime-checkin.md`, `templates/evening-recap.md`
+- Legacy/deprecated (historical/backfill only):
+- `templates/morning-checkin.md`, `templates/midday-checkin.md`, `templates/afternoon-checkin.md`
+- `templates/morning-checkin-questions.md`, `templates/midday-checkin-questions.md`, `templates/afternoon-checkin-questions.md`
 - Weekly: `templates/weekly-review.md`, `templates/weekly-recap.md`
 
 ## Prompt execution rules (anti-overwhelm)
@@ -43,7 +49,7 @@
 - Ask `3-6` targeted prompts, not static forms.
 - Prioritize required fields tied to unresolved friction and current risk.
 - Ask optional fields as one optional line only.
-- Keep each check-in answerable in under 90 seconds.
+- Keep each touch answerable in under 90 seconds.
 - If something is missing, ask only for the missing required field.
 
 ## Standard training mode enum (use everywhere)
@@ -79,51 +85,32 @@
 - Austin target: `7/10+` average (with push toward `8/10+`).
 
 ## Required fields matrix (no tables)
-- Morning required:
-- Readiness color, energy, wake window hit, sleep quality.
-- Guardrails (caffeine cutoff, last meal cutoff, wind-down).
-- Nutrition + training mode token (`Train:<mode>`) + fallback rung (`A/B/C`).
-- Breakfast + lunch logistics plan for today's day type (`MWF` or `Tue/Thu`) and traffic-proof fallback.
-- Hydration 1L-by-noon plan.
-- Stress + 10-minute reset plan.
-- Meaningful connection plan (10+ minutes, yes/no).
-- Pain (0-10) + location + red-flag symptom (yes/no).
-- Biggest risk + if-then + one non-negotiable.
-- Morning optional:
-- One optional line: awakenings, mood/readiness, schedule constraints.
-- Midday required:
-- Readiness color + energy.
-- Stress + reset done/scheduled.
-- Hydration (urine color + 1L by noon yes/no).
-- Guardrails on-track, nutrition on-track, training mode/status.
-- Breakfast executed (`Yes/Partial/No`) + lunch plan/status + fallback intent (`Intentional/Impulsive/None` when applicable).
-- Connection status (done/planned/missed).
-- Pain (0-10) + location + red-flag symptom (yes/no).
-- One next action with time.
-- Midday optional:
-- One optional line: focus/hunger note, calendar pressure, other context.
-- Afternoon required:
-- Energy + stress + reset status.
-- Hydration progress + quick nutrition update.
-- Lunch execution (`Yes/Partial/No`) + no-microwave adherence (`Yes/No`, reason if `No`).
-- Training type/status and risk check (pain/location/red-flag).
-- Biggest friction + one concrete action with time.
-- Afternoon optional:
-- One optional line: mood/focus/context.
+- Daytime required:
+- Carryover block when needed (prior evening missed, unresolved unknowns, open follow-ups).
+- Readiness color + energy + stress now.
+- Hydration status, nutrition/training status, and training mode token + fallback rung.
+- Schedule constraints and biggest friction.
+- One concrete remainder-of-day plan with times.
+- Top risk + if-then fallback.
+- Daytime optional:
+- One optional line: extra context or schedule nuance.
 - Evening required:
+- Execution recap vs daytime plan.
 - Sleep score (`0-4`), nutrition score (`0-3`), training score (`0-3`), total score (`0-10`).
 - Readiness trend, peak stress + reset completion.
 - Hydration sufficiency + connection completion.
 - Meal logistics outcomes: breakfast/lunch execution + fallback chain use + no-microwave adherence.
 - Peak pain (0-10) + location + red-flag symptom (yes/no).
 - Reflection: what happened (2), what worked (1), friction (1), one change tomorrow.
+- Tomorrow preview (top 1-3).
+- One before-bed goal with timing.
 - Evening optional:
 - One optional line: alcohol/cannabis or extra context.
 
 ## Trigger handling (short)
-- Readiness Yellow: `Yellow` >=2 consecutive check-ins or energy <=2 -> fallback ladder (`A` then `B` then `C`) + bedtime protection for 24h.
+- Readiness Yellow: `Yellow` >=2 consecutive touches or energy <=2 -> fallback ladder (`A` then `B` then `C`) + bedtime protection for 24h.
 - Readiness Red: any `Red` or energy =1 -> recovery-only day and no high-intensity training.
-- Stress: stress >=4 -> do 10-minute reset within 60 minutes; if still >=4 next check-in, shift to Busy Day mode.
+- Stress: stress >=4 -> do 10-minute reset within 60 minutes; if still >=4 at next touch, shift to Busy Day mode.
 - Hydration miss: dark urine or missed 1L by noon; if >=2 misses in a week, enforce AM + pre-noon hydration blocks.
 - Connection miss: missed 10+ minute meaningful connection for 2 consecutive days -> schedule next-day block before 6pm.
 - Pain/red-flag: red-flag yes or pain >=7 -> urgent escalation now. Pain 4-6 >48h (or pain >=3 for 3+ days) -> clinician-soon escalation.
@@ -133,25 +120,20 @@
 - `Unknown` allowed only if explicitly stated by Austin with a reason.
 - Store as `Unknown - <reason>`.
 - Missing required value without explicit unknown -> ask follow-up now.
-- Required value marked `Unknown` -> force follow-up at next check-in.
+- Required value marked `Unknown` -> force follow-up at next touch.
 - Optional fields never block file creation.
 
 ## Commit message conventions
-- Morning:
-- `git add journals/YYYY-MM-DD-morning.md`
-- `git commit -m "journal: YYYY-MM-DD morning check-in"`
-- Midday:
-- `git add journals/YYYY-MM-DD-midday.md`
-- `git commit -m "journal: YYYY-MM-DD midday check-in"`
-- Afternoon:
-- `git add journals/YYYY-MM-DD-afternoon.md`
-- `git commit -m "journal: YYYY-MM-DD afternoon check-in"`
+- Daytime:
+- `git add journals/YYYY-MM-DD-daytime.md`
+- `git commit -m "journal: YYYY-MM-DD daytime check-in"`
 - Evening:
 - `git add journals/YYYY-MM-DD-evening.md`
 - `git commit -m "journal: YYYY-MM-DD evening recap"`
 - Weekly:
 - `git add weekly/YYYY-[W]WW.md`
 - `git commit -m "journal: YYYY-[W]WW weekly recap"`
+- Legacy backfill entries keep the legacy part name in commit message when used.
 
 ## Safety and redaction
 - Do not store sensitive medical details.
@@ -168,11 +150,9 @@
 - If message date is ambiguous after midnight, ask for explicit date.
 
 ## Minimum execution standard
+- Every active day has a daytime check-in file.
 - Every active day ends with an evening recap file.
-- Morning is required.
-- Midday is required.
-- Afternoon is required.
 - Weekly recap is required once per week.
-- Every check-in file includes a Pepper coaching response block.
-- Evening recap includes Pepper-computed scores + why + insightful read + tomorrow plan.
-- Material user updates between check-ins should be appended to the active day-part journal file before end of day.
+- Every touch file includes a Pepper coaching response block.
+- Evening recap includes Pepper-computed scores + why + insightful read + tomorrow preview + before-bed goal.
+- Material user updates between touches should be appended to the active daily journal file before end of day.

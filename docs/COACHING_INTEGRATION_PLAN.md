@@ -11,7 +11,7 @@
 - Track meal logistics adherence as a nutrition execution modifier: breakfast/lunch plan execution, no-microwave preference, and fallback intent.
 - Prioritize adherence trend over single-day perfection.
 - Keep coaching language non-diagnostic and practical.
-- Generate context-aware prompts at each check-in; do not use static forms.
+- Generate context-aware prompts at each touch; do not use static forms.
 
 ## Meal logistics source and scope
 - Meal logistics source doc: `docs/AUSTIN_MEAL_PREP_PLAYBOOK.md`.
@@ -20,9 +20,9 @@
 - Rule: meal logistics data drives prompts, planning, and intervention triggers only; score formula is unchanged.
 
 ## Context-aware check-in generation
-- Before each check-in, read today + yesterday day-part files, prior coach notes, unresolved follow-ups, and `profiles/austin-preferences.yaml`.
+- Before each touch, read today + yesterday files, prior coach notes, unresolved follow-ups, and `profiles/austin-preferences.yaml`.
 - Ask `3-6` targeted prompts based on active risk, open friction, prior commitments, and recent wins.
-- Preserve required captures by day-part with focused follow-up for missing required fields only.
+- Preserve required captures by touch with focused follow-up for missing required fields only.
 - Keep prompts concise and answerable in under 90 seconds.
 
 ## Standard training mode enum (use everywhere)
@@ -42,39 +42,28 @@
 - Avoid late hard HIIT.
 - If evening is tight, favor `A` or `C`.
 
-## Daily check-ins
-- Morning check-in:
-- Capture readiness color + energy, sleep state, and guardrails.
-- Set nutrition + training mode (`Train:<mode>`) + fallback rung (`A/B/C`).
-- Set breakfast and lunch logistics plan for today's day type (`MWF` or `Tue/Thu`) including fallback chain/order if schedule compresses.
-- Set hydration 1L-by-noon plan, stress reset plan, connection plan.
-- Capture pain/location/red-flag status.
-- Midday check-in:
-- Re-rate readiness, energy, stress, hydration sufficiency.
-- Confirm guardrails, nutrition, training mode/status, and connection status.
-- Confirm breakfast execution status and lunch execution plan/status (`Yes/Partial/No`) and whether fallback was intentional.
-- Re-check pain/location/red-flag and set one next action.
-- Afternoon check-in:
-- Re-check energy, stress/reset, hydration progress, and nutrition drift.
-- Confirm training mode/status and pain/location/red-flag status.
-- Re-check lunch execution and no-microwave adherence; set traffic-proof action if evening constraints tighten.
-- Capture biggest friction and one concrete action with time.
+## Daily touches
+- Daytime check-in:
+- Resolve carryover from prior evening only when needed.
+- Capture readiness/energy/stress, hydration, nutrition/training status, and schedule constraints.
+- Set training mode (`Train:<mode>`) + fallback rung (`A/B/C`).
+- Produce a concrete remainder-of-day execution plan with timing and fallback.
 - Evening recap:
+- Recap execution against daytime plan.
 - Score sleep, nutrition, training, and total.
 - Log modifier outcomes (readiness trend, stress reset, hydration, connection, pain/red-flag).
 - Log meal logistics outcomes: breakfast/lunch execution, fallback chain use (`Intentional/Impulsive/None`), no-microwave adherence.
-- Capture what happened, what worked, friction, and one change for tomorrow.
+- Capture reflection, tomorrow preview, and one before-bed goal.
 
 ## Daily cadence (America/New_York)
-- Morning: within 15-90 minutes of wake.
-- Midday: around late morning to midday.
-- Afternoon: late-afternoon course-correct check-in.
-- Evening: end of day or 60-120 minutes pre-bed.
-- If midday is missed, recover at afternoon.
-- If afternoon is missed, recover at evening recap.
+- Daytime: target `11:30` (window `10:30-14:30`).
+- Evening: target `20:30` (window `19:30-22:30`, or 60-120 minutes pre-bed).
+- If daytime is missed, recover at evening before scoring.
+- If evening is missed, recover at next daytime.
+- If both are missed, restart next daytime with one easy action.
 
 ## Intervention triggers (explicit and short)
-- Readiness Yellow threshold: `Yellow` for >=2 consecutive check-ins or energy <=2.
+- Readiness Yellow threshold: `Yellow` for >=2 consecutive touches or energy <=2.
 - Readiness Red threshold: any `Red` or energy =1.
 - Stress threshold: stress >=4/5.
 - Hydration miss threshold: dark urine or missed 1L by noon; repeated if >=2 days/week.

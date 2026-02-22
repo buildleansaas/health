@@ -9,20 +9,22 @@ This repo runs a practical integrated coaching system for Austin across sleep, n
 - `docs/COACHING_INTEGRATION_PLAN.md`
 
 ## Active templates
-- `templates/morning-checkin.md`
-- `templates/midday-checkin.md`
+- `templates/daytime-checkin.md`
 - `templates/evening-recap.md`
 - `templates/weekly-review.md`
 - `templates/weekly-recap.md`
 
 ## Journal outputs
-- `journals/YYYY-MM-DD-morning.md`
-- `journals/YYYY-MM-DD-midday.md`
+- `journals/YYYY-MM-DD-daytime.md`
 - `journals/YYYY-MM-DD-evening.md`
 - `weekly/YYYY-[W]WW.md`
 
 ## Scoring model (only model)
 - `total 0-10 = sleep 0-4 + nutrition 0-3 + training 0-3`
+
+## Legacy compatibility
+- Historical 4-touch files remain valid history: `morning`, `midday`, `afternoon`, `evening`.
+- Legacy morning/midday/afternoon templates are retained as deprecated backfill references.
 
 ## Deprecated and historical
 - Deprecated: `templates/daily-recap.md`, `templates/daily-recap-questions.md`, `templates/daily-scorecard.md`

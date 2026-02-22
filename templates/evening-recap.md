@@ -10,6 +10,11 @@ Training mode enum: `Masters Swim`, `Gym LP`, `Home Strength (KB+Pullup+Rings)`,
 Mode token format: `Train:MastersSwim|Train:GymLP|Train:HomeStrength|Train:HIITOnly|Train:MinimumDay|Train:Recovery`.
 Fallback ladder: `A = Home Strength 25-35 min`, `B = HIIT 10-15 min`, `C = Minimum Day 8-12 min`.
 
+## Required Execution Recap vs Daytime Plan
+- Daytime plan completion summary (done / partial / missed):
+- What was completed as planned:
+- What slipped and why:
+
 ## Required Scores
 - Sleep score (0-4):
 - Nutrition score (0-3):
@@ -35,10 +40,20 @@ Fallback ladder: `A = Home Strength 25-35 min`, `B = HIIT 10-15 min`, `C = Minim
 - One change for tomorrow:
 -
 
+## Tomorrow Preview (required)
+- Top 1-3 actions for tomorrow:
+  1)
+  2)
+  3)
+
+## One Before-Bed Goal (required)
+- Before-bed goal (single action):
+- Planned time:
+
 ## Pepper Coach Report (required)
 - Why (wins + score drag):
 - Insightful read (1-2 lines):
-- Tomorrow improvement plan (top 1-3):
+- Tomorrow improvement plan lock-in (top 1-3):
   1)
   2)
   3)

@@ -9,12 +9,10 @@ communication:
   require_feedback: true
   require_tomorrow_actions: true
 cadence:
-  checkins_per_day: 4
+  checkins_per_day: 2
   windows:
-    morning: "08:00"
-    midday: "12:00"
-    afternoon: "16:00"
-    evening: "20:00"
+    daytime: "11:30"
+    evening: "20:30"
 schedule_notes:
   mwf: "Up early, masters swim, then work in town; home for dinner."
   tue_thu: "Up later, work in town, short break, then pool work; home around 19:30."

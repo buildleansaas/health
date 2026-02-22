@@ -2,7 +2,7 @@
 
 ## Canonical active workflow
 - `docs/CONTEXT_AWARE_CHECKINS.md` is the canonical algorithm for context-aware prompt generation and follow-up logic.
-- `docs/COACHING_CRON_SYSTEM.md` is the operating source for check-in cadence, SLA, thresholds, and escalation.
+- `docs/COACHING_CRON_SYSTEM.md` is the operating source for touch cadence, SLA, thresholds, and escalation.
 - `docs/DISCORD_JOURNAL_WORKFLOW.md` is the source for Discord-to-journal execution details.
 - `docs/COACHING_INTEGRATION_PLAN.md` is the behavior framework for scored domains + modifier facets.
 - `docs/AUSTIN_GOAL_SETUP_2026-02-20.md` is the active goal and weekly structure.
@@ -13,19 +13,20 @@
 
 ## Canonical check-in mode
 - Context-aware coaching is the default mode.
-- Before each check-in, read today + yesterday day-part files, prior coach notes, unresolved follow-ups, and the preference profile.
+- Daily loop is two touches: `daytime` then `evening`.
+- Before each touch, read today + yesterday files, prior coach notes, unresolved follow-ups, and the preference profile.
 - Send `3-6` targeted prompts based on current risk, commitments, friction, and wins.
 - Do not send static fixed forms.
 - Preserve journaling integrity by collecting all required captures with focused follow-up for missing required fields.
 
 ## Canonical active templates
-- `templates/morning-checkin.md`
-- `templates/midday-checkin.md`
-- `templates/afternoon-checkin.md`
+- `templates/daytime-checkin.md`
 - `templates/evening-recap.md`
 - `templates/weekly-review.md`
 - `templates/weekly-recap.md`
-- Question sets: `templates/morning-checkin-questions.md`, `templates/midday-checkin-questions.md`, `templates/afternoon-checkin-questions.md`, `templates/evening-recap-questions.md`
+- Question sets: `templates/daytime-checkin-questions.md`, `templates/evening-recap-questions.md`
+- Legacy/deprecated templates retained for historical compatibility: `templates/morning-checkin.md`, `templates/midday-checkin.md`, `templates/afternoon-checkin.md`
+- Legacy/deprecated question guides retained for historical compatibility: `templates/morning-checkin-questions.md`, `templates/midday-checkin-questions.md`, `templates/afternoon-checkin-questions.md`
 
 ## Canonical scoring model (only model)
 - Daily total: `0-10`
@@ -47,5 +48,6 @@
 - User-specific defaults: `docs/AUSTIN_GOAL_SETUP_2026-02-20.md`.
 
 ## Workflow boundary
-- Active execution is four daily day-part check-ins (morning/midday/afternoon/evening) plus weekly recap in `America/New_York` local date boundaries.
+- Active execution is two daily touches (`daytime` and `evening`) plus weekly recap in `America/New_York` local date boundaries.
+- Legacy day-part files (`morning`, `midday`, `afternoon`) remain supported for historical parsing and backfill.
 - Do not modify the scoring formula when adding or adjusting modifier facets.

@@ -7,7 +7,7 @@ You are formatting a day-part journal entry for this repo.
 
 Inputs:
 - Date (local): {{YYYY-MM-DD}}
-- Check-in part: {{morning|midday|afternoon|evening}}
+- Check-in part: {{daytime|evening|morning|midday|afternoon}}
 - Timezone: {{IANA timezone}}
 - Raw Discord answers:
 {{PASTE_RAW_TEXT}}
@@ -16,36 +16,45 @@ Context to read before parsing:
 - docs/CONTEXT_AWARE_CHECKINS.md
 - profiles/austin-preferences.yaml
 - Today day-part files that already exist.
-- Yesterday morning/midday/afternoon/evening files.
-- Prior coach notes and unresolved follow-ups from recent files.
+- Yesterday evening/daytime files.
+- Legacy history files if present: morning/midday/afternoon.
+- Prior coach notes and unresolved follow-ups.
 
 Rules:
-1) `afternoon` is a first-class supported check-in part and must always map to its own template/file.
-2) Select template by check-in part:
-   - morning -> templates/morning-checkin.md
-   - midday -> templates/midday-checkin.md
-   - afternoon -> templates/afternoon-checkin.md
+1) Canonical check-in parts are `daytime` and `evening`.
+2) Legacy aliases `morning|midday|afternoon` are accepted for historical/backfill parsing compatibility.
+3) Normalize part for canonical output unless explicit legacy backfill is requested:
+   - `daytime` -> canonical `daytime`
+   - `evening` -> canonical `evening`
+   - `morning|midday|afternoon` -> canonical `daytime`
+4) Select template by normalized canonical part:
+   - daytime -> templates/daytime-checkin.md
    - evening -> templates/evening-recap.md
-3) Output filename must be:
-   - journals/{{YYYY-MM-DD}}-{{part}}.md
-4) Context-aware ingestion notes:
+5) Output filename must be canonical by default:
+   - journals/{{YYYY-MM-DD}}-daytime.md
+   - journals/{{YYYY-MM-DD}}-evening.md
+6) If explicit historical backfill says to keep legacy part name, use matching deprecated legacy template/file name:
+   - morning -> templates/morning-checkin.md -> journals/{{YYYY-MM-DD}}-morning.md
+   - midday -> templates/midday-checkin.md -> journals/{{YYYY-MM-DD}}-midday.md
+   - afternoon -> templates/afternoon-checkin.md -> journals/{{YYYY-MM-DD}}-afternoon.md
+7) Context-aware ingestion notes:
    - Use recent context to resolve references like "same as earlier", "still pending", or "did it".
-   - Preserve unresolved friction and prior commitments when they are updated in the raw answer.
+   - Preserve unresolved friction and prior commitments when they are updated in raw answer.
    - Do not invent details that are not present in raw text or explicit recent context.
-5) Required-field behavior:
+8) Required-field behavior:
    - If a required field is missing, ask a follow-up question for only that missing field.
    - Do not ask about optional fields.
-6) Unknown handling:
+9) Unknown handling:
    - `Unknown` is allowed only if Austin explicitly says unknown and gives a reason.
    - Write as `Unknown - <reason>`.
    - Do not auto-fill Unknown for missing fields.
    - If a required field is `Unknown`, include it in "Next-check-in follow-up".
-7) Redact sensitive medical info:
+10) Redact sensitive medical info:
    - meds/doses -> [medication redacted]
    - diagnoses/conditions -> [health detail redacted]
    - lab/vitals -> [health metric redacted]
-8) Keep wording concise and behavioral.
-9) Recognize training mode enum from raw text:
+11) Keep wording concise and behavioral.
+12) Recognize training mode enum from raw text:
    - Canonical display values:
      - `Masters Swim`
      - `Gym LP`
@@ -72,44 +81,35 @@ Rules:
      - `B = HIIT 10-15 min`
      - `C = Minimum Day 8-12 min`
    - If training is mentioned but mode is ambiguous, ask one follow-up for exact mode token.
-10) Always include a Pepper coaching block in the journal output:
-   - Morning/midday/afternoon: short coaching read + next 1-3 actions.
-   - Evening: computed scores + why + insightful read + tomorrow plan.
+13) Always include a Pepper coaching block in the journal output:
+   - Daytime: short coaching read + remainder-of-day next 1-3 actions.
+   - Evening: computed scores + why + insightful read + tomorrow preview + before-bed goal.
+14) Keep scoring model unchanged everywhere:
+   - `total 0-10 = sleep 0-4 + nutrition 0-3 + training 0-3`.
 
-Required fields by part:
-- Morning:
-  - readiness color, energy, wake window hit, sleep quality
-  - caffeine cutoff, last meal cutoff, wind-down start
-  - nutrition plan, training mode, fallback rung (`A/B/C`)
-  - hydration 1L-by-noon plan
-  - stress + reset plan
-  - meaningful connection plan
-  - pain (0-10) + location + red-flag symptom
-  - biggest risk + if-then response + one non-negotiable
-- Midday:
-  - readiness color + energy
-  - stress + reset done/scheduled
-  - hydration status (urine color + 1L by noon yes/no)
-  - guardrails on-track, nutrition on-track, training mode/status
-  - meaningful connection status
-  - pain (0-10) + location + red-flag symptom
-  - one next action with timing
-- Afternoon:
-  - energy + stress + reset status
-  - hydration progress + quick nutrition update
-  - training mode/status + pain/location/red-flag risk check
-  - biggest friction + one concrete action with timing
+Required fields by canonical part:
+- Daytime (applies to `daytime` and legacy aliases when normalized):
+  - carryover block only when needed (prior evening missed, unresolved unknowns, open follow-ups)
+  - readiness color + energy + stress
+  - hydration status + nutrition/training status
+  - training mode token + fallback rung (`A/B/C`)
+  - schedule constraints + biggest friction
+  - remainder-of-day execution plan with timing sequence
+  - top risk + if-then fallback
 - Evening:
+  - execution recap vs daytime plan
   - sleep score (0-4), nutrition score (0-3), training score (0-3), total score (0-10)
   - readiness trend, peak stress + reset completion
   - hydration sufficiency + meaningful connection completion
   - peak pain (0-10) + location + red-flag symptom
-  - what happened, what worked, friction, one change for tomorrow
+  - reflection: what happened, what worked, friction, one change for tomorrow
+  - tomorrow preview (top 1-3 actions)
+  - one before-bed goal with timing
 
 Output format:
 - First: "Follow-up questions (now)" section (only if required fields are missing).
 - Second: "Next-check-in follow-up" section (only if required fields are `Unknown`).
-- Third: "Journal markdown" section with final file content for journals/{{YYYY-MM-DD}}-{{part}}.md.
+- Third: "Journal markdown" section with final file content.
 ```
 
 ## Rubric (Self-Check Before Final Output)
@@ -117,6 +117,6 @@ Output format:
 - Fidelity (0-5): no invented facts.
 - Actionability (0-5): concrete next action captured.
 - Safety (0-5): sensitive health info redacted.
-- Format (0-5): correct day-part template and filename.
+- Format (0-5): correct template and filename behavior.
 
 Minimum acceptable total: 21/25.

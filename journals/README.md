@@ -1,21 +1,20 @@
 # Journals
 
-Create separate files per day-part:
+Create canonical daily files:
+- `journals/YYYY-MM-DD-daytime.md`
+- `journals/YYYY-MM-DD-evening.md`
+
+Legacy history compatibility (read/backfill only):
 - `journals/YYYY-MM-DD-morning.md`
 - `journals/YYYY-MM-DD-midday.md`
 - `journals/YYYY-MM-DD-afternoon.md`
-- `journals/YYYY-MM-DD-evening.md`
 
-Use day-part templates:
-- `templates/morning-checkin.md`
-- `templates/midday-checkin.md`
-- `templates/afternoon-checkin.md`
+Use active day templates:
+- `templates/daytime-checkin.md`
 - `templates/evening-recap.md`
 
-Use Discord question templates:
-- `templates/morning-checkin-questions.md`
-- `templates/midday-checkin-questions.md`
-- `templates/afternoon-checkin-questions.md`
+Use active Discord question guides:
+- `templates/daytime-checkin-questions.md`
 - `templates/evening-recap-questions.md`
 
 Integrated scoring model:
@@ -25,9 +24,9 @@ Integrated scoring model:
 - Training `0-3`
 - `6/10+` counts as a successful day
 
-Coaching response standard (required in each day-part file):
-- Morning/midday: Pepper coaching read + top actions.
-- Evening: Pepper-computed scores + why + insightful read + tomorrow plan.
+Coaching response standard (required in each daily file):
+- Daytime: Pepper coaching read + remainder-of-day actions.
+- Evening: Pepper-computed scores + why + insightful read + tomorrow preview + before-bed goal.
 
 Weekly review files:
 - `weekly/YYYY-[W]WW.md` (example: `2026-W08.md`)
