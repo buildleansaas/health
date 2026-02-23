@@ -31,24 +31,27 @@
 - Include if prior evening was missed.
 - Include unresolved required fields marked `Unknown - <reason>`.
 - Include open follow-ups not yet closed.
-3. Extract unresolved friction:
+3. Build daytime baseline from prior evening when present:
+- Extract the prior evening "tomorrow execution plan" as today's starting baseline.
+- Ask for reality-day changes (schedule shifts, energy changes, new friction) and adjust the plan.
+4. Extract unresolved friction:
 - Repeated blockers.
 - Missed actions from prior touch.
 - Missed touches or incomplete recoveries.
 - Breakfast/lunch execution misses and impulsive fast-food events.
-4. Extract prior commitments:
+5. Extract prior commitments:
 - Remainder-of-day plan commitments and non-negotiables.
 - Training mode + fallback rung (`A/B/C`).
 - Hydration, reset, and connection commitments.
-5. Extract risk signals:
+6. Extract risk signals:
 - Sleep guardrail drift.
 - Hydration misses.
 - Training risk or pain trend.
 - Stress escalation and red-flag status.
-6. Extract wins to reinforce:
+7. Extract wins to reinforce:
 - Completed commitments.
 - Positive trend changes.
-7. Rank top priorities for this touch:
+8. Rank top priorities for this touch:
 - First: unresolved risk or missing required capture.
 - Second: highest-impact next action.
 - Third: reinforcement to sustain momentum.
@@ -62,11 +65,12 @@
 ## Required captures for journaling integrity
 - Daytime:
 - Carryover resolution block when needed (prior evening missed, open unknowns, open follow-ups).
+- Prior evening tomorrow-plan baseline (when present) + reality-day changes.
 - Readiness color + energy + stress.
 - Hydration status and nutrition/training status.
 - Training mode token (`Train:<mode>`) + fallback rung (`A/B/C`) for remaining day.
 - Schedule constraints + biggest friction.
-- Remainder-of-day execution plan with timing sequence.
+- Remainder-of-day execution plan with timing sequence (updated to match reality-day changes).
 - Top risk + if-then fallback.
 - Evening:
 - Execution recap against daytime plan.
@@ -76,7 +80,9 @@
 - Meal logistics outcomes: breakfast/lunch execution, fallback use (`Intentional/Impulsive/None`), no-microwave adherence.
 - Peak pain (0-10) + location + red-flag symptom.
 - Reflection: what happened, what worked, friction, one change for tomorrow.
-- Tomorrow preview (top 1-3 actions).
+- Tomorrow schedule/context from Austin (hard windows, key constraints, likely friction).
+- Explicit output 1: tomorrow preview (top 1-3 actions).
+- Explicit output 2: full tomorrow execution plan tailored to schedule/context (morning/daytime/evening blocks + fallback).
 - One before-bed goal with timing.
 
 ## Follow-up logic for missing required data
@@ -97,7 +103,9 @@
 
 ## Output standard
 - Send one concise Discord message with targeted prompts.
-- After reply, return concise coaching read + top 1-3 actions.
+- After reply, return concise coaching read with touch-specific output:
+- Daytime: updated remainder-of-day execution plan and top actions.
+- Evening: score + why, then explicit output 1 (tomorrow preview top actions) and explicit output 2 (full tomorrow execution plan with morning/daytime/evening blocks + fallback).
 - Write/update canonical daily file once required captures are complete or correctly marked as unknown:
 - `journals/YYYY-MM-DD-daytime.md`
 - `journals/YYYY-MM-DD-evening.md`

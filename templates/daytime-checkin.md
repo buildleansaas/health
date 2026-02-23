@@ -10,10 +10,13 @@ Training mode enum: `Masters Swim`, `Gym LP`, `Home Strength (KB+Pullup+Rings)`,
 Mode token format: `Train:MastersSwim|Train:GymLP|Train:HomeStrength|Train:HIITOnly|Train:MinimumDay|Train:Recovery`.
 Fallback ladder: `A = Home Strength 25-35 min`, `B = HIIT 10-15 min`, `C = Minimum Day 8-12 min`.
 
-## 1) Carryover From Prior Night (required when applicable)
+## 1) Carryover + Prior-Night Plan Baseline (required when applicable)
+- Prior evening tomorrow-plan baseline available (yes/no):
+- Baseline summary from prior evening:
+- Reality-day changes since last night (schedule, energy, friction):
 - Prior evening missed or unresolved follow-up present (yes/no):
 - Carryover items to resolve now:
-- Carryover resolved in this touch (yes/no + note):
+- Carryover/baseline update resolved in this touch (yes/no + note):
 
 ## 2) Current Status Snapshot (required)
 - Recovery readiness now (Green/Yellow/Red):
@@ -40,7 +43,7 @@ Fallback ladder: `A = Home Strength 25-35 min`, `B = HIIT 10-15 min`, `C = Minim
 
 ## 6) Pepper Coach Response (required)
 - Daytime coaching read (1-2 lines):
-- Next 1-3 actions for remainder of day:
+- Next 1-3 actions for remainder of day (baseline-adjusted):
   1)
   2)
   3)

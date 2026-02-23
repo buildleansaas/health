@@ -40,23 +40,27 @@ Fallback ladder: `A = Home Strength 25-35 min`, `B = HIIT 10-15 min`, `C = Minim
 - One change for tomorrow:
 -
 
-## Tomorrow Preview (required)
-- Top 1-3 actions for tomorrow:
-  1)
-  2)
-  3)
+## Tomorrow Schedule + Context (required input capture)
+- Hard commitments/time windows tomorrow:
+- Key schedule constraints tomorrow:
+- Likely friction tomorrow:
 
 ## One Before-Bed Goal (required)
 - Before-bed goal (single action):
 - Planned time:
 
-## Pepper Coach Report (required)
+## Pepper Coach Report (required, after scoring)
 - Why (wins + score drag):
 - Insightful read (1-2 lines):
-- Tomorrow improvement plan lock-in (top 1-3):
+- Explicit output 1: Tomorrow Preview (top 1-3 actions):
   1)
   2)
   3)
+- Explicit output 2: Full Tomorrow Execution Plan (tailored to schedule/context):
+  - Morning block:
+  - Daytime block:
+  - Evening block:
+  - Fallback if schedule collapses:
 
 ## Optional
 - Optional: alcohol/cannabis or extra context notes.

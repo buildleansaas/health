@@ -15,9 +15,13 @@
 - Context-aware coaching is the default mode.
 - Daily loop is two touches: `daytime` then `evening`.
 - Before each touch, read today + yesterday files, prior coach notes, unresolved follow-ups, and the preference profile.
+- Daytime touch uses prior evening tomorrow-plan output as baseline when available, then adjusts for reality-day changes.
 - Send `3-6` targeted prompts based on current risk, commitments, friction, and wins.
 - Do not send static fixed forms.
 - Preserve journaling integrity by collecting all required captures with focused follow-up for missing required fields.
+- Evening touch output contract after scoring is explicit:
+- Output 1: tomorrow preview (top actions).
+- Output 2: full tomorrow execution plan tailored to schedule constraints (morning/daytime/evening blocks + fallback).
 
 ## Canonical active templates
 - `templates/daytime-checkin.md`

@@ -39,6 +39,7 @@ Rules:
    - afternoon -> templates/afternoon-checkin.md -> journals/{{YYYY-MM-DD}}-afternoon.md
 7) Context-aware ingestion notes:
    - Use recent context to resolve references like "same as earlier", "still pending", or "did it".
+   - For daytime parsing, use prior evening "tomorrow execution plan" as baseline when present, then capture reality-day changes.
    - Preserve unresolved friction and prior commitments when they are updated in raw answer.
    - Do not invent details that are not present in raw text or explicit recent context.
 8) Required-field behavior:
@@ -83,13 +84,14 @@ Rules:
    - If training is mentioned but mode is ambiguous, ask one follow-up for exact mode token.
 13) Always include a Pepper coaching block in the journal output:
    - Daytime: short coaching read + remainder-of-day next 1-3 actions.
-   - Evening: computed scores + why + insightful read + tomorrow preview + before-bed goal.
+   - Evening (after scoring): computed scores + why + insightful read + explicit output 1 (tomorrow preview top 1-3 actions) + explicit output 2 (full tomorrow execution plan tailored to schedule constraints, with morning/daytime/evening blocks + fallback) + before-bed goal.
 14) Keep scoring model unchanged everywhere:
    - `total 0-10 = sleep 0-4 + nutrition 0-3 + training 0-3`.
 
 Required fields by canonical part:
 - Daytime (applies to `daytime` and legacy aliases when normalized):
   - carryover block only when needed (prior evening missed, unresolved unknowns, open follow-ups)
+  - prior evening tomorrow-plan baseline (when present) + reality-day changes
   - readiness color + energy + stress
   - hydration status + nutrition/training status
   - training mode token + fallback rung (`A/B/C`)
@@ -103,7 +105,9 @@ Required fields by canonical part:
   - hydration sufficiency + meaningful connection completion
   - peak pain (0-10) + location + red-flag symptom
   - reflection: what happened, what worked, friction, one change for tomorrow
-  - tomorrow preview (top 1-3 actions)
+  - tomorrow schedule/context from Austin (hard windows, constraints, likely friction)
+  - explicit output 1: tomorrow preview (top 1-3 actions)
+  - explicit output 2: full tomorrow execution plan tailored to schedule/context (morning/daytime/evening blocks + fallback)
   - one before-bed goal with timing
 
 Output format:

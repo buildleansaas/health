@@ -29,8 +29,8 @@
 3. Pepper asks follow-ups only for missing required fields.
 4. Pepper captures durable preference updates in `profiles/austin-preferences.yaml` when Austin changes cadence/tone/rules.
 5. Pepper computes coaching output from Austin's narrative:
-   - Daytime: concise coaching read + remainder-of-day actions.
-   - Evening: execution recap + computed scorecard + why + insightful read + tomorrow preview + before-bed goal.
+   - Daytime: concise coaching read + remainder-of-day actions, using prior-evening tomorrow plan as baseline when available and adjusting for reality-day changes.
+   - Evening: execution recap + computed scorecard + why + insightful read + explicit output 1 (tomorrow preview top actions) + explicit output 2 (full tomorrow execution plan tailored to schedule constraints) + before-bed goal.
 6. Pepper redacts sensitive medical details.
 7. Pepper formats content with the matching template.
 8. Pepper writes or updates touch file in `journals/`.
@@ -87,10 +87,11 @@
 ## Required fields matrix (no tables)
 - Daytime required:
 - Carryover block when needed (prior evening missed, unresolved unknowns, open follow-ups).
+- Prior evening tomorrow-plan baseline (when present) + reality-day adjustments.
 - Readiness color + energy + stress now.
 - Hydration status, nutrition/training status, and training mode token + fallback rung.
 - Schedule constraints and biggest friction.
-- One concrete remainder-of-day plan with times.
+- One concrete remainder-of-day plan with times (updated from baseline when needed).
 - Top risk + if-then fallback.
 - Daytime optional:
 - One optional line: extra context or schedule nuance.
@@ -102,7 +103,9 @@
 - Meal logistics outcomes: breakfast/lunch execution + fallback chain use + no-microwave adherence.
 - Peak pain (0-10) + location + red-flag symptom (yes/no).
 - Reflection: what happened (2), what worked (1), friction (1), one change tomorrow.
-- Tomorrow preview (top 1-3).
+- Tomorrow schedule/context from Austin (hard windows, constraints, likely friction).
+- Explicit output 1: tomorrow preview (top 1-3).
+- Explicit output 2: full tomorrow execution plan tailored to schedule/context (morning/daytime/evening blocks + fallback).
 - One before-bed goal with timing.
 - Evening optional:
 - One optional line: alcohol/cannabis or extra context.
@@ -154,5 +157,5 @@
 - Every active day ends with an evening recap file.
 - Weekly recap is required once per week.
 - Every touch file includes a Pepper coaching response block.
-- Evening recap includes Pepper-computed scores + why + insightful read + tomorrow preview + before-bed goal.
+- Evening recap includes Pepper-computed scores + why + insightful read + explicit tomorrow preview + full tomorrow execution plan (morning/daytime/evening + fallback) + before-bed goal.
 - Material user updates between touches should be appended to the active daily journal file before end of day.

@@ -238,12 +238,15 @@ Example day (America/New_York):
 
 - 11:30 Daytime touch arrives with concise context-aware questions.
 - User replies once.
-- Pepper returns a practical remainder-of-day execution plan with timing (nutrition, hydration, training, reset, connection, and fallback path).
+- Pepper returns a practical remainder-of-day execution plan with timing (nutrition, hydration, training, reset, connection, and fallback path), adjusted from prior-night baseline when needed.
 - 20:30 Night touch arrives.
 - User gives execution recap.
-- Pepper computes and explains score, writes reflection, gives tomorrow preview, and sets one before-bed goal.
+- Pepper computes and explains score, then returns two explicit outputs:
+  - Output 1: tomorrow preview (top actions).
+  - Output 2: full tomorrow execution plan tailored to tomorrow schedule constraints (morning/daytime/evening blocks + fallback).
+- Next-day daytime touch starts from that prior-night plan baseline and adjusts only what changed in reality.
 
-Result: fewer interruptions, same scoring rigor, clearer execution loop.
+Result: fewer interruptions, same scoring rigor, and a tighter night-to-next-day execution loop.
 
 ## 11) Open questions/assumptions to confirm
 

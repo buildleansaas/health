@@ -62,11 +62,12 @@
 ## Required fields matrix (no tables)
 - Daytime required:
 - Carryover block when needed (prior evening missed, unresolved unknowns, or open follow-ups).
+- Prior evening tomorrow-plan baseline (when present) + reality-day changes.
 - Readiness color + energy + stress now.
 - Hydration status and nutrition/training status.
 - Training mode token (`Train:<mode>`) + fallback rung (`A/B/C`) for remaining day.
 - Schedule constraints and biggest friction.
-- Concrete remainder-of-day execution plan with timing sequence.
+- Concrete remainder-of-day execution plan with timing sequence (updated from baseline when needed).
 - Top risk + if-then fallback.
 - Daytime optional:
 - One optional line: mood/readiness note, extra context, or schedule nuance.
@@ -77,7 +78,9 @@
 - Hydration sufficiency and connection completion.
 - Risk/safety: peak pain (0-10) + location + red-flag symptom (yes/no).
 - Reflection: what happened (2), what worked (1), friction (1), one change for tomorrow.
-- Tomorrow preview (top 1-3 actions).
+- Tomorrow schedule/context capture from Austin (hard windows, constraints, likely friction).
+- Explicit output 1: tomorrow preview (top 1-3 actions).
+- Explicit output 2: full tomorrow execution plan (morning/daytime/evening blocks + fallback), tailored to tomorrow schedule/context.
 - One before-bed goal with timing.
 - Evening optional:
 - One optional line: alcohol/cannabis or extra context.
@@ -95,7 +98,7 @@
 - Captures durable user preference changes in `profiles/austin-preferences.yaml`.
 - Computes coaching output at each touch:
   - Daytime: coaching read + remainder-of-day next actions.
-  - Evening: computed scorecard + why + insightful read + tomorrow preview + before-bed goal lock-in.
+  - Evening: computed scorecard + why + insightful read + explicit output 1 (tomorrow preview top actions) + explicit output 2 (full tomorrow execution plan with morning/daytime/evening blocks + fallback) + before-bed goal lock-in.
 - Redacts sensitive health details before writing.
 - Writes or updates canonical daily files:
 - `journals/YYYY-MM-DD-daytime.md`

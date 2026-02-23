@@ -21,6 +21,7 @@
 
 ## Context-aware check-in generation
 - Before each touch, read today + yesterday files, prior coach notes, unresolved follow-ups, and `profiles/austin-preferences.yaml`.
+- For daytime, when prior evening exists, treat the prior evening tomorrow execution plan as baseline and adjust for reality-day changes.
 - Ask `3-6` targeted prompts based on active risk, open friction, prior commitments, and recent wins.
 - Preserve required captures by touch with focused follow-up for missing required fields only.
 - Keep prompts concise and answerable in under 90 seconds.
@@ -45,6 +46,7 @@
 ## Daily touches
 - Daytime check-in:
 - Resolve carryover from prior evening only when needed.
+- Pull forward prior evening tomorrow-plan baseline when present, then adjust for today reality.
 - Capture readiness/energy/stress, hydration, nutrition/training status, and schedule constraints.
 - Set training mode (`Train:<mode>`) + fallback rung (`A/B/C`).
 - Produce a concrete remainder-of-day execution plan with timing and fallback.
@@ -53,7 +55,11 @@
 - Score sleep, nutrition, training, and total.
 - Log modifier outcomes (readiness trend, stress reset, hydration, connection, pain/red-flag).
 - Log meal logistics outcomes: breakfast/lunch execution, fallback chain use (`Intentional/Impulsive/None`), no-microwave adherence.
-- Capture reflection, tomorrow preview, and one before-bed goal.
+- Capture tomorrow schedule/context from Austin (hard windows, constraints, likely friction).
+- After scoring, return two explicit outputs:
+- Output 1: tomorrow preview (top 1-3 actions).
+- Output 2: full tomorrow execution plan tailored to schedule/context (morning/daytime/evening blocks + fallback).
+- Capture reflection and one before-bed goal.
 
 ## Daily cadence (America/New_York)
 - Daytime: target `11:30` (window `10:30-14:30`).
