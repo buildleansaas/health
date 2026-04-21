@@ -26,6 +26,7 @@ def main():
     parser.add_argument("--target", default="-1003555895168")
     parser.add_argument("--thread-id", default="6228")
     parser.add_argument("--account", default="default")
+    parser.add_argument("--tag", default="", help="Filter affirmations to records that include this tag")
     parser.add_argument("--dry-run", action="store_true")
     args = parser.parse_args()
 
@@ -33,15 +34,21 @@ def main():
     if not isinstance(affirmations, list) or not affirmations:
         raise SystemExit("No affirmations found")
 
+    if args.tag:
+        affirmations = [a for a in affirmations if args.tag in (a.get("tags") or [])]
+        if not affirmations:
+            raise SystemExit(f"No affirmations found for tag: {args.tag}")
+
     state_path = Path(args.state)
-    state = {"next_index": 0}
+    state = {}
     if state_path.exists():
         try:
             state = load_json(state_path)
         except Exception:
-            state = {"next_index": 0}
+            state = {}
 
-    start = int(state.get("next_index", 0)) % len(affirmations)
+    state_key = f"next_index::{args.tag or 'all'}"
+    start = int(state.get(state_key, 0)) % len(affirmations)
     selected = [affirmations[(start + i) % len(affirmations)] for i in range(args.count)]
 
     lines = ["Good morning. Read these out loud now:", ""]
@@ -71,7 +78,7 @@ def main():
         return
 
     subprocess.run(cmd, check=True)
-    state["next_index"] = (start + args.count) % len(affirmations)
+    state[state_key] = (start + args.count) % len(affirmations)
     save_json(state_path, state)
 
 
