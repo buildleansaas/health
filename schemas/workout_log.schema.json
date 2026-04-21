@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "workout_log.schema.json",
+  "title": "WorkoutLog",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["started_at", "completed_at", "routine_id", "status"],
+  "properties": {
+    "started_at": { "type": "string", "format": "date-time" },
+    "completed_at": { "type": "string", "format": "date-time" },
+    "routine_id": { "type": "string", "minLength": 1 },
+    "status": { "type": "string", "enum": ["completed", "partial", "skipped"] },
+    "rounds_completed": { "type": "integer", "minimum": 0 },
+    "rpe": { "type": "integer", "minimum": 1, "maximum": 10 },
+    "notes": { "type": "string" }
+  }
+}

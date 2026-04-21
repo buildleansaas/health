@@ -1,0 +1,7 @@
+- [x] Clone/update repository from GitHub.
+- [x] Remove old tracked content and scaffold clean schema-first structure.
+- [x] Seed affirmations from Aura morning affirmations source.
+- [x] Add JSON Schemas, routines, logs examples, and validation script.
+- [x] Run validation script and capture passing output.
+- [ ] Commit and push changes.
+- [ ] Write delivery note with changed files and verification output.

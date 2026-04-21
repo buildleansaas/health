@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "affirmation_log.schema.json",
+  "title": "AffirmationLog",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["timestamp", "affirmation_id", "status"],
+  "properties": {
+    "timestamp": { "type": "string", "format": "date-time" },
+    "affirmation_id": { "type": "string", "minLength": 1 },
+    "status": { "type": "string", "enum": ["read", "skipped"] },
+    "notes": { "type": "string" }
+  }
+}

@@ -1,35 +1,21 @@
-# Austin Integrated Coaching Repo
+# health
 
-This repo runs a practical integrated coaching system for Austin across sleep, nutrition, and training.
+Schema-first health data repo for:
+- affirmations
+- HIIT routines
+- workout + affirmation logs
 
-## Start here
-- `docs/SYSTEM_SOURCE_OF_TRUTH.md`
-- `docs/COACHING_CRON_SYSTEM.md`
-- `docs/DISCORD_JOURNAL_WORKFLOW.md`
-- `docs/COACHING_INTEGRATION_PLAN.md`
+## Quickstart
 
-## Active templates
-- `templates/daytime-checkin.md`
-- `templates/evening-recap.md`
-- `templates/weekly-review.md`
-- `templates/weekly-recap.md`
+```bash
+./scripts/validate.py
+```
 
-## Journal outputs
-- `journals/YYYY-MM-DD-daytime.md`
-- `journals/YYYY-MM-DD-evening.md`
-- `weekly/YYYY-[W]WW.md`
+Validation checks all JSON/JSONL examples against `schemas/*.schema.json`.
 
-## Scoring model (only model)
-- `total 0-10 = sleep 0-4 + nutrition 0-3 + training 0-3`
+## Intents
 
-## Legacy compatibility
-- Historical 4-touch files remain valid history: `morning`, `midday`, `afternoon`, `evening`.
-- Legacy morning/midday/afternoon templates are retained as deprecated backfill references.
-
-## Deprecated and historical
-- Deprecated: `templates/daily-recap.md`, `templates/daily-recap-questions.md`, `templates/daily-scorecard.md`
-- Historical reference: `reports/2026-02-19-sleep-bible.md`
-
-## Safety note
-- This is coaching material, not medical advice.
-- For red flags or persistent decline, escalate to a licensed clinician.
+- Keep data portable and machine-readable.
+- Keep structures minimal but explicit.
+- Log events with timezone-aware timestamps.
+- Support phrase-based routine lookup (see `docs/phrase-mapping.md`).

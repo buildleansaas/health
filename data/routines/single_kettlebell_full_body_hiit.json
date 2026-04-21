@@ -1,0 +1,15 @@
+{
+  "id": "single-kettlebell-full-body-hiit",
+  "name": "Single Kettlebell Full Body HIIT",
+  "difficulty": "intermediate",
+  "equipment": ["kettlebell"],
+  "rounds": 5,
+  "estimated_duration_minutes": 25,
+  "exercises": [
+    { "exercise_id": "kb-swings", "name": "Kettlebell Swings", "work_seconds": 35, "rest_seconds": 25 },
+    { "exercise_id": "kb-goblet-squat", "name": "Goblet Squat", "work_seconds": 35, "rest_seconds": 25 },
+    { "exercise_id": "kb-clean-press", "name": "Clean and Press (Alternating)", "work_seconds": 35, "rest_seconds": 25 },
+    { "exercise_id": "kb-reverse-lunge", "name": "Reverse Lunge (Goblet Hold)", "work_seconds": 35, "rest_seconds": 25 },
+    { "exercise_id": "kb-russian-twist", "name": "Russian Twist", "work_seconds": 35, "rest_seconds": 25 }
+  ]
+}

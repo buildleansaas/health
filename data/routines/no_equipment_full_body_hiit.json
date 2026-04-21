@@ -1,0 +1,15 @@
+{
+  "id": "no-equipment-full-body-hiit",
+  "name": "No Equipment Full Body HIIT",
+  "difficulty": "intermediate",
+  "equipment": [],
+  "rounds": 4,
+  "estimated_duration_minutes": 24,
+  "exercises": [
+    { "exercise_id": "jumping-jacks", "name": "Jumping Jacks", "work_seconds": 40, "rest_seconds": 20 },
+    { "exercise_id": "bodyweight-squats", "name": "Bodyweight Squats", "work_seconds": 40, "rest_seconds": 20 },
+    { "exercise_id": "mountain-climbers", "name": "Mountain Climbers", "work_seconds": 40, "rest_seconds": 20 },
+    { "exercise_id": "push-ups", "name": "Push-ups", "work_seconds": 40, "rest_seconds": 20 },
+    { "exercise_id": "high-knees", "name": "High Knees", "work_seconds": 40, "rest_seconds": 20 }
+  ]
+}

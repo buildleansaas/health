@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "exercise.schema.json",
+  "title": "Exercise",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "name", "category", "work_interval_seconds", "rest_interval_seconds"],
+  "properties": {
+    "id": { "type": "string", "minLength": 1 },
+    "name": { "type": "string", "minLength": 1 },
+    "category": { "type": "string", "enum": ["cardio", "strength", "mobility", "core", "conditioning"] },
+    "equipment": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "default": []
+    },
+    "work_interval_seconds": { "type": "integer", "minimum": 5 },
+    "rest_interval_seconds": { "type": "integer", "minimum": 5 },
+    "notes": { "type": "string" }
+  }
+}
