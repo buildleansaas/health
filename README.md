@@ -26,6 +26,14 @@ Expected output:
 VALIDATION PASSED
 ```
 
+## Morning affirmation sender (cron-ready)
+
+```bash
+python3 scripts/send_morning_affirmations.py --dry-run
+```
+
+Live send is the same command without `--dry-run`.
+
 ## HIIT protocol standard
 Both packaged routines use your preferred template:
 - 8 exercises
