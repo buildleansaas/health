@@ -1,2 +1,3 @@
-{"timestamp":"2026-04-20T08:00:00-04:00","affirmation_id":"aura-001","status":"read","notes":"Focused and grounded."}
-{"timestamp":"2026-04-20T08:01:00-04:00","affirmation_id":"aura-002","status":"read"}
+{"timestamp":"2026-04-20T08:00:00-04:00","affirmation_id":"aura-001","status":"hit","voice_confirmation":false,"repetitions":2,"notes":"Read out loud after water + coffee."}
+{"timestamp":"2026-04-20T08:01:00-04:00","affirmation_id":"aura-013","status":"hit","voice_confirmation":true,"repetitions":3,"notes":"Mirror voice extra credit sent."}
+{"timestamp":"2026-04-21T08:00:00-04:00","affirmation_id":"aura-004","status":"miss","voice_confirmation":false,"notes":"Travel morning, resumed later."}

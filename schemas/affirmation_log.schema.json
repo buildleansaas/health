@@ -8,7 +8,9 @@
   "properties": {
     "timestamp": { "type": "string", "format": "date-time" },
     "affirmation_id": { "type": "string", "minLength": 1 },
-    "status": { "type": "string", "enum": ["read", "skipped"] },
+    "status": { "type": "string", "enum": ["hit", "miss", "read", "skipped"] },
+    "voice_confirmation": { "type": "boolean" },
+    "repetitions": { "type": "integer", "minimum": 1 },
     "notes": { "type": "string" }
   }
 }

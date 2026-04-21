@@ -4,7 +4,16 @@
   "title": "Routine",
   "type": "object",
   "additionalProperties": false,
-  "required": ["id", "name", "difficulty", "equipment", "rounds", "estimated_duration_minutes", "exercises"],
+  "required": [
+    "id",
+    "name",
+    "difficulty",
+    "equipment",
+    "rounds",
+    "estimated_duration_minutes",
+    "between_round_rest_seconds",
+    "exercises"
+  ],
   "properties": {
     "id": { "type": "string", "minLength": 1 },
     "name": { "type": "string", "minLength": 1 },
@@ -13,8 +22,16 @@
       "type": "array",
       "items": { "type": "string", "minLength": 1 }
     },
+    "goal_tags": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 }
+    },
     "rounds": { "type": "integer", "minimum": 1 },
+    "rounds_min": { "type": "integer", "minimum": 1 },
+    "rounds_max": { "type": "integer", "minimum": 1 },
     "estimated_duration_minutes": { "type": "integer", "minimum": 1 },
+    "between_round_rest_seconds": { "type": "integer", "minimum": 0 },
+    "execution_notes": { "type": "string" },
     "exercises": {
       "type": "array",
       "minItems": 1,
@@ -26,7 +43,8 @@
           "exercise_id": { "type": "string", "minLength": 1 },
           "name": { "type": "string", "minLength": 1 },
           "work_seconds": { "type": "integer", "minimum": 5 },
-          "rest_seconds": { "type": "integer", "minimum": 5 }
+          "rest_seconds": { "type": "integer", "minimum": 5 },
+          "focus": { "type": "string" }
         }
       }
     }

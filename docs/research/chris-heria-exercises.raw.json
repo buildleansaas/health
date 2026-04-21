@@ -1,0 +1,595 @@
+{
+  "generated_at": "2026-04-21T01:25:11.590760Z",
+  "channel_scope": "Chris Heria YouTube (@CHRISHERIA) plus directly related Chris dumbbell-only uploads for KB transfer",
+  "exercise_count": 20,
+  "exercises": [
+    {
+      "exercise_name": "Push-Up",
+      "equipment": "none",
+      "primary_muscle_groups": [
+        "chest",
+        "triceps",
+        "anterior delts"
+      ],
+      "movement_pattern": "horizontal_push",
+      "qualities": [
+        "strength",
+        "aesthetics"
+      ],
+      "sources": [
+        {
+          "title": "How To Do The Perfect Push Up",
+          "url": "https://www.youtube.com/watch?v=rruHM_sB2Hc"
+        },
+        {
+          "title": "Get a BIGGER CHEST With JUST Push Ups",
+          "url": "https://www.youtube.com/watch?v=zPp-VAi_a24"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "exercise_name": "One-Arm Push-Up",
+      "equipment": "none",
+      "primary_muscle_groups": [
+        "chest",
+        "triceps",
+        "core"
+      ],
+      "movement_pattern": "unilateral_horizontal_push",
+      "qualities": [
+        "strength",
+        "explosiveness"
+      ],
+      "sources": [
+        {
+          "title": "What 100 One-Arm Push-Ups A Day Does To Your Body",
+          "url": "https://www.youtube.com/watch?v=BvZw1tyna-M"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "exercise_name": "Pull-Up",
+      "equipment": "none",
+      "primary_muscle_groups": [
+        "lats",
+        "biceps",
+        "upper_back"
+      ],
+      "movement_pattern": "vertical_pull",
+      "qualities": [
+        "strength",
+        "aesthetics"
+      ],
+      "sources": [
+        {
+          "title": "How To Do The Perfect Pull Up",
+          "url": "https://www.youtube.com/watch?v=iBtL9nX2qOs"
+        },
+        {
+          "title": "Pull-Ups LVL 1-10 (How To Progress Faster)",
+          "url": "https://www.youtube.com/watch?v=hByjG7mymdw"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "exercise_name": "Muscle-Up",
+      "equipment": "none",
+      "primary_muscle_groups": [
+        "lats",
+        "chest",
+        "triceps",
+        "core"
+      ],
+      "movement_pattern": "pull_to_push_transition",
+      "qualities": [
+        "explosiveness",
+        "strength",
+        "aesthetics"
+      ],
+      "sources": [
+        {
+          "title": "HOW TO MUSCLE UP WITH 3 EASY EXERCISES",
+          "url": "https://www.youtube.com/watch?v=KGGWP695Zx4"
+        },
+        {
+          "title": "How To MUSCLE UP In 5 Min FT. Twan",
+          "url": "https://www.youtube.com/watch?v=QIaWg5nBWE4"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "exercise_name": "Dip (parallel bar)",
+      "equipment": "none",
+      "primary_muscle_groups": [
+        "chest",
+        "triceps",
+        "anterior delts"
+      ],
+      "movement_pattern": "vertical_push",
+      "qualities": [
+        "strength",
+        "aesthetics"
+      ],
+      "sources": [
+        {
+          "title": "5 BEST EXERCISES FOR THE DIP BAR",
+          "url": "https://www.youtube.com/watch?v=1cvGnmDYoXk"
+        },
+        {
+          "title": "100 DIPS CHALLENGE | VLOG 2 S 3",
+          "url": "https://www.youtube.com/watch?v=3WnL3fpRg7k"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "exercise_name": "Handstand",
+      "equipment": "none",
+      "primary_muscle_groups": [
+        "shoulders",
+        "triceps",
+        "core"
+      ],
+      "movement_pattern": "inversion_isometric",
+      "qualities": [
+        "strength",
+        "aesthetics"
+      ],
+      "sources": [
+        {
+          "title": "HOW TO HANDSTAND KICK UP",
+          "url": "https://www.youtube.com/watch?v=XnsM3TLjubY"
+        },
+        {
+          "title": "Do This Routine Every Morning | Handstand",
+          "url": "https://www.youtube.com/watch?v=X6SuKUUghSE"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "exercise_name": "Planche",
+      "equipment": "none",
+      "primary_muscle_groups": [
+        "shoulders",
+        "chest",
+        "triceps",
+        "core"
+      ],
+      "movement_pattern": "straight_arm_push_isometric",
+      "qualities": [
+        "strength",
+        "aesthetics"
+      ],
+      "sources": [
+        {
+          "title": "HOW TO TUCK PLANCHE",
+          "url": "https://www.youtube.com/watch?v=M5il8Jpltt8"
+        },
+        {
+          "title": "How To Full Planche Pushup | 5 Steps",
+          "url": "https://www.youtube.com/watch?v=LSWwofk03_8"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "exercise_name": "Plank",
+      "equipment": "none",
+      "primary_muscle_groups": [
+        "core",
+        "glutes",
+        "shoulders"
+      ],
+      "movement_pattern": "anti_extension_core",
+      "qualities": [
+        "strength",
+        "aesthetics"
+      ],
+      "sources": [
+        {
+          "title": "Do This Plank Routine Every Day | Just 5 Min",
+          "url": "https://www.youtube.com/watch?v=6ONgwzcQIvQ"
+        },
+        {
+          "title": "Do This Every Morning For 6 Pack ABS & Core Strength | Planks Only",
+          "url": "https://www.youtube.com/watch?v=fNO30pPBZDo"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "exercise_name": "Burpee",
+      "equipment": "none",
+      "primary_muscle_groups": [
+        "quads",
+        "chest",
+        "shoulders",
+        "core"
+      ],
+      "movement_pattern": "squat_thrust_conditioning",
+      "qualities": [
+        "explosiveness",
+        "strength"
+      ],
+      "sources": [
+        {
+          "title": "Burpees LVL 1-10 (How To Progress Faster)",
+          "url": "https://www.youtube.com/watch?v=1IhPhkoBc_M"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "exercise_name": "L-Sit Hold",
+      "equipment": "none",
+      "primary_muscle_groups": [
+        "abs",
+        "hip_flexors",
+        "triceps"
+      ],
+      "movement_pattern": "core_isometric",
+      "qualities": [
+        "strength",
+        "aesthetics"
+      ],
+      "sources": [
+        {
+          "title": "Why You Can\u2019t L-Sit Hold (How To Step By Step)",
+          "url": "https://www.youtube.com/watch?v=Qv6j5gZyBQ8"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "exercise_name": "Front Lever",
+      "equipment": "none",
+      "primary_muscle_groups": [
+        "lats",
+        "core",
+        "rear_delts"
+      ],
+      "movement_pattern": "horizontal_pull_isometric",
+      "qualities": [
+        "strength",
+        "aesthetics"
+      ],
+      "sources": [
+        {
+          "title": "How To Front Lever Step By Step",
+          "url": "https://www.youtube.com/watch?v=5g8-sj-8snc"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "exercise_name": "Human Flag",
+      "equipment": "none",
+      "primary_muscle_groups": [
+        "obliques",
+        "shoulders",
+        "lats"
+      ],
+      "movement_pattern": "lateral_core_isometric",
+      "qualities": [
+        "strength",
+        "aesthetics"
+      ],
+      "sources": [
+        {
+          "title": "How To Human Flag The Easiest Way",
+          "url": "https://www.youtube.com/watch?v=TF9XhvYh_m8"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "exercise_name": "Single-Kettlebell Goblet Squat",
+      "equipment": "single_kettlebell",
+      "primary_muscle_groups": [
+        "quads",
+        "glutes",
+        "core"
+      ],
+      "movement_pattern": "squat",
+      "qualities": [
+        "strength",
+        "aesthetics"
+      ],
+      "sources": [
+        {
+          "title": "Best Dumbbell Exercises You Can Do From Home",
+          "url": "https://www.youtube.com/watch?v=LBBnoBJeUEY"
+        },
+        {
+          "title": "Perfect Full Body Home Workout For Beginners (DUMBBELLS ONLY)",
+          "url": "https://www.youtube.com/watch?v=B0HaGjZW5Cc"
+        },
+        {
+          "title": "Complete 15 Min Chest & Tricep Workout | Dumbbells Only",
+          "url": "https://www.youtube.com/watch?v=ceiIEk9CKkg"
+        },
+        {
+          "title": "BEST BACK & BICEPS WORKOUT FROM HOME | DUMBBELLS ONLY",
+          "url": "https://www.youtube.com/watch?v=wMgYD0ALT4g"
+        },
+        {
+          "title": "BEST HOME Leg Workout | Dumbbells Only",
+          "url": "https://www.youtube.com/watch?v=c8Hlyu71KcE"
+        }
+      ],
+      "confidence": "medium",
+      "notes": "No kettlebell-titled Chris Heria uploads found in collected corpus; this is a one-to-one dumbbell\u2192single-kettlebell transfer recommendation."
+    },
+    {
+      "exercise_name": "Single-Kettlebell Reverse Lunge",
+      "equipment": "single_kettlebell",
+      "primary_muscle_groups": [
+        "quads",
+        "glutes",
+        "hamstrings"
+      ],
+      "movement_pattern": "lunge",
+      "qualities": [
+        "strength",
+        "aesthetics"
+      ],
+      "sources": [
+        {
+          "title": "Best Dumbbell Exercises You Can Do From Home",
+          "url": "https://www.youtube.com/watch?v=LBBnoBJeUEY"
+        },
+        {
+          "title": "Perfect Full Body Home Workout For Beginners (DUMBBELLS ONLY)",
+          "url": "https://www.youtube.com/watch?v=B0HaGjZW5Cc"
+        },
+        {
+          "title": "Complete 15 Min Chest & Tricep Workout | Dumbbells Only",
+          "url": "https://www.youtube.com/watch?v=ceiIEk9CKkg"
+        },
+        {
+          "title": "BEST BACK & BICEPS WORKOUT FROM HOME | DUMBBELLS ONLY",
+          "url": "https://www.youtube.com/watch?v=wMgYD0ALT4g"
+        },
+        {
+          "title": "BEST HOME Leg Workout | Dumbbells Only",
+          "url": "https://www.youtube.com/watch?v=c8Hlyu71KcE"
+        }
+      ],
+      "confidence": "medium",
+      "notes": "No kettlebell-titled Chris Heria uploads found in collected corpus; this is a one-to-one dumbbell\u2192single-kettlebell transfer recommendation."
+    },
+    {
+      "exercise_name": "Single-Arm Kettlebell Row",
+      "equipment": "single_kettlebell",
+      "primary_muscle_groups": [
+        "lats",
+        "biceps",
+        "upper_back"
+      ],
+      "movement_pattern": "horizontal_pull",
+      "qualities": [
+        "strength",
+        "aesthetics"
+      ],
+      "sources": [
+        {
+          "title": "Best Dumbbell Exercises You Can Do From Home",
+          "url": "https://www.youtube.com/watch?v=LBBnoBJeUEY"
+        },
+        {
+          "title": "Perfect Full Body Home Workout For Beginners (DUMBBELLS ONLY)",
+          "url": "https://www.youtube.com/watch?v=B0HaGjZW5Cc"
+        },
+        {
+          "title": "Complete 15 Min Chest & Tricep Workout | Dumbbells Only",
+          "url": "https://www.youtube.com/watch?v=ceiIEk9CKkg"
+        },
+        {
+          "title": "BEST BACK & BICEPS WORKOUT FROM HOME | DUMBBELLS ONLY",
+          "url": "https://www.youtube.com/watch?v=wMgYD0ALT4g"
+        },
+        {
+          "title": "BEST HOME Leg Workout | Dumbbells Only",
+          "url": "https://www.youtube.com/watch?v=c8Hlyu71KcE"
+        }
+      ],
+      "confidence": "medium",
+      "notes": "No kettlebell-titled Chris Heria uploads found in collected corpus; this is a one-to-one dumbbell\u2192single-kettlebell transfer recommendation."
+    },
+    {
+      "exercise_name": "Single-Arm Kettlebell Floor Press",
+      "equipment": "single_kettlebell",
+      "primary_muscle_groups": [
+        "chest",
+        "triceps",
+        "anterior_delts"
+      ],
+      "movement_pattern": "horizontal_push",
+      "qualities": [
+        "strength",
+        "aesthetics"
+      ],
+      "sources": [
+        {
+          "title": "Best Dumbbell Exercises You Can Do From Home",
+          "url": "https://www.youtube.com/watch?v=LBBnoBJeUEY"
+        },
+        {
+          "title": "Perfect Full Body Home Workout For Beginners (DUMBBELLS ONLY)",
+          "url": "https://www.youtube.com/watch?v=B0HaGjZW5Cc"
+        },
+        {
+          "title": "Complete 15 Min Chest & Tricep Workout | Dumbbells Only",
+          "url": "https://www.youtube.com/watch?v=ceiIEk9CKkg"
+        },
+        {
+          "title": "BEST BACK & BICEPS WORKOUT FROM HOME | DUMBBELLS ONLY",
+          "url": "https://www.youtube.com/watch?v=wMgYD0ALT4g"
+        },
+        {
+          "title": "BEST HOME Leg Workout | Dumbbells Only",
+          "url": "https://www.youtube.com/watch?v=c8Hlyu71KcE"
+        }
+      ],
+      "confidence": "medium",
+      "notes": "No kettlebell-titled Chris Heria uploads found in collected corpus; this is a one-to-one dumbbell\u2192single-kettlebell transfer recommendation."
+    },
+    {
+      "exercise_name": "Single-Arm Kettlebell Overhead Press",
+      "equipment": "single_kettlebell",
+      "primary_muscle_groups": [
+        "delts",
+        "triceps",
+        "upper_chest"
+      ],
+      "movement_pattern": "vertical_push",
+      "qualities": [
+        "strength",
+        "aesthetics"
+      ],
+      "sources": [
+        {
+          "title": "Best Dumbbell Exercises You Can Do From Home",
+          "url": "https://www.youtube.com/watch?v=LBBnoBJeUEY"
+        },
+        {
+          "title": "Perfect Full Body Home Workout For Beginners (DUMBBELLS ONLY)",
+          "url": "https://www.youtube.com/watch?v=B0HaGjZW5Cc"
+        },
+        {
+          "title": "Complete 15 Min Chest & Tricep Workout | Dumbbells Only",
+          "url": "https://www.youtube.com/watch?v=ceiIEk9CKkg"
+        },
+        {
+          "title": "BEST BACK & BICEPS WORKOUT FROM HOME | DUMBBELLS ONLY",
+          "url": "https://www.youtube.com/watch?v=wMgYD0ALT4g"
+        },
+        {
+          "title": "BEST HOME Leg Workout | Dumbbells Only",
+          "url": "https://www.youtube.com/watch?v=c8Hlyu71KcE"
+        }
+      ],
+      "confidence": "medium",
+      "notes": "No kettlebell-titled Chris Heria uploads found in collected corpus; this is a one-to-one dumbbell\u2192single-kettlebell transfer recommendation."
+    },
+    {
+      "exercise_name": "Single-Kettlebell Romanian Deadlift",
+      "equipment": "single_kettlebell",
+      "primary_muscle_groups": [
+        "hamstrings",
+        "glutes",
+        "lower_back"
+      ],
+      "movement_pattern": "hinge",
+      "qualities": [
+        "strength"
+      ],
+      "sources": [
+        {
+          "title": "Best Dumbbell Exercises You Can Do From Home",
+          "url": "https://www.youtube.com/watch?v=LBBnoBJeUEY"
+        },
+        {
+          "title": "Perfect Full Body Home Workout For Beginners (DUMBBELLS ONLY)",
+          "url": "https://www.youtube.com/watch?v=B0HaGjZW5Cc"
+        },
+        {
+          "title": "Complete 15 Min Chest & Tricep Workout | Dumbbells Only",
+          "url": "https://www.youtube.com/watch?v=ceiIEk9CKkg"
+        },
+        {
+          "title": "BEST BACK & BICEPS WORKOUT FROM HOME | DUMBBELLS ONLY",
+          "url": "https://www.youtube.com/watch?v=wMgYD0ALT4g"
+        },
+        {
+          "title": "BEST HOME Leg Workout | Dumbbells Only",
+          "url": "https://www.youtube.com/watch?v=c8Hlyu71KcE"
+        }
+      ],
+      "confidence": "medium",
+      "notes": "No kettlebell-titled Chris Heria uploads found in collected corpus; this is a one-to-one dumbbell\u2192single-kettlebell transfer recommendation."
+    },
+    {
+      "exercise_name": "Single-Kettlebell Thruster",
+      "equipment": "single_kettlebell",
+      "primary_muscle_groups": [
+        "quads",
+        "glutes",
+        "delts",
+        "triceps"
+      ],
+      "movement_pattern": "squat_to_press",
+      "qualities": [
+        "explosiveness",
+        "strength"
+      ],
+      "sources": [
+        {
+          "title": "Best Dumbbell Exercises You Can Do From Home",
+          "url": "https://www.youtube.com/watch?v=LBBnoBJeUEY"
+        },
+        {
+          "title": "Perfect Full Body Home Workout For Beginners (DUMBBELLS ONLY)",
+          "url": "https://www.youtube.com/watch?v=B0HaGjZW5Cc"
+        },
+        {
+          "title": "Complete 15 Min Chest & Tricep Workout | Dumbbells Only",
+          "url": "https://www.youtube.com/watch?v=ceiIEk9CKkg"
+        },
+        {
+          "title": "BEST BACK & BICEPS WORKOUT FROM HOME | DUMBBELLS ONLY",
+          "url": "https://www.youtube.com/watch?v=wMgYD0ALT4g"
+        },
+        {
+          "title": "BEST HOME Leg Workout | Dumbbells Only",
+          "url": "https://www.youtube.com/watch?v=c8Hlyu71KcE"
+        }
+      ],
+      "confidence": "medium",
+      "notes": "No kettlebell-titled Chris Heria uploads found in collected corpus; this is a one-to-one dumbbell\u2192single-kettlebell transfer recommendation."
+    },
+    {
+      "exercise_name": "Single-Kettlebell Suitcase Carry",
+      "equipment": "single_kettlebell",
+      "primary_muscle_groups": [
+        "obliques",
+        "grip",
+        "traps"
+      ],
+      "movement_pattern": "loaded_carry",
+      "qualities": [
+        "strength",
+        "aesthetics"
+      ],
+      "sources": [
+        {
+          "title": "Best Dumbbell Exercises You Can Do From Home",
+          "url": "https://www.youtube.com/watch?v=LBBnoBJeUEY"
+        },
+        {
+          "title": "Perfect Full Body Home Workout For Beginners (DUMBBELLS ONLY)",
+          "url": "https://www.youtube.com/watch?v=B0HaGjZW5Cc"
+        },
+        {
+          "title": "Complete 15 Min Chest & Tricep Workout | Dumbbells Only",
+          "url": "https://www.youtube.com/watch?v=ceiIEk9CKkg"
+        },
+        {
+          "title": "BEST BACK & BICEPS WORKOUT FROM HOME | DUMBBELLS ONLY",
+          "url": "https://www.youtube.com/watch?v=wMgYD0ALT4g"
+        },
+        {
+          "title": "BEST HOME Leg Workout | Dumbbells Only",
+          "url": "https://www.youtube.com/watch?v=c8Hlyu71KcE"
+        }
+      ],
+      "confidence": "medium",
+      "notes": "No kettlebell-titled Chris Heria uploads found in collected corpus; this is a one-to-one dumbbell\u2192single-kettlebell transfer recommendation."
+    }
+  ]
+}

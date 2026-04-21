@@ -1,15 +1,23 @@
 {
   "id": "single-kettlebell-full-body-hiit",
-  "name": "Single Kettlebell Full Body HIIT",
+  "name": "Single-Kettlebell Full Body HIIT (Heria Transfer)",
   "difficulty": "intermediate",
   "equipment": ["kettlebell"],
-  "rounds": 5,
-  "estimated_duration_minutes": 25,
+  "goal_tags": ["aesthetics", "explosiveness", "strength", "full_body"],
+  "rounds": 2,
+  "rounds_min": 1,
+  "rounds_max": 3,
+  "estimated_duration_minutes": 18,
+  "between_round_rest_seconds": 120,
+  "execution_notes": "40s on / 20s off for 8 exercises. 1 round = 8 minutes. Rest 2 minutes between rounds. Single-kettlebell movements are adapted from Chris Heria dumbbell-only routines.",
   "exercises": [
-    { "exercise_id": "kb-swings", "name": "Kettlebell Swings", "work_seconds": 35, "rest_seconds": 25 },
-    { "exercise_id": "kb-goblet-squat", "name": "Goblet Squat", "work_seconds": 35, "rest_seconds": 25 },
-    { "exercise_id": "kb-clean-press", "name": "Clean and Press (Alternating)", "work_seconds": 35, "rest_seconds": 25 },
-    { "exercise_id": "kb-reverse-lunge", "name": "Reverse Lunge (Goblet Hold)", "work_seconds": 35, "rest_seconds": 25 },
-    { "exercise_id": "kb-russian-twist", "name": "Russian Twist", "work_seconds": 35, "rest_seconds": 25 }
+    { "exercise_id": "kb-swing", "name": "Single-Kettlebell Swing", "work_seconds": 40, "rest_seconds": 20, "focus": "hinge_power" },
+    { "exercise_id": "kb-single-arm-floor-press", "name": "Single-Arm Kettlebell Floor Press", "work_seconds": 40, "rest_seconds": 20, "focus": "upper_push" },
+    { "exercise_id": "kb-goblet-squat", "name": "Single-Kettlebell Goblet Squat", "work_seconds": 40, "rest_seconds": 20, "focus": "lower_strength" },
+    { "exercise_id": "kb-single-arm-row", "name": "Single-Arm Kettlebell Row", "work_seconds": 40, "rest_seconds": 20, "focus": "upper_pull" },
+    { "exercise_id": "kb-reverse-lunge", "name": "Single-Kettlebell Reverse Lunge", "work_seconds": 40, "rest_seconds": 20, "focus": "single_leg_stability" },
+    { "exercise_id": "kb-single-arm-overhead-press", "name": "Single-Arm Kettlebell Overhead Press", "work_seconds": 40, "rest_seconds": 20, "focus": "vertical_push" },
+    { "exercise_id": "kb-single-kettlebell-rdl", "name": "Single-Kettlebell Romanian Deadlift", "work_seconds": 40, "rest_seconds": 20, "focus": "posterior_chain" },
+    { "exercise_id": "kb-single-kettlebell-thruster", "name": "Single-Kettlebell Thruster", "work_seconds": 40, "rest_seconds": 20, "focus": "full_body_explosive" }
   ]
 }

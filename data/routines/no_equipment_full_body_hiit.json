@@ -1,15 +1,23 @@
 {
   "id": "no-equipment-full-body-hiit",
-  "name": "No Equipment Full Body HIIT",
+  "name": "No-Equipment Full Body HIIT (Heria-Informed)",
   "difficulty": "intermediate",
   "equipment": [],
-  "rounds": 4,
-  "estimated_duration_minutes": 24,
+  "goal_tags": ["aesthetics", "explosiveness", "strength", "full_body"],
+  "rounds": 2,
+  "rounds_min": 1,
+  "rounds_max": 3,
+  "estimated_duration_minutes": 18,
+  "between_round_rest_seconds": 120,
+  "execution_notes": "40s on / 20s off for 8 exercises. 1 round = 8 minutes. Rest 2 minutes between rounds. Scale to 1-3 rounds based on schedule.",
   "exercises": [
-    { "exercise_id": "jumping-jacks", "name": "Jumping Jacks", "work_seconds": 40, "rest_seconds": 20 },
-    { "exercise_id": "bodyweight-squats", "name": "Bodyweight Squats", "work_seconds": 40, "rest_seconds": 20 },
-    { "exercise_id": "mountain-climbers", "name": "Mountain Climbers", "work_seconds": 40, "rest_seconds": 20 },
-    { "exercise_id": "push-ups", "name": "Push-ups", "work_seconds": 40, "rest_seconds": 20 },
-    { "exercise_id": "high-knees", "name": "High Knees", "work_seconds": 40, "rest_seconds": 20 }
+    { "exercise_id": "push-up", "name": "Push-Up", "work_seconds": 40, "rest_seconds": 20, "focus": "upper_push" },
+    { "exercise_id": "plank", "name": "Plank", "work_seconds": 40, "rest_seconds": 20, "focus": "core_stability" },
+    { "exercise_id": "bodyweight-squat", "name": "Bodyweight Squat", "work_seconds": 40, "rest_seconds": 20, "focus": "lower_body" },
+    { "exercise_id": "l-sit-hold", "name": "L-Sit Hold", "work_seconds": 40, "rest_seconds": 20, "focus": "core_compression" },
+    { "exercise_id": "one-arm-push-up-progression", "name": "One-Arm Push-Up Progression", "work_seconds": 40, "rest_seconds": 20, "focus": "upper_strength" },
+    { "exercise_id": "burpee", "name": "Burpee", "work_seconds": 40, "rest_seconds": 20, "focus": "explosive_conditioning" },
+    { "exercise_id": "reverse-lunge-alternating", "name": "Reverse Lunge (Alternating)", "work_seconds": 40, "rest_seconds": 20, "focus": "lower_stability" },
+    { "exercise_id": "handstand-hold", "name": "Handstand Hold", "work_seconds": 40, "rest_seconds": 20, "focus": "shoulder_core_skill" }
   ]
 }

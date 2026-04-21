@@ -11,6 +11,7 @@
     "routine_id": { "type": "string", "minLength": 1 },
     "status": { "type": "string", "enum": ["completed", "partial", "skipped"] },
     "rounds_completed": { "type": "integer", "minimum": 0 },
+    "chunks_completed": { "type": "integer", "minimum": 0 },
     "rpe": { "type": "integer", "minimum": 1, "maximum": 10 },
     "notes": { "type": "string" }
   }

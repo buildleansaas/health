@@ -4,18 +4,65 @@
   "title": "Exercise",
   "type": "object",
   "additionalProperties": false,
-  "required": ["id", "name", "category", "work_interval_seconds", "rest_interval_seconds"],
+  "required": [
+    "id",
+    "name",
+    "category",
+    "equipment_type",
+    "primary_muscle_groups",
+    "movement_pattern",
+    "qualities",
+    "work_interval_seconds",
+    "rest_interval_seconds",
+    "source_videos",
+    "confidence"
+  ],
   "properties": {
     "id": { "type": "string", "minLength": 1 },
     "name": { "type": "string", "minLength": 1 },
-    "category": { "type": "string", "enum": ["cardio", "strength", "mobility", "core", "conditioning"] },
+    "category": {
+      "type": "string",
+      "enum": ["cardio", "strength", "mobility", "core", "conditioning", "skill"]
+    },
+    "equipment_type": {
+      "type": "string",
+      "enum": ["none", "single_kettlebell", "other"]
+    },
     "equipment": {
       "type": "array",
       "items": { "type": "string", "minLength": 1 },
       "default": []
     },
+    "primary_muscle_groups": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "movement_pattern": { "type": "string", "minLength": 1 },
+    "qualities": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "enum": ["aesthetics", "explosiveness", "strength", "endurance", "stability"]
+      }
+    },
     "work_interval_seconds": { "type": "integer", "minimum": 5 },
     "rest_interval_seconds": { "type": "integer", "minimum": 5 },
+    "source_videos": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["title", "url"],
+        "properties": {
+          "title": { "type": "string", "minLength": 1 },
+          "url": { "type": "string", "format": "uri" }
+        }
+      }
+    },
+    "confidence": { "type": "string", "enum": ["high", "medium", "low"] },
     "notes": { "type": "string" }
   }
 }

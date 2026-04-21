@@ -1,1 +1,289 @@
-[]
+[
+  {
+    "id": "push-up",
+    "name": "Push-Up",
+    "category": "strength",
+    "equipment_type": "none",
+    "equipment": [],
+    "primary_muscle_groups": ["chest", "triceps", "anterior_delts"],
+    "movement_pattern": "horizontal_push",
+    "qualities": ["strength", "aesthetics"],
+    "work_interval_seconds": 40,
+    "rest_interval_seconds": 20,
+    "source_videos": [
+      {"title": "How To Do The Perfect Push Up", "url": "https://www.youtube.com/watch?v=rruHM_sB2Hc"},
+      {"title": "Get a BIGGER CHEST With JUST Push Ups", "url": "https://www.youtube.com/watch?v=zPp-VAi_a24"}
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "one-arm-push-up-progression",
+    "name": "One-Arm Push-Up Progression",
+    "category": "strength",
+    "equipment_type": "none",
+    "equipment": [],
+    "primary_muscle_groups": ["chest", "triceps", "core"],
+    "movement_pattern": "unilateral_horizontal_push",
+    "qualities": ["strength", "explosiveness", "aesthetics"],
+    "work_interval_seconds": 40,
+    "rest_interval_seconds": 20,
+    "source_videos": [
+      {"title": "What 100 One-Arm Push-Ups A Day Does To Your Body", "url": "https://www.youtube.com/watch?v=BvZw1tyna-M"}
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "burpee",
+    "name": "Burpee",
+    "category": "conditioning",
+    "equipment_type": "none",
+    "equipment": [],
+    "primary_muscle_groups": ["quads", "chest", "shoulders", "core"],
+    "movement_pattern": "squat_thrust_conditioning",
+    "qualities": ["explosiveness", "strength", "endurance"],
+    "work_interval_seconds": 40,
+    "rest_interval_seconds": 20,
+    "source_videos": [
+      {"title": "Burpees LVL 1-10 (How To Progress Faster)", "url": "https://www.youtube.com/watch?v=1IhPhkoBc_M"}
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "plank",
+    "name": "Plank",
+    "category": "core",
+    "equipment_type": "none",
+    "equipment": [],
+    "primary_muscle_groups": ["core", "glutes", "shoulders"],
+    "movement_pattern": "anti_extension_core",
+    "qualities": ["strength", "stability", "aesthetics"],
+    "work_interval_seconds": 40,
+    "rest_interval_seconds": 20,
+    "source_videos": [
+      {"title": "Do This Plank Routine Every Day | Just 5 Min", "url": "https://www.youtube.com/watch?v=6ONgwzcQIvQ"}
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "l-sit-hold",
+    "name": "L-Sit Hold",
+    "category": "core",
+    "equipment_type": "none",
+    "equipment": [],
+    "primary_muscle_groups": ["abs", "hip_flexors", "triceps"],
+    "movement_pattern": "core_isometric",
+    "qualities": ["strength", "aesthetics", "stability"],
+    "work_interval_seconds": 40,
+    "rest_interval_seconds": 20,
+    "source_videos": [
+      {"title": "Why You Can’t L-Sit Hold (How To Step By Step)", "url": "https://www.youtube.com/watch?v=Qv6j5gZyBQ8"}
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "handstand-hold",
+    "name": "Handstand Hold",
+    "category": "skill",
+    "equipment_type": "none",
+    "equipment": [],
+    "primary_muscle_groups": ["shoulders", "triceps", "core"],
+    "movement_pattern": "inversion_isometric",
+    "qualities": ["strength", "stability", "aesthetics"],
+    "work_interval_seconds": 40,
+    "rest_interval_seconds": 20,
+    "source_videos": [
+      {"title": "HOW TO HANDSTAND KICK UP", "url": "https://www.youtube.com/watch?v=XnsM3TLjubY"}
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "tuck-planche-hold",
+    "name": "Tuck Planche Hold",
+    "category": "skill",
+    "equipment_type": "none",
+    "equipment": [],
+    "primary_muscle_groups": ["shoulders", "chest", "triceps", "core"],
+    "movement_pattern": "straight_arm_push_isometric",
+    "qualities": ["strength", "aesthetics", "stability"],
+    "work_interval_seconds": 40,
+    "rest_interval_seconds": 20,
+    "source_videos": [
+      {"title": "HOW TO TUCK PLANCHE", "url": "https://www.youtube.com/watch?v=M5il8Jpltt8"}
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "bodyweight-squat",
+    "name": "Bodyweight Squat",
+    "category": "strength",
+    "equipment_type": "none",
+    "equipment": [],
+    "primary_muscle_groups": ["quads", "glutes", "adductors"],
+    "movement_pattern": "squat",
+    "qualities": ["strength", "aesthetics", "endurance"],
+    "work_interval_seconds": 40,
+    "rest_interval_seconds": 20,
+    "source_videos": [
+      {"title": "Calisthenics Leg Workout ( NO EQUIPMENT )", "url": "https://www.youtube.com/watch?v=0z5hJYXAQp4"},
+      {"title": "20 Min Complete Home Leg Workout | Follow Along", "url": "https://www.youtube.com/watch?v=q7rCeOa_m58"}
+    ],
+    "confidence": "medium",
+    "notes": "Exercise appears in Chris Heria no-equipment leg follow-alongs; exact set/rep blocks vary by video."
+  },
+  {
+    "id": "reverse-lunge-alternating",
+    "name": "Reverse Lunge (Alternating)",
+    "category": "strength",
+    "equipment_type": "none",
+    "equipment": [],
+    "primary_muscle_groups": ["quads", "glutes", "hamstrings", "core"],
+    "movement_pattern": "lunge",
+    "qualities": ["strength", "stability", "aesthetics"],
+    "work_interval_seconds": 40,
+    "rest_interval_seconds": 20,
+    "source_videos": [
+      {"title": "Calisthenics Leg Workout ( NO EQUIPMENT )", "url": "https://www.youtube.com/watch?v=0z5hJYXAQp4"},
+      {"title": "8 Min At Home Leg Workout (Follow Along)", "url": "https://www.youtube.com/watch?v=uLzLxV3TFqI"}
+    ],
+    "confidence": "medium",
+    "notes": "Included as a likely movement from Chris Heria bodyweight leg follow-alongs."
+  },
+  {
+    "id": "kb-swing",
+    "name": "Single-Kettlebell Swing",
+    "category": "conditioning",
+    "equipment_type": "single_kettlebell",
+    "equipment": ["kettlebell"],
+    "primary_muscle_groups": ["hamstrings", "glutes", "core"],
+    "movement_pattern": "hip_hinge_power",
+    "qualities": ["explosiveness", "strength", "endurance"],
+    "work_interval_seconds": 40,
+    "rest_interval_seconds": 20,
+    "source_videos": [
+      {"title": "Best Dumbbell Exercises You Can Do From Home", "url": "https://www.youtube.com/watch?v=LBBnoBJeUEY"},
+      {"title": "Perfect Full Body Home Workout For Beginners (DUMBBELLS ONLY)", "url": "https://www.youtube.com/watch?v=B0HaGjZW5Cc"}
+    ],
+    "confidence": "medium",
+    "notes": "No clearly kettlebell-titled Chris Heria uploads found in the crawled channel set; this is a dumbbell-to-kettlebell transfer."
+  },
+  {
+    "id": "kb-goblet-squat",
+    "name": "Single-Kettlebell Goblet Squat",
+    "category": "strength",
+    "equipment_type": "single_kettlebell",
+    "equipment": ["kettlebell"],
+    "primary_muscle_groups": ["quads", "glutes", "core"],
+    "movement_pattern": "squat",
+    "qualities": ["strength", "aesthetics"],
+    "work_interval_seconds": 40,
+    "rest_interval_seconds": 20,
+    "source_videos": [
+      {"title": "Best Dumbbell Exercises You Can Do From Home", "url": "https://www.youtube.com/watch?v=LBBnoBJeUEY"},
+      {"title": "Perfect Full Body Home Workout For Beginners (DUMBBELLS ONLY)", "url": "https://www.youtube.com/watch?v=B0HaGjZW5Cc"}
+    ],
+    "confidence": "medium",
+    "notes": "Dumbbell-to-single-kettlebell transfer."
+  },
+  {
+    "id": "kb-reverse-lunge",
+    "name": "Single-Kettlebell Reverse Lunge",
+    "category": "strength",
+    "equipment_type": "single_kettlebell",
+    "equipment": ["kettlebell"],
+    "primary_muscle_groups": ["quads", "glutes", "hamstrings"],
+    "movement_pattern": "lunge",
+    "qualities": ["strength", "stability", "aesthetics"],
+    "work_interval_seconds": 40,
+    "rest_interval_seconds": 20,
+    "source_videos": [
+      {"title": "BEST HOME Leg Workout | Dumbbells Only", "url": "https://www.youtube.com/watch?v=c8Hlyu71KcE"}
+    ],
+    "confidence": "medium",
+    "notes": "Dumbbell-to-single-kettlebell transfer."
+  },
+  {
+    "id": "kb-single-arm-row",
+    "name": "Single-Arm Kettlebell Row",
+    "category": "strength",
+    "equipment_type": "single_kettlebell",
+    "equipment": ["kettlebell"],
+    "primary_muscle_groups": ["lats", "biceps", "upper_back"],
+    "movement_pattern": "horizontal_pull",
+    "qualities": ["strength", "aesthetics"],
+    "work_interval_seconds": 40,
+    "rest_interval_seconds": 20,
+    "source_videos": [
+      {"title": "BEST BACK & BICEPS WORKOUT FROM HOME | DUMBBELLS ONLY", "url": "https://www.youtube.com/watch?v=wMgYD0ALT4g"}
+    ],
+    "confidence": "medium",
+    "notes": "Dumbbell-to-single-kettlebell transfer."
+  },
+  {
+    "id": "kb-single-arm-floor-press",
+    "name": "Single-Arm Kettlebell Floor Press",
+    "category": "strength",
+    "equipment_type": "single_kettlebell",
+    "equipment": ["kettlebell"],
+    "primary_muscle_groups": ["chest", "triceps", "anterior_delts"],
+    "movement_pattern": "horizontal_push",
+    "qualities": ["strength", "aesthetics"],
+    "work_interval_seconds": 40,
+    "rest_interval_seconds": 20,
+    "source_videos": [
+      {"title": "Complete 15 Min Chest & Tricep Workout | Dumbbells Only", "url": "https://www.youtube.com/watch?v=ceiIEk9CKkg"}
+    ],
+    "confidence": "medium",
+    "notes": "Dumbbell-to-single-kettlebell transfer."
+  },
+  {
+    "id": "kb-single-arm-overhead-press",
+    "name": "Single-Arm Kettlebell Overhead Press",
+    "category": "strength",
+    "equipment_type": "single_kettlebell",
+    "equipment": ["kettlebell"],
+    "primary_muscle_groups": ["delts", "triceps", "upper_chest"],
+    "movement_pattern": "vertical_push",
+    "qualities": ["strength", "aesthetics"],
+    "work_interval_seconds": 40,
+    "rest_interval_seconds": 20,
+    "source_videos": [
+      {"title": "Best Dumbbell Exercises You Can Do From Home", "url": "https://www.youtube.com/watch?v=LBBnoBJeUEY"}
+    ],
+    "confidence": "medium",
+    "notes": "Dumbbell-to-single-kettlebell transfer."
+  },
+  {
+    "id": "kb-single-kettlebell-rdl",
+    "name": "Single-Kettlebell Romanian Deadlift",
+    "category": "strength",
+    "equipment_type": "single_kettlebell",
+    "equipment": ["kettlebell"],
+    "primary_muscle_groups": ["hamstrings", "glutes", "lower_back"],
+    "movement_pattern": "hinge",
+    "qualities": ["strength", "aesthetics"],
+    "work_interval_seconds": 40,
+    "rest_interval_seconds": 20,
+    "source_videos": [
+      {"title": "BEST HOME Leg Workout | Dumbbells Only", "url": "https://www.youtube.com/watch?v=c8Hlyu71KcE"}
+    ],
+    "confidence": "medium",
+    "notes": "Dumbbell-to-single-kettlebell transfer."
+  },
+  {
+    "id": "kb-single-kettlebell-thruster",
+    "name": "Single-Kettlebell Thruster",
+    "category": "conditioning",
+    "equipment_type": "single_kettlebell",
+    "equipment": ["kettlebell"],
+    "primary_muscle_groups": ["quads", "glutes", "delts", "triceps"],
+    "movement_pattern": "squat_to_press",
+    "qualities": ["explosiveness", "strength", "aesthetics"],
+    "work_interval_seconds": 40,
+    "rest_interval_seconds": 20,
+    "source_videos": [
+      {"title": "Perfect Full Body Home Workout For Beginners (DUMBBELLS ONLY)", "url": "https://www.youtube.com/watch?v=B0HaGjZW5Cc"}
+    ],
+    "confidence": "medium",
+    "notes": "Dumbbell-to-single-kettlebell transfer."
+  }
+]
