@@ -3,5 +3,5 @@
 - [x] Seed affirmations from Aura morning affirmations source.
 - [x] Add JSON Schemas, routines, logs examples, and validation script.
 - [x] Run validation script and capture passing output.
-- [ ] Commit and push changes.
-- [ ] Write delivery note with changed files and verification output.
+- [x] Commit and push changes.
+- [x] Write delivery note with changed files and verification output.
