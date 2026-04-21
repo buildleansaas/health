@@ -21,7 +21,7 @@ Yes, this is possible in Telegram forum topics.
 - Telegram Bot (BotFather token)
 - Mini App frontend (React/Vite or Next.js)
 - Backend API (FastAPI/Node)
-- DB (Postgres/Supabase) for exercises, routines, logs
+- DB (local Postgres on VPS) for exercises, routines, logs
 
 ## Topic support details
 - Use Bot API `message_thread_id` for forum topics.
@@ -36,7 +36,10 @@ Yes, this is possible in Telegram forum topics.
 ## MVP feature set
 - Phrase trigger parser
 - Two routine presets
-- Session timer engine (40/20, 8 moves, 2:00 between rounds)
+- Launch screen pickers:
+  - exercises per round (6, 8, or 10)
+  - number of rounds (1, 2, or 3)
+- Session timer engine (40/20, 2:00 between rounds)
 - Buttons: Start, Pause, Resume, Next, End
 - Completion summary + save log
 
